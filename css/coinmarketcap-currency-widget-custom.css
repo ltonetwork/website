@@ -1,0 +1,42 @@
+.currency-widget {
+  color: #c8c8c8;
+  font-weight: 300;
+}
+
+.currency-widget > div {
+  font-family: inherit !important;
+  border: none !important;
+}
+
+.currency-widget img {
+  height: auto !important;
+}
+
+.currency-widget span {
+  font-weight: inherit !important;
+}
+
+.currency-widget > div > div {
+  border: none !important;
+}
+
+.currency-widget > div > div:nth-child(1) a {
+  font-weight: 600;
+  color: #ffffff !important;
+}
+
+.currency-widget > div > div:nth-child(2) span > span {
+  display: none;
+}
+
+.currency-widget > div > div:nth-child(3) a {
+  color: #444 !important;
+}
+
+.hamenu .currency-widget > div {
+  margin-left: -30px;
+  margin-top: -20px;
+  margin-bottom: 60px;
+}
+
+
