@@ -13,16 +13,10 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta
-            name="keywords"
-            content="HTML5 Template Avo onepage themeforest"
-          />
-          <meta
-            name="description"
-            content="Avo - Onepage Multi-Purpose HTML5 Template"
-          />
-          <meta name="author" content="" />
-          <link rel="shortcut icon" href="/img/favicon.ico" />
+          <meta name="author" content="LTO Network" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
+
           {/* Google Fonts */}
           <link
             href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
