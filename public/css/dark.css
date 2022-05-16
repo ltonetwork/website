@@ -54,6 +54,7 @@
 @import "/css/pe-icon.min.css";
 @import "/css/font-awesome.min.css";
 @import "/css/coinmarketcap-currency-widget-custom.css";
+@import "/css/fonts.css";
 
 * {
   margin: 0;
@@ -70,7 +71,7 @@ body {
   line-height: 1.5;
   font-weight: 400;
   overflow-x: hidden !important;
-  font-family: "Poppins", sans-serif;
+  font-family: "Overpass LTO", serif;
 }
 
 img {
