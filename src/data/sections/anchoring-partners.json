@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "title": "Triall",
+    "src": "triall-logo.png",
+    "alt": "triall logo",
+    "content": "clinical trials including Covid19 Vaccine research on the LTO Network"
+    
+  },
+  {
+    "id": 2,
+    "title": "SignRequest",
+    "src": "sign-request-logo.png",
+    "alt": "SignRequest logo",
+    "content": "Immutable PDFs on LTO Network. Over 1 million business documents signed every year."
+    
+  },
+  {
+    "id": 3,
+    "title": "NEN",
+    "src": "dutch-men-logo.png",
+    "alt": "Dutch Men logo",
+    "content": "Smart certificates to facilitate on the spot verification for The Dutch Standardization Institute"
+  }
+]
