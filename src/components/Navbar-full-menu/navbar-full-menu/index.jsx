@@ -18,17 +18,19 @@ const NavbarFullMenu = ({ theme, lr }) => {
       >
         <div className="container-fluid">
           <div className="logo">
-            <a href="/">
-              {theme ? (
-                theme === "light" ? (
-                  <img src={`${appData.darkLogo}`} alt="logo" />
+            <Link href="/">
+              <a>
+                {theme ? (
+                  theme === "light" ? (
+                    <img src={`${appData.darkLogo}`} alt="logo" />
+                  ) : (
+                    <img src={`${appData.lightLogo}`} alt="logo" />
+                  )
                 ) : (
                   <img src={`${appData.lightLogo}`} alt="logo" />
-                )
-              ) : (
-                <img src={`${appData.lightLogo}`} alt="logo" />
-              )}
-            </a>
+                )}
+              </a>
+            </Link>
           </div>
           <div className="menu-icon">
             <span className="icon">
@@ -53,18 +55,18 @@ const NavbarFullMenu = ({ theme, lr }) => {
                   <li>
                     <div className="o-hidden">
                       <Link href="/">
-                        <span className="link">
+                        <a className="link">
                           <span className="nm">01.</span>Home
-                        </span>
+                        </a>
                       </Link>
                     </div>
                   </li>
                   <li>
                     <div className="o-hidden">
                       <Link href="/about">
-                        <span className="link">
+                        <a className="link">
                           <span className="nm">02.</span>What is LTO Network?
-                        </span>
+                        </a>
                       </Link>
                     </div>
                   </li>
