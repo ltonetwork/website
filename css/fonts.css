@@ -1,0 +1,15 @@
+/* Overpass LTO - Regular */
+@font-face {
+  font-family: "Overpass LTO";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Overpass/Overpass-Regular.ttf");
+}
+
+/* Overpass LTO - Regular */
+@font-face {
+  font-family: "Overpass LTO";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Overpass/Overpass-Bold.ttf");
+}
