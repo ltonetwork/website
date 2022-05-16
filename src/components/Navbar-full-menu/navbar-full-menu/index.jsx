@@ -86,6 +86,15 @@ const NavbarFullMenu = ({ theme, lr }) => {
                       </Link>
                     </div>
                   </li>
+                  <li>
+                    <div className="o-hidden">
+                      <Link href="/partnerships">
+                        <a className="link">
+                          <span className="nm">05.</span>Partnerships & Projects
+                        </a>
+                      </Link>
+                    </div>
+                  </li>
                 </ul>
               </div>
             </div>
