@@ -39,10 +39,10 @@ const Works2Slider = ({ subBG }) => {
             </h6>
             <Split>
               <h3 className="wow words chars splitting" data-splitting>
-                Roadmap.
+                Roadmap
               </h3>
             </Split>
-            <span className="tbg">Roadmap.</span>
+            <span className="tbg">Roadmap</span>
           </div>
           <div className="row">
             <div className="col-lg-12 no-padding">
@@ -97,6 +97,7 @@ const Works2Slider = ({ subBG }) => {
                           className="content wow fadeInUp"
                           data-wow-delay=".3s"
                         >
+                          <div className="top-label">Q1 - 2022</div>
                           <div
                             className="item-img bg-img wow imago"
                             style={{
@@ -131,6 +132,7 @@ const Works2Slider = ({ subBG }) => {
                           className="content wow fadeInUp"
                           data-wow-delay=".3s"
                         >
+                          <div className="top-label">Q2 - 2022</div>
                           <div
                             className="item-img bg-img wow imago"
                             style={{
