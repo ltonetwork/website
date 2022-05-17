@@ -1,13 +1,13 @@
 import React from "react";
 import Split from "../Split";
 import services4Data from "../../data/sections/services4.json";
-
-const Services4 = ({ withBG, withPadding, halfBG, withOutTitle }) => {
+import Link from "next/link"
+const Services4 = ({ theme, withBG, withPadding, halfBG, withOutTitle }) => {
   return (
     <section
       className={`services ${withPadding ? "section-padding" : ""} ${
         withBG ? "sub-bg" : ""
-      }`}
+      } pt-30`}
     >
       <div className="container">
         {!withOutTitle && (
@@ -29,17 +29,40 @@ const Services4 = ({ withBG, withPadding, halfBG, withOutTitle }) => {
               <div
                 className={`item ${
                   index != services4Data.length - 1 ? "md-mb50" : ""
-                } wow fadeInUp`}
+                } wow fadeInUp dark-purple-bg`}
                 data-wow-delay={
                   item.id == 1 ? ".5s" : item.id == 2 ? ".3s" : ".8s"
                 }
               >
-                <span className={`icon ${item.icon}`}></span>
-                <h6>{item.title}</h6>
-                <p>{item.content}</p>
+                <img src ={`/img/project-background/${item.src}`} className={`icon ${item.src}`} alt={`${item.alt}`}/>
+                {/* <h6>{item.title}</h6> */}
+                <Link href={`/${item.link}`} style="position:absolute; right:0;">
+                    <a
+                      className={`btn-curve ${
+                        theme == "light" ? "btn-blc" : "btn-lit"
+                      } wow fadeInUp`}
+                      data-wow-delay=".5s"
+                    >
+                      <span>View</span>
+                    </a>
+                  </Link>
               </div>
             </div>
           ))}
+        </div>
+        <div className = "row justify-content-end pt-100">
+        <div className="col-lg-3">
+          <Link href="/explore-projects" style="position:absolute; right:0;">
+            <a
+              className={`btn-curve ${
+                theme == "light" ? "btn-blc" : "btn-lit"
+              } wow fadeInUp`}
+              data-wow-delay=".5s"
+            >
+              <span>Explore Projects</span>
+            </a>
+          </Link>
+        </div>
         </div>
       </div>
       {halfBG && <div className="half-bg bottom"></div>}

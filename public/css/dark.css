@@ -147,6 +147,29 @@ span:hover {
 }
 
 /* ====================== [ End Typography  ] ====================== */
+
+
+
+/* ====================== [ By Will Midgette  ] ====================== */
+.min-content-block{
+  width: min-content;
+}
+body{
+  --dark-purple-bg: #fffff;
+}
+.list-custom-style{
+  padding: 30px 0 30px 0 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border-bottom-width: 1px !important;
+  border-bottom-style: solid !important;
+  border-bottom-color: rgba(255, 255, 255, 0.05) !important;
+}
+.list-custom-style h6{
+  font-size: 1.5rem;
+}
+/* ====================== [ End Typography  ] ====================== */
+
+
 /* ====================== [ Start Helper Classes  ] ====================== */
 .o-hidden {
   overflow: hidden;
@@ -199,6 +222,22 @@ span:hover {
 .bg-color .primery-shadow {
   -webkit-box-shadow: 0px 4px 40px -4px rgba(255, 255, 255, 0.2);
   box-shadow: 0px 4px 40px -4px rgba(255, 255, 255, 0.2);
+}
+
+.light-purple-bg{
+  background-color:#804BC9 !important;
+}
+
+.dark-purple-bg{
+  background-color:#510094 !important;
+}
+
+.light-purple-font{
+  color: #804BC9 !important;
+}
+
+.dark-purple-font{
+  color:#510094 !important;
 }
 
 .sub-bg {
@@ -3569,9 +3608,10 @@ body {
 }
 .services .item {
   text-align: center;
-  padding: 60px;
+  padding: 30px;
   background: #151921;
   position: relative;
+  height:100%;
 }
 .services .item .icon {
   color: #75dab4;
@@ -4455,7 +4495,7 @@ body {
 .team .item .info .social a {
   font-size: 13px;
   margin: 0 8px;
-  color: #75dab4;
+  color: #ffffff;
 }
 .team .item:hover .info h5,
 .team .item:hover .info span {

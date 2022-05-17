@@ -19,13 +19,13 @@ const MinimalArea = ({theme}) => {
       <div className="container">
         <div className="row">
           <div className="col-lg-6 valign">
-            <div className="content">
+            <div className="content pl-0 pt-0">
               <ul className="feat">
                 <li className="wow fadeInUp" data-wow-delay=".2s">
                   <h6>
                   Decentralized Identifiers
                   </h6>
-                  <p>
+                  <p className="pl-0">
                   Allowing LTO Network to be used as an identity platform.
 Any account can be resolved as DID. Multiple ciphers/curves
 are supported (natively).
@@ -35,14 +35,14 @@ are supported (natively).
                   <h6>
                   Verifiable Credentials
                   </h6>
-                  <p>
+                  <p className="pl-0">
                   Decentralized revocation registry for verifiable credentials.
 Verifiable presentations can be shared over private layer to
 comply with GDPR. 
                   </p>
                 </li>
                 <li>
-                  <Link href="/contact/contact-dark" style="position:absolute; right:0;">
+                  <Link href="/learn-more" style="position:absolute; right:0;">
                     <a
                       className={`btn-curve ${
                         theme == "light" ? "btn-blc" : "btn-lit"
@@ -56,16 +56,17 @@ comply with GDPR.
               </ul>
             </div>
           </div>
-          <div className="col-lg-6 valign">
-          <div className="content">
-            <div className="row">
+          <div className="col-lg-6 valign dark-purple-bg">
+          <div>
+            <div className="row justify-content-around">
               <span>
                 <button
                   className={`btn-curve ${
-                    tabTitle == "MyCompanyWallet" ? "btn-blc" : "btn-lit"
+                    tabTitle == "MyCompanyWallet" ? "light-purple-bg" : "btn-lit"
                   } wow fadeInUp`}
                   data-wow-delay=".5s"
                   onClick={()=>{setTitle('MyCompanyWallet'), setContent('MyCompanyWallet content to go here')}}
+                  style={{"padding":"12px 25px"}}
                 >
                   <span>MyCompanyWallet</span>
                 </button>
@@ -73,10 +74,11 @@ comply with GDPR.
               <span>
                 <button
                   className={`btn-curve ${
-                    tabTitle == "Proofi" ? "btn-blc" : "btn-lit"
+                    tabTitle == "Proofi" ? "light-purple-bg" : "btn-lit"
                   } wow fadeInUp`}
                   data-wow-delay=".5s"
                   onClick={()=>{setTitle('Proofi'), setContent('Proofi content to go here')}}
+                  style={{"padding":"12px 25px"}}
                 >
                   <span>Proofi</span>
                 </button>
@@ -84,46 +86,46 @@ comply with GDPR.
               <span>
                 <button
                   className={`btn-curve ${
-                    tabTitle == "LtoWallet" ? "btn-blc" : "btn-lit"
+                    tabTitle == "LtoWallet" ? "light-purple-bg" : "btn-lit"
                   } wow fadeInUp`}
                   data-wow-delay=".5s"
                   onClick={()=>{setTitle('LtoWallet'), setContent('LTO content to go here')}}
+                  style={{"padding":"12px 25px"}}
                 >
                   <span>LTO Wallet</span>
                 </button>
               </span>
             </div>
-            <section className="min-area sub-bg">
-      <div className="container pt-40">
-        <div className="row">
-          <div className="col-lg-6 valign sub-bg">
-            <div className="content">
-              <Split>
-                <h4
-                  className="wow custom-font words chars splitting"
-                  data-splitting
-                >
-                  <h3>{tabTitle}</h3>
-                </h4>
-              </Split>
-              <Split>
-                <p className="wow txt words chars splitting" data-splitting>
-                <p>{tabContent}</p>
-                </p>
-              </Split>
-            </div>
-          </div>
-          <div className="col-lg-6 valign sub-bg">
-            <div className="content">
-              <Split>
-              <img className={`icon ${tabTitle}`} src={`/img/${tabTitle}.png`}alt={`${tabTitle}`}/>
-              </Split>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+            <section className="min-area">
+              <div className="container pt-40">
+                <div className="row">
+                  <div className="col-lg-6 valign">
+                    <div>
+                      <Split>
+                        <h4
+                          className="wow custom-font words chars splitting"
+                          data-splitting
+                        >
+                          <h3>{tabTitle}</h3>
+                        </h4>
+                      </Split>
+                      <Split>
+                        <p className="wow txt words chars splitting" data-splitting>
+                        <p>{tabContent}</p>
+                        </p>
+                      </Split>
+                    </div>
+                  </div>
+                  <div className="col-lg-6 valign">
+                    <div className="content">
+                      <Split>
+                      <img className={`icon ${tabTitle}`} src={`/img/identity-platform/${tabTitle}.png`}alt={`${tabTitle}`}/>
+                      </Split>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
           </div>
         </div>

@@ -4,11 +4,11 @@ import layersData from "../../data/sections/layersdata.json";
 
 const PrivatePublicLayers = ({ withBG, withPadding, halfBG, withOutTitle }) => {
   return (
-    <section className="min-area sub-bg">
-      <div className="container section-padding">
+    <section className="min-area sub-bg section-padding pt-30">
+      <div className="container">
         <div className="row">
-          <div className="col-lg-6 valign sub-bg">
-            <div>
+          <div className="col-lg-6 valign light-purple-bg">
+            <div className="pt-20 pb-20">
               <Split>
                 <h4
                   className="wow custom-font words chars splitting"
@@ -24,8 +24,8 @@ const PrivatePublicLayers = ({ withBG, withPadding, halfBG, withOutTitle }) => {
               </Split>
             </div>
           </div>
-          <div className="col-lg-6 valign sub-bg">
-            <div>
+          <div className="col-lg-6 valign dark-purple-bg">
+            <div className="pt-20 pb-20">
               <Split>
                 <h4
                   className="wow custom-font words chars splitting"

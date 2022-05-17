@@ -11,21 +11,32 @@ import SkillsCircle from "../components/Skills-circle";
 import Team1 from "../components/Team1";
 import VideoWithTestimonials from "../components/Video-with-testimonials";
 import DarkTheme from "../layouts/Dark";
-
+import HybridArchitecture from "../components/Hybrid-architecture"
+import PrivatePublicLayers from "../components/PrivatePublicLayers"
+import DataAnchoring from "../components/DataAnchoring"
+import AnchoringPartners from "../components/AnchoringPartners"
+import IdentityPlatform from "../components/IdentityPlatform"
+import PointsAndTabs from "../components/PointsAndTabs"
+import TitaniumLitePaper from "../components/TitaniumLitePaper"
+import PressKit from "../components/PressKit"
+import DownloadFontsAndLogos from "../components/DownloadFontsAndLogos"
 const AboutDark = () => {
   return (
     <DarkTheme>
-      <NavbarFullMenu />
-      <AboutHeader />
-      <AboutIntro />
-      <Services4 withPadding withOutTitle />
-      <VideoWithTestimonials />
-      <SkillsCircle subBG theme="dark" />
-      <Team1 />
-      <MinimalArea />
-      <Clients1 theme="dark" />
-      <CallToAction subBG />
-      <Footer />
+      <NavbarFullMenu/>
+      <AboutHeader/>
+      <AboutIntro/>
+      <Services4 withPadding withOutTitle/>
+      <HybridArchitecture/>
+      <PrivatePublicLayers/>
+      <DataAnchoring/>
+      <AnchoringPartners/>
+      <IdentityPlatform/>
+      <PointsAndTabs theme="dark"/>
+      <TitaniumLitePaper/>
+      <Team1/>
+      {/* <SkillsCircle subBG theme="dark" /> */}
+      <PressKit/>
     </DarkTheme>
   );
 };

@@ -35,8 +35,7 @@ class Team1 extends React.Component {
             <div className="col-lg-4 valign">
               <div className="full-width">
                 <div className="sec-head custom-font mb-0">
-                  <h6>Employees</h6>
-                  <h3>Our Team.</h3>
+                  <h3 style={{'line-height':"1em"}}>Team Members</h3>
                 </div>
                 {this.renderArrows()}
               </div>
@@ -83,7 +82,7 @@ class Team1 extends React.Component {
                     <div className="img wow imago">
                       <img src={item.image} alt="" />
                     </div>
-                    <div className="info">
+                    <div className="info dark-purple-bg">
                       <h5>{item.name}</h5>
                       <span>{item.title}</span>
                       <div className="social">

@@ -14,13 +14,12 @@ const DataAnchoring = () => {
           <div className="col-lg-8 offset-lg-1 col-md-8">
             <div className="text">
               <Split>
-                <span>DATA AND DOCUMENTS, SAFE AND SECURE</span>
+                <span className="pb-20 light-purple-font">DATA AND DOCUMENTS, SAFE AND SECURE</span>
                 <p className="wow txt words chars splitting" data-splitting>
                 Anchoring provides a simple and cheap way to notarize documents, timestamp and verify data. It&apos;s one of the most fundamental uses of any blockchain  decentralized public ledger.
 
 With LTO Network, data becomes tamper-proof. It becomes possible to prove the timestamp and show the document hasn&apos;t been modified. The data becomes anchored.
                 </p>
-                <p>Our network has been used by</p>
               </Split>
             </div>
           </div>

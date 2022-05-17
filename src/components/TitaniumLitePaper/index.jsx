@@ -25,7 +25,7 @@ const TitaniumLitePaper = (theme) => {
       
       <div
         className="background bg-img section-padding"
-        style={{ backgroundImage: `url(/img/slid/1.jpg)` }}
+        style={{ backgroundImage: `url(/img/titanium-litepaper/background.jpg)` }}
         data-overlay-dark="8"
       >
         <div className="container">
@@ -36,7 +36,7 @@ const TitaniumLitePaper = (theme) => {
                   <h3 className="wow" data-splitting>
                   Ownables
                   </h3>
-                <span>TRULY DECENTRALIZED DIGITAL COLLECTABLES</span>
+                <span className="pb-15 light-purple-font mb-15">TRULY DECENTRALIZED DIGITAL COLLECTABLES</span>
                 <p>
                 Ownables can contain media files, images, songs, 3D models and much more. Whatever the content, the owner has full possession over the asset.
                 </p>
@@ -51,12 +51,12 @@ build and expand their own worlds.
               </div>
             </div>
             <div className="col-lg-5 offset-lg-1">
-              <div className="testim-box">
+              <div className="testim-box dark-purple-bg">
                 <div className="head-box">
-                  <h4 className="wow fadeInLeft" data-wow-delay=".5s">
+                  <h4 className="wow fadeInLeft min-content-block" data-wow-delay=".5s">
                     Titanium LitePaper
                   </h4>
-            <Link href="/contact/contact-dark">
+            <Link href="/read-now">
               <a
                 className={`btn-curve ${
                   theme == "light" ? "btn-blc" : "btn-lit"

@@ -21,7 +21,7 @@ const BlogsThreeColumn2 = ({ subBG }) => {
         <div className="row">
           <div className="col-lg-4">
             <div
-              className="item list md-mb50 wow fadeInUp"
+              className="item list md-mb50 wow fadeInUp "
               data-wow-delay=".3s"
             >
               <div className="img">
