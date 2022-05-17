@@ -1,7 +1,14 @@
-import React from "react";
-import Link from "next/link";
+import React, { useState, useEffect } from "react";
+import Link from "next/link"; 
 
 const BlogsThreeColumn1 = ({ subBG }) => {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    console.log('loading blog!');
+    parse('https://cors-anywhere.herokuapp.com/https://blog.ltonetwork.com/rss/', 'feed');
+  }, []);
+
   return (
     <section className={`blog-grid section-padding ${subBG ? "sub-bg" : ""}`}>
       <div className="container">
@@ -124,9 +131,52 @@ const BlogsThreeColumn1 = ({ subBG }) => {
             </div>
           </div>
         </div>
+        <div id="feed"></div>
       </div>
     </section>
   );
 };
+
+function parse(rssUrl, rssList) {
+    const request = new XMLHttpRequest();
+    request.open('GET', rssUrl);
+    request.addEventListener('load', (event) => {
+      if (event.target.status !== 200) {
+        const e = '<p>Error ' + event.target.status + ': ' + event.target.statusText + ' (sorry)</p>';
+          document.getElementById(rssList).insertAdjacentHTML('beforeend', e);
+          return;
+      }
+
+      const result = event.target.responseText;
+
+      let data = [];
+
+      result.split('<item>').forEach(element => {
+        const postTitle = element.split('<title>')[1].split('</title>')[0];
+        const postLink = element.split('<link>')[1].split('</link>')[0];
+
+        var postDate = undefined; // item 0 (blog link/title) has no pubDate
+        if (element.includes('<pubDate>')) {
+          var postDate = element.split('<pubDate>')[1].split('</pubDate>')[0];
+        };
+
+        let post = {};
+        post.postTitle = postTitle;
+        post.postLink = postLink;
+        post.postDate = postDate;
+        data.push(post);
+      });
+
+      var d = document.getElementById(rssList);
+      var i;
+      for (i = 1; i < 4; i++) {
+        var t = data[i].postDate; // MMM DD, YYYY
+        var t = '<div class="date">' + t.substring(8, 11) + ' ' + t.substring(5, 7) + ', ' + t.substring(12, 16) + '</div>';
+        var s = '<li>' + t + '<a target="_blank" href="' + data[i].postLink + '">' + data[i].postTitle + '</a></li>';
+        d.insertAdjacentHTML('beforeend', s);
+      }
+    });
+    request.send();
+}
 
 export default BlogsThreeColumn1;
