@@ -145,7 +145,7 @@ span:hover {
 }
 
 .custom-font {
-  font-family: "Barlow Condensed", sans-serif;
+  /*font-family: "Barlow Condensed", sans-serif;*/
 }
 
 /* ====================== [ End Typography  ] ====================== */
@@ -1353,14 +1353,14 @@ body {
 /* ====================== [ Start Heading ] ====================== */
 .sec-head {
   position: relative;
-  margin: 0 auto 60px;
+  margin: 0 auto 50px;
 }
 .sec-head h6 {
   color: var(--lto-primary);
   font-weight: 300;
   font-size: 17px;
   text-transform: uppercase;
-  letter-spacing: 14px;
+  letter-spacing: 12px;
   margin-bottom: 5px;
 }
 .sec-head h3 {
@@ -4039,9 +4039,17 @@ body {
   opacity: 1;
 }
 
+.top-label {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  color: white;
+}
+
 .work-carousel .swiper-slide {
   padding: 0px 15px;
   height: auto;
+  position: relative;
+  margin-top: 35px;
 }
 
 .work-carousel .swiper-slide-active .noraidus .cont {
