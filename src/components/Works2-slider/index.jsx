@@ -32,17 +32,17 @@ const Works2Slider = ({ subBG }) => {
           subBG ? "sub-bg" : ""
         } position-re`}
       >
-        <div className="container-fluid mt-100">
+        <div className="container">
           <div className="sec-head custom-font text-center">
             <h6 className="wow fadeIn" data-wow-delay=".5s">
-              Portfolio
+              2022 Development Roadmap
             </h6>
             <Split>
               <h3 className="wow words chars splitting" data-splitting>
-                Our Works.
+                Roadmap.
               </h3>
             </Split>
-            <span className="tbg">Portfolio</span>
+            <span className="tbg">Roadmap.</span>
           </div>
           <div className="row">
             <div className="col-lg-12 no-padding">
@@ -51,7 +51,7 @@ const Works2Slider = ({ subBG }) => {
                   {!load ? (
                     <Swiper
                       speed={1000}
-                      loop={true}
+                      loop={false}
                       spaceBetween={0}
                       breakpoints={{
                         320: {
@@ -62,12 +62,8 @@ const Works2Slider = ({ subBG }) => {
                           slidesPerView: 2,
                           spaceBetween: 0,
                         },
-                        991: {
-                          slidesPerView: 3,
-                          spaceBetween: 0,
-                        },
                         1024: {
-                          slidesPerView: 4,
+                          slidesPerView: 3,
                           spaceBetween: 0,
                         },
                       }}
@@ -104,27 +100,12 @@ const Works2Slider = ({ subBG }) => {
                           <div
                             className="item-img bg-img wow imago"
                             style={{
-                              backgroundImage: "url(/img/portfolio/curs/1.jpg)",
+                              backgroundImage: "url(/img/about/roadmap-1.jpg)",
                             }}
                           ></div>
                           <div className="cont bgbox">
-                            <h6>
-                              <Link href="/works2/works2-dark">
-                                art &amp; illustration
-                              </Link>
-                            </h6>
-                            <h4>
-                              <Link href="/project-details/project-details-dark">
-                                <a>Innovation and Crafts.</a>
-                              </Link>
-                            </h4>
-                            <Link href="/project-details2/project-details2-dark">
-                              <a>
-                                <span className="icon">
-                                  <i className="fas fa-plus"></i>
-                                </span>
-                              </a>
-                            </Link>
+                            <h6>Triall</h6>
+                            <h4>Clinical trials including Covid19 Vaccine research on the LTO Network</h4>
                           </div>
                         </div>
                       </SwiperSlide>
@@ -136,27 +117,12 @@ const Works2Slider = ({ subBG }) => {
                           <div
                             className="item-img bg-img wow imago"
                             style={{
-                              backgroundImage: "url(/img/portfolio/curs/2.jpg)",
+                              backgroundImage: "url(/img/about/roadmap-2.jpg)",
                             }}
                           ></div>
                           <div className="cont bgbox">
-                            <h6>
-                              <Link href="/works2/works2-dark">
-                                art &amp; illustration
-                              </Link>
-                            </h6>
-                            <h4>
-                              <Link href="/project-details/project-details-dark">
-                                <a>Inspiring new space.</a>
-                              </Link>
-                            </h4>
-                            <Link href="/project-details2/project-details2-dark">
-                              <a>
-                                <span className="icon">
-                                  <i className="fas fa-plus"></i>
-                                </span>
-                              </a>
-                            </Link>
+                            <h6>SignRequest</h6>
+                            <h4>Immutable PDFs on LTO Network. Over 1 million business documents signed every year.</h4>
                           </div>
                         </div>
                       </SwiperSlide>
@@ -168,27 +134,12 @@ const Works2Slider = ({ subBG }) => {
                           <div
                             className="item-img bg-img wow imago"
                             style={{
-                              backgroundImage: "url(/img/portfolio/curs/3.jpg)",
+                              backgroundImage: "url(/img/about/roadmap-3.jpg)",
                             }}
                           ></div>
                           <div className="cont bgbox">
-                            <h6>
-                              <Link href="/works2/works2-dark">
-                                art &amp; illustration
-                              </Link>
-                            </h6>
-                            <h4>
-                              <Link href="/project-details/project-details-dark">
-                                <a>Natural plus modern.</a>
-                              </Link>
-                            </h4>
-                            <Link href="/project-details2/project-details2-dark">
-                              <a>
-                                <span className="icon">
-                                  <i className="fas fa-plus"></i>
-                                </span>
-                              </a>
-                            </Link>
+                            <h6>NEN</h6>
+                            <h4>Smart certificates to facilitate on the spot verification for The Dutch Standardization Institute</h4>
                           </div>
                         </div>
                       </SwiperSlide>
@@ -200,27 +151,12 @@ const Works2Slider = ({ subBG }) => {
                           <div
                             className="item-img bg-img wow imago"
                             style={{
-                              backgroundImage: "url(/img/portfolio/curs/4.jpg)",
+                              backgroundImage: "url(/img/about/roadmap-4.jpg)",
                             }}
                           ></div>
                           <div className="cont bgbox">
-                            <h6>
-                              <Link href="/works2/works2-dark">
-                                art &amp; illustration
-                              </Link>
-                            </h6>
-                            <h4>
-                              <Link href="/project-details/project-details-dark">
-                                <a>Innovation and Crafts.</a>
-                              </Link>
-                            </h4>
-                            <Link href="/project-details2/project-details2-dark">
-                              <a>
-                                <span className="icon">
-                                  <i className="fas fa-plus"></i>
-                                </span>
-                              </a>
-                            </Link>
+                            <h6>New Timeline Item</h6>
+                            <h4>Text will go here.</h4>
                           </div>
                         </div>
                       </SwiperSlide>
@@ -232,27 +168,12 @@ const Works2Slider = ({ subBG }) => {
                           <div
                             className="item-img bg-img wow imago"
                             style={{
-                              backgroundImage: "url(/img/portfolio/curs/5.jpg)",
+                              backgroundImage: "url(/img/about/roadmap-5.jpg)",
                             }}
                           ></div>
                           <div className="cont bgbox">
-                            <h6>
-                              <Link href="/works2/works2-dark">
-                                art &amp; illustration
-                              </Link>
-                            </h6>
-                            <h4>
-                              <Link href="/project-details/project-details-dark">
-                                <a>Inspiring new space.</a>
-                              </Link>
-                            </h4>
-                            <Link href="/project-details2/project-details2-dark">
-                              <a>
-                                <span className="icon">
-                                  <i className="fas fa-plus"></i>
-                                </span>
-                              </a>
-                            </Link>
+                            <h6>New Timeline Item</h6>
+                            <h4>Text will go here.</h4>
                           </div>
                         </div>
                       </SwiperSlide>

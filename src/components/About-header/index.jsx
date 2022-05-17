@@ -4,8 +4,8 @@ const AboutHeader = () => {
   return (
     <header
       className="pages-header bg-img valign parallaxie"
-      style={{ backgroundImage: "url(/img/slid/1.jpg)" }}
-      data-overlay-dark="5"
+      style={{ backgroundImage: "url(/img/about/about-hero.jpeg)" }}
+      data-overlay-dark="7"
     >
       <div className="container">
         <div className="row">

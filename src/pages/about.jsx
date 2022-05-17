@@ -10,6 +10,7 @@ import Services4 from "../components/Services4";
 import SkillsCircle from "../components/Skills-circle";
 import Team1 from "../components/Team1";
 import VideoWithTestimonials from "../components/Video-with-testimonials";
+import Works2Slider from "../components/Works2-slider";
 import DarkTheme from "../layouts/Dark";
 
 const AboutDark = () => {
@@ -25,6 +26,7 @@ const AboutDark = () => {
       <MinimalArea />
       <Clients1 theme="dark" />
       <CallToAction subBG />
+      <Works2Slider />
       <Footer />
     </DarkTheme>
   );
