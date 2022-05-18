@@ -149,6 +149,29 @@ span:hover {
 }
 
 /* ====================== [ End Typography  ] ====================== */
+
+
+
+/* ====================== [ By Will Midgette  ] ====================== */
+.min-content-block{
+  width: min-content;
+}
+body{
+  --dark-purple-bg: #fffff;
+}
+.list-custom-style{
+  padding: 30px 0 30px 0 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border-bottom-width: 1px !important;
+  border-bottom-style: solid !important;
+  border-bottom-color: rgba(255, 255, 255, 0.05) !important;
+}
+.list-custom-style h6{
+  font-size: 1.5rem;
+}
+/* ====================== [ End Typography  ] ====================== */
+
+
 /* ====================== [ Start Helper Classes  ] ====================== */
 .o-hidden {
   overflow: hidden;
@@ -201,6 +224,30 @@ span:hover {
 .bg-color .primery-shadow {
   -webkit-box-shadow: 0px 4px 40px -4px rgba(255, 255, 255, 0.2);
   box-shadow: 0px 4px 40px -4px rgba(255, 255, 255, 0.2);
+}
+
+.light-purple-bg{
+  background-color:#804BC9 !important;
+}
+
+.dark-purple-bg{
+  background-color:#510094 !important;
+}
+
+.light-purple-border {
+  border: 2px solid var(--lto-purpleLight);
+}
+
+.light-purple-border-top {
+  border-top: 3px solid var(--lto-purpleLight);
+}
+
+.light-purple-font{
+  color: #804BC9 !important;
+}
+
+.dark-purple-font{
+  color:#510094 !important;
 }
 
 .sub-bg {
@@ -1364,7 +1411,7 @@ body {
   margin-bottom: 5px;
 }
 .sec-head h3 {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -3424,6 +3471,9 @@ body {
 .services {
   position: relative;
 }
+.services .btn-curve {
+  margin-left: auto;
+}
 .services .container {
   position: relative;
   z-index: 2;
@@ -3571,17 +3621,18 @@ body {
 }
 .services .item {
   text-align: center;
-  padding: 60px;
+  padding: 30px;
   background: #151921;
   position: relative;
+  height:100%;
 }
 .services .item .icon {
   color: var(--lto-primary);
-  font-size: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .services .item h6 {
   margin-bottom: 15px;
+  color: var(--lto-secondary);
 }
 
 .min-area .img {
@@ -4475,7 +4526,7 @@ body {
 .team .item .info .social a {
   font-size: 13px;
   margin: 0 8px;
-  color: var(--lto-primary);
+  color: #ffffff;
 }
 .team .item:hover .info h5,
 .team .item:hover .info span {
@@ -4640,11 +4691,17 @@ body {
 }
 .testimonials.lftstl .item .info .author .fxright {
   display: table-cell;
-  padding: 20px;
+  padding: 20px 5px;
 }
 
 .testimonials.lftstl .slick-dots {
   text-align: right;
+}
+
+.tab-box {
+  background: var(--lto-purple);
+  align-self: flex-start;
+  padding: 20px;
 }
 
 .block-sec .video-box .img {
@@ -4687,7 +4744,7 @@ body {
 }
 
 .block-sec .vid-area .cont {
-  margin-top: 40px;
+  margin-top: 10px;
 }
 .block-sec .vid-area .cont h6 {
   text-transform: uppercase;
@@ -4701,12 +4758,13 @@ body {
 
 .block-sec .testim-box {
   position: relative;
-  background: var(--lto-primary);
-  padding: 80px 40px;
-  margin-bottom: -120px;
+  background: #151921;
+  border: 3px solid var(--lto-secondary);
+  padding: 60px 40px;
+  /*margin-bottom: -120px;*/
 }
 .block-sec .testim-box .head-box h6 {
-  color: #0c0f16;
+  color: white;
   font-size: 12px;
   font-weight: 300;
   text-transform: uppercase;
@@ -4714,7 +4772,7 @@ body {
   margin-bottom: 10px;
 }
 .block-sec .testim-box .head-box h4 {
-  color: #0c0f16;
+  color: white;
   margin-bottom: 40px;
 }
 .block-sec .testim-box .item p {
@@ -5532,8 +5590,8 @@ body {
   margin-bottom: 30px;
 }
 .footer-half .cont .logo {
-  width: 55px;
-  margin-bottom: 30px;
+  width: 190px;
+  margin-bottom: 15px;
 }
 .footer-half .cont .con-info li {
   margin-top: 10px;
@@ -5620,6 +5678,13 @@ body {
 /* ====================== [ End Footer ] ====================== */
 /* ====================== [ Start Responsive ] ====================== */
 @media screen and (max-width: 991px) {
+  .section-padding {
+    padding: 80px 0;
+  }
+
+  .services .item {
+    padding: 15px;
+  }
   .md-mb10 {
     margin-bottom: 10px;
   }
@@ -5849,7 +5914,7 @@ body {
     margin: 25px 0;
   }
   .block-sec .testim-box {
-    margin-bottom: 120px;
+    /*margin-bottom: 120px;*/
   }
   .block-sec .showreel {
     background: #13161d;
