@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ModalVideo from "react-modal-video";
 import "react-modal-video/css/modal-video.css";
-import Link from "next/Link"
+import Link from "next/link"
 
 const PressKit = (theme) => {
   const [isOpen, setOpen] = React.useState(false);
