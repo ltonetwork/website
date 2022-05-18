@@ -1,7 +1,6 @@
 import React from "react";
 import Split from "../Split";
-import Link from "next/link";
-
+import Link from "next/link"
 const CallToAction = ({ img, theme, subBG }) => {
   return (
     <section

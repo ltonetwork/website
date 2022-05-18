@@ -1,0 +1,50 @@
+import React from "react";
+import Split from "../Split";
+import layersData from "../../data/sections/layersdata.json";
+
+const PrivatePublicLayers = ({ withBG, withPadding, halfBG, withOutTitle }) => {
+  return (
+    <section className="min-area sub-bg section-padding pt-30">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6 valign light-purple-bg">
+            <div className="pt-20 pb-20">
+              <Split>
+                <h4
+                  className="wow custom-font words chars splitting"
+                  data-splitting
+                >
+                  <h3>{layersData[0].title}</h3>
+                </h4>
+              </Split>
+              <Split>
+                <p className="wow txt words chars splitting" data-splitting>
+                <p>{layersData[0].content}</p>
+                </p>
+              </Split>
+            </div>
+          </div>
+          <div className="col-lg-6 valign dark-purple-bg">
+            <div className="pt-20 pb-20">
+              <Split>
+                <h4
+                  className="wow custom-font words chars splitting"
+                  data-splitting
+                >
+                  <h3>{layersData[1].title}</h3>
+                </h4>
+              </Split>
+              <Split>
+                <p className="wow txt words chars splitting" data-splitting>
+                <p>{layersData[1].content}</p>
+                </p>
+              </Split>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default PrivatePublicLayers;
