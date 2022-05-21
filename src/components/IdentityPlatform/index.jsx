@@ -1,7 +1,7 @@
 import React from "react";
 import Split from "../Split";
 
-const DataAnchoring = () => {
+const IdentityPlatform = () => {
   return (
     <section className="intro-section section-padding pb-0 sub-bg">
       <div className="container pb-30">
@@ -27,4 +27,4 @@ const DataAnchoring = () => {
   );
 };
 
-export default DataAnchoring;
+export default IdentityPlatform;

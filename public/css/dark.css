@@ -4698,10 +4698,77 @@ body {
   text-align: right;
 }
 
+.partner-info {
+
+}
+
+.partner-info__logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
 .tab-box {
-  background: var(--lto-purple);
   align-self: flex-start;
+  width: 100%;
+}
+
+.tab-box h4,
+.tab-box p {
+  background: var(--lto-purple);
+  padding: 5px;
+}
+
+.tab-box h4 {
+  margin-bottom: 10px;
+}
+
+.tab-box__tabs {
+  display: flex;
+}
+
+.tab-box__tabs span + span {
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .tab-box__tabs {
+    flex-direction: column;
+  }
+
+  .tab-box__tabs span,
+  .tab-box__tabs button {
+    width: 100%;
+  }
+
+  .tab-box__tabs span + span {
+    margin-left: 0px;
+  }
+}
+
+.tab-box__tabs .btn-curve {
+  border: none !important;
+  color: white;
+}
+
+.tab-box__tabs .btn-curve.btn-lit {
+  background: #222;
+}
+
+.tab-box__content {
   padding: 20px;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+}
+
+.tab-box__content::before {
+  content: "";
+  position: absolute;
+  background: radial-gradient(ellipse at left top, var(--lto-purple) 0%, var(--lto-purple) 45%, transparent 100%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .block-sec .video-box .img {

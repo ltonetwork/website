@@ -22,24 +22,12 @@ const MinimalArea = ({theme}) => {
             <div className="content pl-0 pt-0 pb-20">
               <ul className="feat">
                 <li className="wow fadeInUp" data-wow-delay=".2s">
-                  <h6>
-                  Decentralized Identifiers
-                  </h6>
-                  <p className="pl-0">
-                  Allowing LTO Network to be used as an identity platform.
-Any account can be resolved as DID. Multiple ciphers/curves
-are supported (natively).
-                  </p>
+                  <h6>Decentralized Identifiers</h6>
+                  <p className="pl-0">Allowing LTO Network to be used as an identity platform. Any account can be resolved as DID. Multiple ciphers/curves are supported (natively).</p>
                 </li>
                 <li className="wow fadeInUp" data-wow-delay=".4s">
-                  <h6>
-                  Verifiable Credentials
-                  </h6>
-                  <p className="pl-0">
-                  Decentralized revocation registry for verifiable credentials.
-Verifiable presentations can be shared over private layer to
-comply with GDPR. 
-                  </p>
+                  <h6>Verifiable Credentials</h6>
+                  <p className="pl-0">Decentralized revocation registry for verifiable credentials. Verifiable presentations can be shared over private layer to comply with GDPR.</p>
                 </li>
                 <li>
                   <Link href="/learn-more" style="position:absolute; right:0;">
@@ -56,48 +44,47 @@ comply with GDPR.
               </ul>
             </div>
           </div>
-          <div className="col-lg-6 offset-lg-1 valign tab-box">
-          <div>
-            <div className="row justify-content-around">
-              <span>
-                <button
-                  className={`btn-curve ${
-                    tabTitle == "MyCompany Wallet" ? "light-purple-bg" : "btn-lit"
-                  } wow fadeInUp`}
-                  data-wow-delay=".5s"
-                  onClick={()=>{setTitle('MyCompany Wallet'), setContent('MyCompanyWallet content to go here')}}
-                  style={{"padding":"12px 25px"}}
-                >
-                  <span>MyCompany Wallet</span>
-                </button>
-              </span>
-              <span>
-                <button
-                  className={`btn-curve ${
-                    tabTitle == "Proofi" ? "light-purple-bg" : "btn-lit"
-                  } wow fadeInUp`}
-                  data-wow-delay=".5s"
-                  onClick={()=>{setTitle('Proofi'), setContent('Proofi content to go here')}}
-                  style={{"padding":"12px 25px"}}
-                >
-                  <span>Proofi</span>
-                </button>
-              </span>
-              <span>
-                <button
-                  className={`btn-curve ${
-                    tabTitle == "LtoWallet" ? "light-purple-bg" : "btn-lit"
-                  } wow fadeInUp`}
-                  data-wow-delay=".5s"
-                  onClick={()=>{setTitle('LtoWallet'), setContent('LTO content to go here')}}
-                  style={{"padding":"12px 25px"}}
-                >
-                  <span>LTO Wallet</span>
-                </button>
-              </span>
-            </div>
-            <section className="min-area">
-              <div className="container pt-40">
+          <div className="col-lg-6 offset-lg-1 valign">
+            <div className="tab-box">
+              <div className="tab-box__tabs">
+                <span>
+                  <button
+                    className={`btn-curve ${
+                      tabTitle == "MyCompany Wallet" ? "dark-purple-bg" : "btn-lit"
+                    } wow fadeInUp`}
+                    data-wow-delay=".5s"
+                    onClick={()=>{setTitle('MyCompany Wallet'), setContent('MyCompanyWallet content to go here')}}
+                    style={{"padding":"12px 25px"}}
+                  >
+                    <span>MyCompany Wallet</span>
+                  </button>
+                </span>
+                <span>
+                  <button
+                    className={`btn-curve ${
+                      tabTitle == "Proofi" ? "dark-purple-bg" : "btn-lit"
+                    } wow fadeInUp`}
+                    data-wow-delay=".5s"
+                    onClick={()=>{setTitle('Proofi'), setContent('Proofi content to go here')}}
+                    style={{"padding":"12px 25px"}}
+                  >
+                    <span>Proofi</span>
+                  </button>
+                </span>
+                <span>
+                  <button
+                    className={`btn-curve ${
+                      tabTitle == "LtoWallet" ? "dark-purple-bg" : "btn-lit"
+                    } wow fadeInUp`}
+                    data-wow-delay=".5s"
+                    onClick={()=>{setTitle('LtoWallet'), setContent('LTO content to go here')}}
+                    style={{"padding":"12px 25px"}}
+                  >
+                    <span>LTO Wallet</span>
+                  </button>
+                </span>
+              </div>
+              <div className="tab-box__content" style={{backgroundImage: 'url(/img/about/IdentityPlatformTabsBg.jpg)' }}>
                 <div className="row">
                   <div className="col-lg-6 valign">
                     <div>
@@ -125,8 +112,7 @@ comply with GDPR.
                   </div>
                 </div>
               </div>
-            </section>
-          </div>
+            </div>
           </div>
         </div>
       </div>
