@@ -57,11 +57,10 @@ const PressKit = (theme) => {
                   </h6>
                   <div className="col-lg-4 valign"><Link href="/download/logos" style="position:absolute; right:0;">
                     <a
-                      className={`btn-curve ${
+                      className={`press-kit-btn btn-curve ${
                         theme == "light" ? "btn-blc" : "btn-lit"
                       } wow fadeInUp`}
                       data-wow-delay=".5s"
-                      id="press-kit-btn"
                     >
                       <span>Download</span>
                     </a>
@@ -73,11 +72,10 @@ const PressKit = (theme) => {
                   </h6>
                   <div className="col-lg-4 valign"><Link href="/download/fonts" style="position:absolute; right:0;">
                     <a
-                      className={`btn-curve ${
+                      className={`press-kit-btn btn-curve ${
                         theme == "light" ? "btn-blc" : "btn-lit"
                       } wow fadeInUp`}
                       data-wow-delay=".5s"
-                      id="press-kit-btn"
                     >
                       <span>Download</span>
                     </a>

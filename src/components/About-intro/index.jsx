@@ -14,7 +14,7 @@ const AboutIntro = () => {
             LTO Network is a hybrid blockchain for securing, exchanging and verification of digital assets. Our mission is to build cutting edge solutions that promote decentralization across B2B, consumer and crypto to crypto use cases. 
             </p>
             <br/>
-            <p>Our network has been used by:</p>
+            <p>Our network has been used by some of the following organizations:</p>
           </Split>
         </div>
       </div>

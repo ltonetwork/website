@@ -3,7 +3,7 @@ import Split from "../Split";
 
 const HybridArchitecture = () => {
   return (
-    <section className="intro-section section-padding pb-0 sub-bg">
+    <section className="intro-section section-padding pt-50 pb-0 sub-bg">
       <div className="container">
             <div className="htit mb-20 cont">
               <h4 className="section-title">Hybrid Architecture</h4>

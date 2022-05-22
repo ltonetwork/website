@@ -4,7 +4,7 @@ import layersData from "../../data/sections/layersdata.json";
 
 const PrivatePublicLayers = ({ withBG, withPadding, halfBG, withOutTitle }) => {
   return (
-    <section className="min-area sub-bg section-padding pt-30">
+    <section className="min-area sub-bg section-padding pt-30 pb-70">
       <div className="container">
         <div className="row">
           <div className="col-lg-6 valign light-purple-bg" style={{"padding": "30px"}}>

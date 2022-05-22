@@ -7,7 +7,7 @@ const Services4 = ({ theme, withBG, withPadding, halfBG, withOutTitle }) => {
     <section
       className={`services ${withPadding ? "section-padding" : ""} ${
         withBG ? "sub-bg" : ""
-      } pt-30`}
+      } pt-30 pb-50`}
     >
       <div className="container">
         {!withOutTitle && (

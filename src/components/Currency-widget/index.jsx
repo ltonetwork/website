@@ -4,9 +4,9 @@ import Script from 'next/script'
 const CurrencyWidget = () => {
   return (
     <>
-      <Script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></Script>
+      <Script type="text/javascript" src="https://crypto.com/price/static/widget/index.js"></Script>
       {//@ts-ignore
-        <div className="currency-widget coinmarketcap-currency-widget" data-currencyid="3714" data-base="USD" data-secondary="" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="USD"></div>}
+        <div id="crypto-widget-CoinTicker" data-theme="dark" data-design="classic" data-coins="lto-network"></div>}
     </>
   )
 }

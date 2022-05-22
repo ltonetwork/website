@@ -16,7 +16,7 @@ import PointsAndTabs from "../components/PointsAndTabs";
 import TitaniumLitePaper from "../components/TitaniumLitePaper";
 import PressKit from "../components/PressKit";
 import SectionWrapper from "../components/SectionWrapper";
-import KeyTechAndBenefits from "../components/KeyTechAndBenefits";
+import BigTitle from "../components/BigTitle";
 const AboutDark = () => {
   return (
     <DarkTheme>
@@ -25,7 +25,12 @@ const AboutDark = () => {
       <AboutIntro/>
       <Services4 withPadding withOutTitle/>
       {/* Add title here */}
-      <KeyTechAndBenefits/>
+      <BigTitle 
+        title="Key Tech & Benefits" 
+        subtitle="What we offer" 
+        backTitle="Key Tech"
+        paddingTop="0" 
+      />
       <SectionWrapper> {/* white border outside black - background black, inner lighter grey for component backgrounds */}
         <HybridArchitecture/>
         <PrivatePublicLayers/>

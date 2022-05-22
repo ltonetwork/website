@@ -8,13 +8,11 @@ const AnchoringPartners = ({ theme, withBG, withPadding, halfBG, withOutTitle })
       className="services sub-bg"
     >
       <div className="container">
-        <div className="row pt-40 pb-60">
+        <div className="row pt-30 pb-30">
           <div className="col-md-8 col-lg-9">
             <div className="content sm-mb30">
               <Split>
-              <h5 className="wow fadeIn pt-15 pb-0" data-wow-delay=".5s">
-            Partners Anchoring on LTO Network
-            </h5>
+              <h5 className="wow fadeIn pt-15 pb-0" data-wow-delay=".5s">Partners Anchoring on LTO Network</h5>
               </Split>
             </div>
           </div>
@@ -39,7 +37,7 @@ const AnchoringPartners = ({ theme, withBG, withPadding, halfBG, withOutTitle })
             </div>
           ))}
         </div>
-        <div className = "row justify-content-end section-padding pt-50">
+        <div className = "row justify-content-end section-padding pt-50 pb-60">
         <div className="col-lg-3 d-flex">
           <Link href="/contact/contact-dark" style="position:absolute; right:0;">
             <a
