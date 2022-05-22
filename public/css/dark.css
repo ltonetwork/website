@@ -100,6 +100,10 @@ h3 {
   font-size: 35px;
 }
 
+.section-title{
+  font-size: 45px;
+}
+
 h4 {
   font-size: 30px;
 }
@@ -169,6 +173,15 @@ body{
 .list-custom-style h6{
   font-size: 1.5rem;
 }
+
+.section-wrapper{
+  padding: 50px;
+}
+
+.custom-border{
+  border: 2px solid #fff
+}
+
 /* ====================== [ End Typography  ] ====================== */
 
 
@@ -200,6 +213,14 @@ body{
 
 .main-color {
   color: var(--lto-primary) !important;
+}
+
+.secondary-color{
+  color:var(--lto-secondary) !important;
+}
+
+.pink-bg{
+  background-color:var(--lto-pink) !important;
 }
 
 .bg-gray {
@@ -1613,6 +1634,16 @@ body {
   border-radius: 30px;
 }
 
+#press-kit-btn.btn-curve{
+  background-color: #fff;
+}
+#press-kit-btn span{
+  color: var(--lto-purple);
+  transition: 0.5s !important;
+}
+#press-kit-btn:hover span{
+  font-weight: bold;
+}
 .simple-btn {
   position: relative;
   padding: 7px;
@@ -6071,6 +6102,9 @@ body {
   h3 {
     font-size: 24px;
   }
+  .section-title{
+    font-size: 34px;
+  }
   h4 {
     font-size: 20px;
   }
@@ -6289,6 +6323,9 @@ body {
     margin: 5px 15px;
   }
   .block-sec .vid-area .cont h3 {
+    font-size: 28px;
+  }
+  .section-title{
     font-size: 28px;
   }
   .blog-curs .item {

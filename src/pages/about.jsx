@@ -15,7 +15,8 @@ import IdentityPlatform from "../components/IdentityPlatform";
 import PointsAndTabs from "../components/PointsAndTabs";
 import TitaniumLitePaper from "../components/TitaniumLitePaper";
 import PressKit from "../components/PressKit";
-
+import SectionWrapper from "../components/SectionWrapper";
+import KeyTechAndBenefits from "../components/KeyTechAndBenefits";
 const AboutDark = () => {
   return (
     <DarkTheme>
@@ -23,13 +24,17 @@ const AboutDark = () => {
       <AboutHeader/>
       <AboutIntro/>
       <Services4 withPadding withOutTitle/>
-      <HybridArchitecture/>
-      <PrivatePublicLayers/>
-      <DataAnchoring/>
-      <AnchoringPartners/>
-      <IdentityPlatform/>
-      <PointsAndTabs theme="dark"/>
-      <TitaniumLitePaper/>
+      {/* Add title here */}
+      <KeyTechAndBenefits/>
+      <SectionWrapper> {/* white border outside black - background black, inner lighter grey for component backgrounds */}
+        <HybridArchitecture/>
+        <PrivatePublicLayers/>
+        <DataAnchoring/>
+        <AnchoringPartners/>
+        <IdentityPlatform/>
+        <PointsAndTabs theme="dark"/>
+        <TitaniumLitePaper/>
+      </SectionWrapper>
       <Team1/>
       <PressKit/>
       <Works2Slider />

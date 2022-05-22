@@ -32,10 +32,10 @@ class Team1 extends React.Component {
       <section className="team section-padding">
         <div className="container">
           <div className="row">
-            <div className="col-lg-4 valign">
+            <div className="col-lg-2 valign">
               <div className="full-width">
                 <div className="sec-head custom-font mb-0">
-                  <h3 style={{'line-height':"1em"}}>Team Members</h3>
+                  <h3 style={{'line-height':"1em"}}>Team</h3>
                 </div>
                 {this.renderArrows()}
               </div>
@@ -82,7 +82,7 @@ class Team1 extends React.Component {
                     <div className="img wow imago">
                       <img src={item.image} alt="" />
                     </div>
-                    <div className="info dark-purple-bg">
+                    <div className="info" style={{"background-color": item.color}}>
                       <h5>{item.name}</h5>
                       <span>{item.title}</span>
                       <div className="social">

@@ -7,8 +7,8 @@ const PrivatePublicLayers = ({ withBG, withPadding, halfBG, withOutTitle }) => {
     <section className="min-area sub-bg section-padding pt-30">
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 valign light-purple-bg">
-            <div className="pt-20 pb-20">
+          <div className="col-lg-6 valign light-purple-bg" style={{"padding": "30px"}}>
+            <div>
               <Split>
                 <h4
                   className="wow custom-font words chars splitting"
@@ -24,8 +24,8 @@ const PrivatePublicLayers = ({ withBG, withPadding, halfBG, withOutTitle }) => {
               </Split>
             </div>
           </div>
-          <div className="col-lg-6 valign dark-purple-bg">
-            <div className="pt-20 pb-20">
+          <div className="col-lg-6 valign dark-purple-bg" style={{"padding": "30px"}}>
+            <div>
               <Split>
                 <h4
                   className="wow custom-font words chars splitting"

@@ -36,7 +36,7 @@ const PressKit = (theme) => {
                   <h3 className="wow" data-splitting>
                   Press Kit
                   </h3>
-                <span className="pb-20 light-purple-font">OUR PRESS KIT</span>
+                <span className="pb-20 secondary-color">OUR PRESS KIT</span>
                 <p>
                   LTO Network&apos;s branding should look clean, futuristic and minimal.
                 </p>
@@ -51,7 +51,7 @@ const PressKit = (theme) => {
             <div className="col-lg-6 valign">
             <div className="content pl-0 pt-0" style={{"flex-grow":"1"}}>
               <ul className="feat">
-                <li className="wow fadeInUp list-custom-style light-purple-bg row justify-content-center" data-wow-delay=".2s">
+                <li className="wow fadeInUp list-custom-style pink-bg row justify-content-center" data-wow-delay=".2s">
                   <h6 className = "col-lg-4 pl-15 valign">
                   Logos
                   </h6>
@@ -61,6 +61,7 @@ const PressKit = (theme) => {
                         theme == "light" ? "btn-blc" : "btn-lit"
                       } wow fadeInUp`}
                       data-wow-delay=".5s"
+                      id="press-kit-btn"
                     >
                       <span>Download</span>
                     </a>
@@ -76,6 +77,7 @@ const PressKit = (theme) => {
                         theme == "light" ? "btn-blc" : "btn-lit"
                       } wow fadeInUp`}
                       data-wow-delay=".5s"
+                      id="press-kit-btn"
                     >
                       <span>Download</span>
                     </a>

@@ -3,18 +3,14 @@ import Split from "../Split";
 
 const DataAnchoring = () => {
   return (
-    <section className="intro-section section-padding pb-0">
+    <section className="intro-section pb-0 sub-bg">
       <div className="container">
-        <div className="row">
-          <div className="col-lg-3 col-md-4">
-            <div className="htit sm-mb30">
-              <h4>Data Anchoring</h4>
+            <div className="htit mb-20">
+              <h4 className="section-title">Data Anchoring</h4>
             </div>
-          </div>
-          <div className="col-lg-8 offset-lg-1 col-md-8">
             <div className="text">
               <Split>
-                <span className="pb-20 light-purple-font">DATA AND DOCUMENTS, SAFE AND SECURE</span>
+                <span className="pb-20 secondary-color">DATA AND DOCUMENTS, SAFE AND SECURE</span>
                 <p className="wow txt words chars splitting" data-splitting>
                 Anchoring provides a simple and cheap way to notarize documents, timestamp and verify data. It&apos;s one of the most fundamental uses of any blockchain  decentralized public ledger.
 
@@ -23,8 +19,6 @@ With LTO Network, data becomes tamper-proof. It becomes possible to prove the ti
               </Split>
             </div>
           </div>
-        </div>
-      </div>
     </section>
   );
 };

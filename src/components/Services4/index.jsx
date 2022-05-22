@@ -40,7 +40,7 @@ const Services4 = ({ theme, withBG, withPadding, halfBG, withOutTitle }) => {
                     <a
                       className={`btn-curve ${
                         theme == "light" ? "btn-blc" : "btn-lit"
-                      } wow fadeInUp`}
+                      } wow fadeInUp bg-color`}
                       data-wow-delay=".5s"
                     >
                       <span>View</span>

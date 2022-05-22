@@ -3,36 +3,42 @@
     "id": 1,
     "image": "/img/team/shawn-naderi.jpg",
     "name": "Shawn Naderi",
-    "title": "CMO"
+    "title": "CMO",
+    "color":"#510094"
   },
   {
     "id": 2,
     "image": "/img/team/rick-schmitz.jpg",
     "name": "Rick Schmitz",
-    "title": "CEO"
+    "title": "CEO",
+    "color": "#804BC9"
   },
   {
     "id": 3,
     "image": "/img/team/andrea.jpg",
     "name": "Andrea",
-    "title": "Dev"
+    "title": "Dev",
+    "color": "#00ccdd"
   },
   {
     "id": 4,
     "image": "/img/team/maurits.jpg",
     "name": "Maurits",
-    "title": "Dev"
+    "title": "Dev",
+    "color": "#510094"
   },
   {
     "id": 5,
     "image": "/img/team/ben.jpg",
     "name": "Ben",
-    "title": "Marketing"
+    "title": "Marketing",
+    "color": "#804BC9"
   },
   {
     "id": 6,
     "image": "/img/team/christin.jpg",
     "name": "Christin",
-    "title": "Marketing"
+    "title": "Marketing",
+    "color":"#00ccdd"
   }
 ]

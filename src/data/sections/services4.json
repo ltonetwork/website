@@ -3,18 +3,18 @@
       "id": 1,
       "src": "un-logo.png",
       "alt": "UN Logo",
-      "link" : "/view/un"
+      "link" : "view/un"
     },
     {
       "id": 2,
       "src": "ibm-logo.png",
       "alt": "IBM Logo",
-      "link": "/view/ibm"
+      "link": "view/ibm"
     },
     {
       "id": 3,
       "src": "dutch-gvt-logo.png",
       "alt": "Dutch government logo",
-      "link": "/view/dutch"
+      "link": "view/dutch"
     }
 ]

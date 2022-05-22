@@ -5,9 +5,7 @@ import Link from "next/link"
 const AnchoringPartners = ({ theme, withBG, withPadding, halfBG, withOutTitle }) => {
   return (
     <section
-      className={`services ${withPadding ? "section-padding" : ""} ${
-        withBG ? "sub-bg" : ""
-      }`}
+      className="services sub-bg"
     >
       <div className="container">
         <div className="row pt-40 pb-60">
@@ -20,23 +18,10 @@ const AnchoringPartners = ({ theme, withBG, withPadding, halfBG, withOutTitle })
               </Split>
             </div>
           </div>
-
-          <div className="col-md-4 col-lg-3 valign">
-            <Link href="/contact/contact-dark">
-              <a
-                className={`btn-curve ${
-                  theme == "light" ? "btn-blc" : "btn-lit"
-                } wow fadeInUp`}
-                data-wow-delay=".5s"
-              >
-                <span>Get In Touch</span>
-              </a>
-            </Link>
-          </div>
         </div>
       </div>
       <div className="container">
-        <div className="row section-padding pt-0">
+        <div className="row pt-0">
           {anchoringPartnersData.map((partner, index) => (
             <div className="col-lg-4 col-md-4" key={partner.id}>
               <div
@@ -53,6 +38,20 @@ const AnchoringPartners = ({ theme, withBG, withPadding, halfBG, withOutTitle })
               </div>
             </div>
           ))}
+        </div>
+        <div className = "row justify-content-end section-padding pt-50">
+        <div className="col-lg-3 d-flex">
+          <Link href="/contact/contact-dark" style="position:absolute; right:0;">
+            <a
+              className={`btn-curve ${
+                theme == "light" ? "btn-blc" : "btn-lit"
+              } wow fadeInUp`}
+              data-wow-delay=".5s"
+            >
+              <span>Get In Touch</span>
+            </a>
+          </Link>
+        </div>
         </div>
       </div>
       {halfBG && <div className="half-bg bottom"></div>}

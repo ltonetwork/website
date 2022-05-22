@@ -21,12 +21,10 @@ const TitaniumLitePaper = (theme) => {
     slidesToScroll: 1,
   };
   return (
-    <section className="block-sec">
+    <section className="block-sec sub-bg">
       
       <div
-        className="background bg-img section-padding"
-        style={{ backgroundImage: `url(/img/titanium-litepaper/background.jpg)` }}
-        data-overlay-dark="8"
+        className="background bg-img section-padding pt-0"
       >
         <div className="container">
           <div className="row">
@@ -36,7 +34,7 @@ const TitaniumLitePaper = (theme) => {
                   <h3 className="wow" data-splitting>
                   Ownables
                   </h3>
-                <span className="pb-15 light-purple-font mb-15">TRULY DECENTRALIZED DIGITAL COLLECTABLES</span>
+                <span className="pb-20 secondary-color">TRULY DECENTRALIZED DIGITAL COLLECTABLES</span>
                 <p>
                 Ownables can contain media files, images, songs, 3D models and much more. Whatever the content, the owner has full possession over the asset.
                 </p>
@@ -46,7 +44,7 @@ const TitaniumLitePaper = (theme) => {
               </div>
             </div>
             <div className="col-lg-5 offset-lg-1">
-              <div className="testim-box">
+              <div className="testim-box" style={{ backgroundImage: `url(/img/titanium-litepaper/background.jpg)` }}>
                 <div className="head-box">
                   <h4 className="wow fadeInLeft min-content-block" data-wow-delay=".5s">
                     Titanium LitePaper
@@ -55,7 +53,7 @@ const TitaniumLitePaper = (theme) => {
               <a
                 className={`btn-curve ${
                   theme == "light" ? "btn-blc" : "btn-lit"
-                } wow fadeInUp`}
+                } wow fadeInUp bg-color`}
                 data-wow-delay=".5s"
               >
                 <span>Read Now</span>
