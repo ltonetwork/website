@@ -1,44 +1,92 @@
 [
   {
     "id": 1,
-    "image": "/img/team/shawn-naderi.jpg",
-    "name": "Shawn Naderi",
-    "title": "CMO",
-    "color":"#510094"
-  },
-  {
-    "id": 2,
     "image": "/img/team/rick-schmitz.jpg",
     "name": "Rick Schmitz",
     "title": "CEO",
-    "color": "#804BC9"
+    "color": "#ff00ff",
+    "linkedin":"#rick-linkedin",
+    "twitter":"#rick-twitter"
+  },
+  {
+    "id": 2,
+    "image": "/img/team/martijn.jpg",
+    "name": "Martijn",
+    "title": "CFO",
+    "color":"#ff00ff",
+    "linkedin":"#martijn-linkedin",
+    "twitter":"#martijn-twitter"
   },
   {
     "id": 3,
-    "image": "/img/team/andrea.jpg",
-    "name": "Andrea",
-    "title": "Dev",
-    "color": "#00ccdd"
+    "image": "/img/team/shawn-naderi.jpg",
+    "name": "Shawn Naderi",
+    "title": "CMO",
+    "color":"#ff00ff",
+    "linkedin":"#shawn-linkedin",
+    "twitter":"#shawn-twitter"
+  },
+  {
+    "id": 3,
+    "image": "/img/team/arnold-daniels.jpg",
+    "name": "Arnold Daniels",
+    "title": "Chief Architect",
+    "color": "#00ccdd",
+    "linkedin":"",
+    "twitter":""
   },
   {
     "id": 4,
-    "image": "/img/team/maurits.jpg",
-    "name": "Maurits",
+    "image": "/img/team/andrea.jpg",
+    "name": "Andrea",
     "title": "Dev",
-    "color": "#510094"
+    "color": "#00ccdd",
+    "linkedin":"",
+    "twitter":""
   },
   {
     "id": 5,
-    "image": "/img/team/ben.jpg",
-    "name": "Ben",
-    "title": "Marketing",
-    "color": "#804BC9"
+    "image": "/img/team/maurits.jpg",
+    "name": "Maurits",
+    "title": "Dev",
+    "color": "#00ccdd",
+    "linkedin":"",
+    "twitter":""
   },
   {
     "id": 6,
+    "image": "/img/team/ben.jpg",
+    "name": "Ben",
+    "title": "Marketing",
+    "color": "#510094",
+    "linkedin":"",
+    "twitter":""
+  },
+  {
+    "id": 7,
     "image": "/img/team/christin.jpg",
     "name": "Christin",
     "title": "Marketing",
-    "color":"#00ccdd"
+    "color":"#510094",
+    "linkedin":"",
+    "twitter":""
+  },
+  {
+    "id": 8,
+    "image": "/img/team/dom.jpg",
+    "name": "Dom",
+    "title": "Marketing",
+    "color":"#510094",
+    "linkedin":"",
+    "twitter":""
+  },
+  {
+    "id": 9,
+    "image": "/img/team/cees.jpg",
+    "name": "Cees",
+    "title": "Marketing",
+    "color":"#510094",
+    "linkedin":"",
+    "twitter":""
   }
 ]

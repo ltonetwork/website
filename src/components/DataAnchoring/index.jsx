@@ -10,7 +10,7 @@ const DataAnchoring = () => {
             </div>
             <div className="text">
               <Split>
-                <span className="pb-20 secondary-color">DATA AND DOCUMENTS, SAFE AND SECURE</span>
+                <span className="pb-20 secondary-color subtitle">DATA AND DOCUMENTS, SAFE AND SECURE</span>
                 <p className="wow txt words chars splitting" data-splitting>
                 Anchoring provides a simple and cheap way to notarize documents, timestamp and verify data. It&apos;s one of the most fundamental uses of any blockchain  decentralized public ledger.
 

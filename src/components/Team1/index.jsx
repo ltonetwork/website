@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Slider from "react-slick";
+import Link from "next/link";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import team1Data from "../../data/sections/team1.json";
@@ -76,7 +77,7 @@ class Team1 extends React.Component {
               >
                 {team1Data.map((item) => (
                   <div
-                    className="item wow fadeInUp"
+                    className={`item wow fadeInUp ${item.linkedin=='' && item.twitter=='' ? 'item--noFade' : ''}`}
                     data-wow-delay=".3s"
                     key={item.id}
                   >
@@ -87,18 +88,16 @@ class Team1 extends React.Component {
                       <h5>{item.name}</h5>
                       <span>{item.title}</span>
                       <div className="social">
-                        <a href="#0">
-                          <i className="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#0">
-                          <i className="fab fa-twitter"></i>
-                        </a>
-                        <a href="#0">
-                          <i className="fab fa-behance"></i>
-                        </a>
-                        <a href="#0">
-                          <i className="fab fa-linkedin-in"></i>
-                        </a>
+                        {item.linkedin ? <Link href={item.linkedin}>
+                          <a>
+                            <i className="fab fa-linkedin-in"></i>
+                          </a>
+                        </Link> : ''}                        
+                        {item.twitter ? <Link href={item.twitter}>
+                          <a>
+                            <i className="fab fa-twitter"></i>
+                          </a>
+                        </Link> : ''}
                       </div>
                     </div>
                   </div>

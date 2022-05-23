@@ -7,7 +7,7 @@ const PrivatePublicLayers = ({ withBG, withPadding, halfBG, withOutTitle }) => {
     <section className="min-area sub-bg section-padding pt-30 pb-70">
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 valign light-purple-bg" style={{"padding": "30px"}}>
+          <div className="col-lg-6 light-purple-bg" style={{"padding": "30px"}}>
             <div>
               <Split>
                 <h4
@@ -24,7 +24,7 @@ const PrivatePublicLayers = ({ withBG, withPadding, halfBG, withOutTitle }) => {
               </Split>
             </div>
           </div>
-          <div className="col-lg-6 valign dark-purple-bg" style={{"padding": "30px"}}>
+          <div className="col-lg-6 dark-purple-bg" style={{"padding": "30px"}}>
             <div>
               <Split>
                 <h4

@@ -6,7 +6,11 @@
     "alt": "triall logo",
     "content": "Triall copy will go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales.",
     "challenges": "Triall challenges to go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales. Praesent non libero sit amet ex commodo dictum ut luctus urna.",
-    "solutions": "Triall solutions to go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales. Praesent non libero sit amet ex commodo dictum ut luctus urna."
+    "challenges_img": "triall-challenges.png",
+    "challenges_alt": "triall challenges",
+    "solutions": "Triall solutions to go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales. Praesent non libero sit amet ex commodo dictum ut luctus urna.",
+    "solutions_img": "triall-solutions.png",
+    "solutions_alt": "triall solutions"
   },
   {
     "id": 2,
@@ -15,7 +19,11 @@
     "alt": "casino logo",
     "content": "Casino copy will go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales.",
     "challenges": "Casino challenges to go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales. Praesent non libero sit amet ex commodo dictum ut luctus urna.",
-    "solutions": "Casino solutions to go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales. Praesent non libero sit amet ex commodo dictum ut luctus urna."
+    "challenges_img": "casino-challenges.png",
+    "challenges_alt": "casino challenges",
+    "solutions": "Casino solutions to go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales. Praesent non libero sit amet ex commodo dictum ut luctus urna.",
+    "solutions_img": "casino-solutions.png",
+    "solutions_alt": "casino solutions"
   },
   {
     "id": 3,
@@ -24,7 +32,11 @@
     "alt": "goland logo",
     "content": "GoLand copy will go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales.",
     "challenges": "GoLand challenges to go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales. Praesent non libero sit amet ex commodo dictum ut luctus urna.",
-    "solutions": "GoLand solutions to go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales. Praesent non libero sit amet ex commodo dictum ut luctus urna."
+    "challenges_img": "goland-challenges.png",
+    "challenges_alt": "goland challenges",
+    "solutions": "GoLand solutions to go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales. Praesent non libero sit amet ex commodo dictum ut luctus urna.",
+    "solutions_img": "goland-solutions.png",
+    "solutions_alt": "goland solutions"
   },
   {
     "id": 4,
@@ -33,7 +45,11 @@
     "alt": "sphereon logo",
     "content": "Sphereon copy will go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales.",
     "challenges": "Sphereon challenges to go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales. Praesent non libero sit amet ex commodo dictum ut luctus urna.",
-    "solutions": "Sphereon solutions to go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales. Praesent non libero sit amet ex commodo dictum ut luctus urna."
+    "challenges_img": "sphereon-challenges.png",
+    "challenges_alt": "sphereon challenges",
+    "solutions": "Sphereon solutions to go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales. Praesent non libero sit amet ex commodo dictum ut luctus urna.",
+    "solutions_img": "sphereon-solutions.png",
+    "solutions_alt": "sphereon solutions"
   },
   {
     "id": 5,
@@ -42,7 +58,11 @@
     "alt": "ibm logo",
     "content": "IBM copy will go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales.",
     "challenges": "IBM challenges to go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales. Praesent non libero sit amet ex commodo dictum ut luctus urna.",
-    "solutions": "IBM solutions to go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales. Praesent non libero sit amet ex commodo dictum ut luctus urna."
+    "challenges_img": "ibm-challenges.png",
+    "challenges_alt": "ibm challenges",
+    "solutions": "IBM solutions to go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales. Praesent non libero sit amet ex commodo dictum ut luctus urna.",
+    "solutions_img": "ibm-solutions.png",
+    "solutions_alt": "ibm solutions"
   },
   {
     "id": 6,
@@ -51,7 +71,11 @@
     "alt": "capptions logo",
     "content": "Capptions copy will go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales.",
     "challenges": "Capptions challenges to go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales. Praesent non libero sit amet ex commodo dictum ut luctus urna.",
-    "solutions": "Capptions solutions to go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales. Praesent non libero sit amet ex commodo dictum ut luctus urna."
+    "challenges_img": "capptions-challenges.png",
+    "challenges_alt": "capptions challenges",
+    "solutions": "Capptions solutions to go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales. Praesent non libero sit amet ex commodo dictum ut luctus urna.",
+    "solutions_img": "capptions-solutions.png",
+    "solutions_alt": "capptions solutions"
   },
   {
     "id": 7,
@@ -60,6 +84,10 @@
     "alt": "signrequest logo",
     "content": "SignRequest copy will go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales.",
     "challenges": "SignRequest challenges to go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales. Praesent non libero sit amet ex commodo dictum ut luctus urna.",
-    "solutions": "SignRequest solutions to go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales. Praesent non libero sit amet ex commodo dictum ut luctus urna."
+    "challenges_img": "signrequest-challenges.png",
+    "challenges_alt": "signrequest challenges",
+    "solutions": "SignRequest solutions to go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate id lorem eu pretium. Curabitur rhoncus et diam id commodo. Cras lacinia fringilla purus et luctus. <br><br>Pellentesque fringilla mollis tellus, eu finibus sem semper ac. In rutrum pellentesque sodales. Praesent non libero sit amet ex commodo dictum ut luctus urna.",
+    "solutions_img": "signrequest-solutions.png",
+    "solutions_alt": "signrequest logo"
   }
 ]

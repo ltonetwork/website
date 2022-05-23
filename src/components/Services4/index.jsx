@@ -7,7 +7,7 @@ const Services4 = ({ theme, withBG, withPadding, halfBG, withOutTitle }) => {
     <section
       className={`services ${withPadding ? "section-padding" : ""} ${
         withBG ? "sub-bg" : ""
-      } pt-30 pb-50`}
+      } pt-30 pb-60`}
     >
       <div className="container">
         {!withOutTitle && (
@@ -52,7 +52,7 @@ const Services4 = ({ theme, withBG, withPadding, halfBG, withOutTitle }) => {
         </div>
         <div className = "row justify-content-end pt-50">
         <div className="col-lg-3 d-flex">
-          <Link href="/explore-projects" style="position:absolute; right:0;">
+          <Link href="/partnerships" style="position:absolute; right:0;">
             <a
               className={`btn-curve ${
                 theme == "light" ? "btn-blc" : "btn-lit"

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { Formik, Form, Field } from "formik";
-import Link from "next/link"
+import Link from "next/link";
 import appData from "../../data/app.json";
 
 const Footer = () => {
@@ -93,20 +93,6 @@ const Footer = () => {
                   </Form>
                 )}
               </Formik>
-            </div>
-            <div className="insta">
-              <h6 className="custom-font stit simple-btn">Instagram Post</h6>
-              <div className="insta-gallary">
-                <a href="#0">
-                  <img src="/img/insta/1.jpg" alt="" />
-                </a>
-                <a href="#0">
-                  <img src="/img/insta/2.jpg" alt="" />
-                </a>
-                <a href="#0">
-                  <img src="/img/insta/3.jpg" alt="" />
-                </a>
-              </div>
             </div>
           </div>
         </div>

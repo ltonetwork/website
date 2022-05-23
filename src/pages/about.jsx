@@ -24,18 +24,17 @@ const AboutDark = () => {
       <AboutHeader/>
       <AboutIntro/>
       <Services4 withPadding withOutTitle/>
-      {/* Add title here */}
-      <BigTitle 
-        title="Key Tech & Benefits" 
-        subtitle="What we offer" 
-        backTitle="Key Tech"
-        paddingTop="0" 
-      />
-      <SectionWrapper> {/* white border outside black - background black, inner lighter grey for component backgrounds */}
+      <SectionWrapper> 
+        <BigTitle 
+          title="Key Tech & Benefits" 
+          subtitle="What we offer" 
+          backTitle="Key Tech"
+          paddingTop="0" 
+        />
         <HybridArchitecture/>
         <PrivatePublicLayers/>
-        <DataAnchoring/>
-        <AnchoringPartners/>
+        {/*<DataAnchoring/>*/}
+        {/*<AnchoringPartners/>*/}
         <IdentityPlatform/>
         <PointsAndTabs theme="dark"/>
         <TitaniumLitePaper/>

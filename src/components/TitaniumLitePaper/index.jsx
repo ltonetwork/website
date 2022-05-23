@@ -28,37 +28,35 @@ const TitaniumLitePaper = (theme) => {
       >
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-12">
+              <h3 className="wow mb-20 section-title" data-splitting>Ownables</h3>
+            </div>
+            <div className="col-lg-5">
               <div className="vid-area">
                 <div className="cont">
-                  <h3 className="wow" data-splitting>
-                  Ownables
-                  </h3>
-                <span className="pb-20 secondary-color">TRULY DECENTRALIZED DIGITAL COLLECTABLES</span>
-                <p>
-                Ownables can contain media files, images, songs, 3D models and much more. Whatever the content, the owner has full possession over the asset.
-                </p>
-                <br/>
-                <p>With NFT2.0, TITANIUM will empower content creators worldwide, such as artists, musicians, game developers (and more) to develop, build and expand their own worlds.</p>
+                  <span className="pb-20 secondary-color subtitle">TRULY DECENTRALIZED DIGITAL COLLECTABLES</span>
+                  <p>
+                  Ownables can contain media files, images, songs, 3D models and much more. Whatever the content, the owner has full possession over the asset.
+                  </p>
+                  <br/>
+                  <p>With NFT2.0, TITANIUM will empower content creators worldwide, such as artists, musicians, game developers (and more) to develop, build and expand their own worlds.</p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-5 offset-lg-1">
+            <div className="col-lg-6 offset-lg-1">
               <div className="testim-box" style={{ backgroundImage: `url(/img/titanium-litepaper/background.jpg)` }}>
                 <div className="head-box">
-                  <h4 className="wow fadeInLeft min-content-block" data-wow-delay=".5s">
-                    Titanium LitePaper
-                  </h4>
-            <Link href="/read-now">
-              <a
-                className={`btn-curve ${
-                  theme == "light" ? "btn-blc" : "btn-lit"
-                } wow fadeInUp bg-color`}
-                data-wow-delay=".5s"
-              >
-                <span>Read Now</span>
-              </a>
-            </Link>
+                  <h4 className="wow fadeInLeft min-content-block" data-wow-delay=".5s">Titanium LitePaper</h4>
+                  <Link href="/read-now">
+                    <a
+                      className={`btn-curve ${
+                        theme == "light" ? "btn-blc" : "btn-lit"
+                      } wow fadeInUp bg-color`}
+                      data-wow-delay=".5s"
+                    >
+                      <span>Read Now</span>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>

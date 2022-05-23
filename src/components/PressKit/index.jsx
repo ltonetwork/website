@@ -36,7 +36,7 @@ const PressKit = (theme) => {
                   <h3 className="wow" data-splitting>
                   Press Kit
                   </h3>
-                <span className="pb-20 secondary-color">OUR PRESS KIT</span>
+                <span className="pb-20 secondary-color subtitle">OUR PRESS KIT</span>
                 <p>
                   LTO Network&apos;s branding should look clean, futuristic and minimal.
                 </p>
@@ -47,46 +47,63 @@ const PressKit = (theme) => {
                 </div>
               </div>
             </div>  
-
             <div className="col-lg-6 valign">
-            <div className="content pl-0 pt-0" style={{"flex-grow":"1"}}>
-              <ul className="feat">
-                <li className="wow fadeInUp list-custom-style pink-bg row justify-content-center" data-wow-delay=".2s">
-                  <h6 className = "col-lg-4 pl-15 valign">
-                  Logos
-                  </h6>
-                  <div className="col-lg-4 valign"><Link href="/download/logos" style="position:absolute; right:0;">
-                    <a
-                      className={`press-kit-btn btn-curve ${
-                        theme == "light" ? "btn-blc" : "btn-lit"
-                      } wow fadeInUp`}
-                      data-wow-delay=".5s"
-                    >
-                      <span>Download</span>
-                    </a>
-                  </Link></div>
-                </li>
-                <li className="wow fadeInUp list-custom-style dark-purple-bg row justify-content-center" data-wow-delay=".2s">
-                  <h6 className="col-lg-4 valign pl-15">
-                  Fonts
-                  </h6>
-                  <div className="col-lg-4 valign"><Link href="/download/fonts" style="position:absolute; right:0;">
-                    <a
-                      className={`press-kit-btn btn-curve ${
-                        theme == "light" ? "btn-blc" : "btn-lit"
-                      } wow fadeInUp`}
-                      data-wow-delay=".5s"
-                    >
-                      <span>Download</span>
-                    </a>
-                  </Link></div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          
-            
-                      
+              <div className="content pl-0 pt-0" style={{"flex-grow":"1"}}>
+                <ul className="feat">
+                  <li className="wow fadeInUp list-custom-style pink-bg d-flex justify-content-center" data-wow-delay=".2s">
+                    <h6 className = "col-lg-4 pl-15 valign">
+                    Logos
+                    </h6>
+                    <div className="col-lg-4 valign">
+                      <Link href="/download/logos" style="position:absolute; right:0;">
+                        <a
+                          className={`press-kit-btn btn-curve ${
+                            theme == "light" ? "btn-blc" : "btn-lit"
+                          } wow fadeInUp`}
+                          data-wow-delay=".5s"
+                        >
+                          <span>Download</span>
+                        </a>
+                      </Link>
+                    </div>
+                  </li>
+                  <li className="wow fadeInUp list-custom-style dark-purple-bg d-flex justify-content-center" data-wow-delay=".2s">
+                    <h6 className="col-lg-4 valign pl-15">
+                    Fonts
+                    </h6>
+                    <div className="col-lg-4 valign">
+                      <Link href="/download/fonts" style="position:absolute; right:0;">
+                        <a
+                          className={`press-kit-btn btn-curve ${
+                            theme == "light" ? "btn-blc" : "btn-lit"
+                          } wow fadeInUp`}
+                          data-wow-delay=".5s"
+                        >
+                          <span>Download</span>
+                        </a>
+                      </Link>
+                    </div>
+                  </li>
+                  <li className="wow fadeInUp list-custom-style cyan-bg d-flex justify-content-center" data-wow-delay=".2s">
+                    <h6 className="col-lg-4 valign pl-15">
+                    Style Guide
+                    </h6>
+                    <div className="col-lg-4 valign">
+                      <Link href="/download/style-guide" style="position:absolute; right:0;">
+                        <a
+                          className={`press-kit-btn btn-curve ${
+                            theme == "light" ? "btn-blc" : "btn-lit"
+                          } wow fadeInUp`}
+                          data-wow-delay=".5s"
+                        >
+                          <span>Download</span>
+                        </a>
+                      </Link>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>    
           </div>
         </div>
       </div>

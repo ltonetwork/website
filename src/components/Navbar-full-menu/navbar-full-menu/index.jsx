@@ -49,7 +49,7 @@ const NavbarFullMenu = ({ theme, lr }) => {
       <div className="hamenu">
         <div className="container">
           <div className="row">
-            <div className="col-lg-8 col-md-8">
+            <div className="col-lg-7 col-md-6">
               <div className="menu-links">
                 <ul className="main-menu">
                   <li>
@@ -100,7 +100,7 @@ const NavbarFullMenu = ({ theme, lr }) => {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-4 col-md-4">
+            <div className="col-lg-5 col-md-6">
               <div className="cont-info">
                 <div className="item">
                   <CurrencyWidget />

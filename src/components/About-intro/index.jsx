@@ -3,10 +3,10 @@ import Split from "../Split";
 
 const AboutIntro = () => {
   return (
-    <section className="intro-section section-padding pb-0">
+    <section className="intro-section pt-80 pb-0">
       <div className="container">
         <div className="htit mb-20">
-          <h4 className="section-title">Project Background</h4>
+          <h2 className="section-title">What is LTO Network?</h2>
         </div>
         <div className="text">
           <Split>

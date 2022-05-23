@@ -44,7 +44,7 @@ const MinimalArea = ({theme}) => {
               </ul>
             </div>
           </div>
-          <div className="col-lg-6 offset-lg-1 valign">
+          <div className="col-lg-6 offset-lg-1">
             <div className="tab-box">
               <div className="tab-box__tabs">
                 <span>
@@ -86,7 +86,7 @@ const MinimalArea = ({theme}) => {
               </div>
               <div className="tab-box__content" style={{backgroundImage: 'url(/img/about/IdentityPlatformTabsBg.jpg)' }}>
                 <div className="row">
-                  <div className="col-lg-6 valign">
+                  <div className="col-lg-7">
                     <div>
                       <Split>
                         <h4
@@ -103,11 +103,9 @@ const MinimalArea = ({theme}) => {
                       </Split>
                     </div>
                   </div>
-                  <div className="col-lg-6 valign">
+                  <div className="col-lg-5 col-md-5 mt-20-md">
                     <div className="content pt-0 pb-0">
-                      <Split>
                       <img className={`icon ${tabTitle}`} src={`/img/identity-platform/${tabTitle}.png`}alt={`${tabTitle}`}/>
-                      </Split>
                     </div>
                   </div>
                 </div>

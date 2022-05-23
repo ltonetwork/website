@@ -25,7 +25,11 @@ const PartnershipsDark = () => {
           alt={partner.alt}
           info={partner.content} 
           challenges={partner.challenges}
+          challengesImg={partner.challenges_img}
+          challengesImgAlt={partner.challenges_alt}
           solutions={partner.solutions} 
+          solutionsImg={partner.solutions_img}
+          solutionsImgAlt={partner.solutions_alt}
           subBG={index%2==0}
         />
       ))}
