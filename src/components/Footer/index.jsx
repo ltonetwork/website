@@ -31,32 +31,64 @@ const Footer = () => {
               <div className="con-info custom-font">
                 <ul>
                   <li>
-                    <span>Email : </span> Avo_support@website.com
+                    <span>General Inquiries : </span> <Link href="mailto:support@ltonetwork.com"><a>support@ltonetwork.com</a></Link>
                   </li>
                   <li>
-                    <span>Address : </span> A32 , Ave 15th Street, Door 211, San
-                    Franciso, USA 32490.
+                    <span>Press & Media Relations : </span> <Link href="mailto:support@ltonetwork.com"><a>press@ltonetwork.com</a></Link>
                   </li>
                   <li>
-                    <span>Phone : </span> (+1) 2345 678 44 88
+                    <span>Address : </span> LTO Network B.V. <br/>Helicopterstraat 25h, 1059 CE <br/>Amsterdam, Netherlands
                   </li>
                 </ul>
               </div>
               <div className="social-icon">
                 <h6 className="custom-font stit simple-btn">Follow Us</h6>
                 <div className="social">
-                  <a href="#0" className="icon">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="#0" className="icon">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a href="#0" className="icon">
-                    <i className="fab fa-pinterest"></i>
-                  </a>
-                  <a href="#0" className="icon">
-                    <i className="fab fa-behance"></i>
-                  </a>
+                  <Link href="https://twitter.com/TheLTONetwork">
+                    <a className="icon" target="_blank">
+                      <i className="fab fa-twitter"></i>
+                    </a>
+                  </Link>
+                  <Link href="https://t.me/ltonetwork">
+                    <a className="icon" target="_blank">
+                      <i className="fab fa-telegram"></i>
+                    </a>
+                  </Link>
+                  <Link href="https://www.reddit.com/r/LTONetwork">
+                    <a className="icon" target="_blank">
+                      <i className="fab fa-reddit"></i>
+                    </a>
+                  </Link>
+                  <Link href="https://www.youtube.com/c/LTONetwork">
+                    <a className="icon" target="_blank">
+                      <i className="fab fa-youtube"></i>
+                    </a>
+                  </Link>
+                  <Link href="https://www.facebook.com/TheLTONetwork">
+                    <a className="icon" target="_blank">
+                      <i className="fab fa-facebook"></i>
+                    </a>
+                  </Link>
+                  <Link href="https://www.instagram.com/theltonetwork/">
+                    <a className="icon" target="_blank">
+                      <i className="fab fa-instagram"></i>
+                    </a>
+                  </Link>
+                  <Link href="https://www.linkedin.com/company/ltonetwork/">
+                    <a className="icon" target="_blank">
+                      <i className="fab fa-linkedin"></i>
+                    </a>
+                  </Link>
+                  <Link href="https://github.com/ltonetwork">
+                    <a className="icon" target="_blank">
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </Link>
+                  <Link href="https://blog.ltonetwork.com/">
+                    <a className="icon" target="_blank">
+                      <i className="fas fa-newspaper"></i>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
