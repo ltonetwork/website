@@ -158,6 +158,172 @@ span:hover {
 
 /* ====================== [ End Typography  ] ====================== */
 
+/* ====================== [ Home Hero ] ====================== */
+
+.hero {
+  width: 100%;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to bottom, transparent, #0c0f16);
+}
+.hero__inner {
+  position: relative;
+  overflow: hidden;
+  padding-top: 62.51%;
+  background: #0c0f16;
+}
+.hero__inner::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #0c0f16;
+}
+.hero__inner.lto-animate::before {
+  animation: intro 1s forwards;
+}
+.hero__image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hero__image img {
+  width: 100%;
+  position: relative;
+}
+.hero__image--sun {
+  transform: translateY(100%);
+}
+.hero__image--sun.lto-animate {
+  animation: sunrise 1.5s forwards;
+}
+.hero__image--sparkle {
+  animation: sparkle 6s infinite;
+}
+.hero__image--leaf1::before {
+  content: "";
+  position: absolute;
+  top: 13.9%;
+  left: 2.5%;
+  width: 18%;
+  height: 13.5%;
+  transform: rotate(135deg);
+  background: linear-gradient(to left, #00ed8a 0%, #00ed8a 60%, white 80%, #00ed8a 100%);
+  background-size: 200% 200%;
+  animation: pulse 4s infinite;
+}
+.hero__image--leaf2::before {
+  content: "";
+  position: absolute;
+  top: 45.5%;
+  left: 6.5%;
+  width: 18%;
+  height: 13.5%;
+  transform: rotate(46deg);
+  background: linear-gradient(to left, #00ed8a 0%, #00ed8a 60%, white 80%, #00ed8a 100%);
+  background-size: 200% 200%;
+  animation: pulse 4s infinite;
+  animation-delay: 2s;
+  clip-path: polygon(11% 45%, 21% 14%, 28% 0, 100% 0, 100% 100%, 30% 100%, 21% 85%, 18% 73%);
+}
+.hero__image--leaf4::before {
+  content: "";
+  position: absolute;
+  top: 85.9%;
+  left: 20.5%;
+  width: 22%;
+  height: 13.5%;
+  transform: rotate(125deg);
+  background: linear-gradient(to left, #00ed8a 0%, #00ed8a 60%, white 80%, #00ed8a 100%);
+  background-size: 200% 200%;
+  animation: pulse 4s infinite;
+  animation-delay: 1s;
+}
+.hero__image--leaf6::before {
+  content: "";
+  position: absolute;
+  top: 26.5%;
+  left: 71.5%;
+  width: 18%;
+  height: 13.5%;
+  transform: rotate(27deg);
+  background: linear-gradient(to left, #00ed8a 0%, #00ed8a 60%, white 80%, #00ed8a 100%);
+  background-size: 200% 200%;
+  animation: pulse 4s infinite;
+}
+.hero__image--leaf7::before {
+  content: "";
+  position: absolute;
+  top: 62%;
+  left: 78.8%;
+  width: 17%;
+  height: 13.5%;
+  transform: rotate(125deg);
+  clip-path: ellipse(50% 50% at 50% 50%);
+  background: linear-gradient(to left, #00ed8a 0%, #00ed8a 60%, white 80%, #00ed8a 100%);
+  background-size: 200% 200%;
+  animation: pulse 4s infinite;
+  animation-delay: 1s;
+}
+
+@keyframes pulse {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 280% 280%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+@keyframes sparkle {
+  0%, 30%, 90%, 100% {
+    opacity: 0;
+    clip-path: polygon(54.2% 42%, 54.2% 42%, 54.2% 42%, 54.2% 42%);
+  }
+  40%, 80% {
+    opacity: 0.9;
+    clip-path: polygon(50% 35%, 60% 35%, 60% 50%, 50% 50%);
+  }
+  50% {
+    opacity: 1;
+    clip-path: polygon(50% 35%, 60% 35%, 60% 50%, 50% 50%);
+  }
+}
+@keyframes intro {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sunrise {
+  0% {
+    transform: translateY(100%) scale(1.1);
+  }
+  80% {
+    transform: translateY(-1%) scale(1.1);
+  }
+  100% {
+    transform: translateY(0) scale(1.1);
+  }
+}
+
+/* ====================== [ End Home Hero  ] ====================== */
 
 
 /* ====================== [ By Will Midgette  ] ====================== */

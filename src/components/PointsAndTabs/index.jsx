@@ -1,16 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import featuresEffect from "../../common/featuresEffect";
-import { thumparallaxDown } from "../../common/thumparallax";
 import Split from "../Split";
 import { useState } from 'react';
 import Link from "next/link"
 const MinimalArea = ({theme}) => {
   React.useEffect(() => {
     featuresEffect();
-    setTimeout(() => {
-      thumparallaxDown();
-    }, 1000);
   }, []);
   const [tabTitle, setTitle] = useState('MyCompany Wallet');
   const [tabContent, setContent] = useState('Details coming soon!')

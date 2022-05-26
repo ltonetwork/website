@@ -48,7 +48,7 @@ const PressKit = (theme) => {
               </div>
             </div>  
             <div className="col-lg-6 valign">
-              <div className="content pl-0 pt-0" style={{"flex-grow":"1"}}>
+              <div className="content pl-0 pt-0" style={{"flexGrow":"1"}}>
                 <ul className="feat">
                   <li className="wow fadeInUp list-custom-style pink-bg d-flex justify-content-center" data-wow-delay=".2s">
                     <h6 className = "col-lg-4 pl-15 valign">

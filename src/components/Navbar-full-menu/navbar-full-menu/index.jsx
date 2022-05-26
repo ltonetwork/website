@@ -38,7 +38,7 @@ const NavbarFullMenu = ({ theme, lr }) => {
               <i></i>
             </span>
             <Split>
-              <span className="text" data-splitting>
+              <span className="text" data-splitting style={{ paddingTop: '4px' }}>
                 <span className="menu-text">Menu</span>
               </span>
             </Split>
@@ -63,7 +63,7 @@ const NavbarFullMenu = ({ theme, lr }) => {
                   </li>
                   <li>
                     <div className="o-hidden">
-                      <Link href="/about">
+                      <Link href="/#about">
                         <a className="link">
                           <span className="nm">02.</span>What is LTO Network?
                         </a>
