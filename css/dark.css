@@ -5937,6 +5937,7 @@ body {
   background: rgba(255, 255, 255, 0.01);
   border-radius: 50%;
   margin-right: 5px;
+  margin-bottom: 5px;
   font-size: 13px;
   opacity: 0.6;
 }
@@ -5965,7 +5966,7 @@ body {
   border: 0;
   padding: 15px 30px;
   background: rgba(255, 255, 255, 0.02);
-  color: var(--lto-primary);
+  color: var(--lto-secondary);
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 13px;
