@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import featuresEffect from "../../common/featuresEffect";
-import { thumparallaxDown } from "../../common/thumparallax";
 import Split from "../Split";
 import { useState } from 'react';
 import Link from "next/link";
@@ -9,9 +8,6 @@ import Link from "next/link";
 const PartnerInfo = ({partner, logo, alt, info, challenges, challengesImg, challengesImgAlt, solutions, solutionsImg, solutionsImgAlt, subBG}) => {
   React.useEffect(() => {
     featuresEffect();
-    setTimeout(() => {
-      thumparallaxDown();
-    }, 1000);
   }, []);
 
   const [tabTitle, setTitle] = useState('Challenges');
@@ -69,7 +65,7 @@ const PartnerInfo = ({partner, logo, alt, info, challenges, challengesImg, chall
               </div>
               <div className="tab-box__content" style={{background: 'var(--lto-primary)' }}>
                 <div className="row">
-                  <div className="col-lg-7">
+                  <div className={`${tabImage != '' ? 'col-lg-7 ' : 'col-lg-12'}`}>
                     <Split>
                       <h4
                         className="wow custom-font words chars splitting"
@@ -79,12 +75,10 @@ const PartnerInfo = ({partner, logo, alt, info, challenges, challengesImg, chall
                       </h4>
                     </Split>
                     <Split>
-                      <p className="wow txt words chars splitting white-text" data-splitting  dangerouslySetInnerHTML={{__html: tabContent}}></p>
+                      <div className="wow txt words chars splitting white-text" data-splitting  dangerouslySetInnerHTML={{__html: tabContent}}></div>
                     </Split>
                   </div>
-                  <div className="col-lg-5 col-md-5 mt-20-md">
-                    <img src={`/img/partners/${tabImage}`}alt={`${tabAlt}`}/>
-                  </div>
+                  {tabImage != '' && <div className="col-lg-5 col-md-5 mt-20-md"><img src={`/img/partners/${tabImage}`}alt={`${tabAlt}`}/></div>}
                 </div>
               </div>
             </div>
