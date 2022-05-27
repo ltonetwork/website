@@ -4968,14 +4968,31 @@ body {
   width: 100%;
 }
 
-.tab-box h4,
-.tab-box p {
+.tab-box__content h4 {
+  margin-bottom: 10px;
+}
+
+.tab-box__content h4,
+.tab-box__content div.wow {
   background: var(--lto-purple);
   padding: 5px;
 }
 
-.tab-box h4 {
+.tab-box__content ul {
+  padding-left: 30px;
+}
+
+.tab-box__content li {
+  list-style: disc;
   margin-bottom: 10px;
+}
+
+.tab-box__content ul ul li {
+  list-style: circle;
+}
+
+.tab-box__content ul ul ul li {
+  list-style: square;
 }
 
 .tab-box__tabs {
