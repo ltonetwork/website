@@ -105,8 +105,8 @@ const Works2Slider = ({ subBG }) => {
                             }}
                           ></div>
                           <div className="cont bgbox">
-                            <h6>Triall</h6>
-                            <h4>Clinical trials including Covid19 Vaccine research on the LTO Network</h4>
+                            <h6>New Website - Stage 1</h6>
+                            <h4>Stage 1 launch of LTO Network’s new website.</h4>
                           </div>
                         </div>
                       </SwiperSlide>
