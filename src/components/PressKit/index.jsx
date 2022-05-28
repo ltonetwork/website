@@ -36,13 +36,13 @@ const PressKit = (theme) => {
                   <h3 className="wow" data-splitting>
                   Press Kit
                   </h3>
-                <span className="pb-20 secondary-color subtitle">OUR PRESS KIT</span>
+                <span className="pb-20 secondary-color subtitle">Our Press Kit and Branding Assets</span>
                 <p>
                   LTO Network&apos;s branding should look clean, futuristic and minimal.
                 </p>
                 <br/>
                   <p>
-                  Blah blah blah blah blah
+                  You can access our latest branding elements here.
                   </p>
                 </div>
               </div>
