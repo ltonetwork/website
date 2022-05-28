@@ -151,33 +151,56 @@ const Works2Slider = ({ subBG }) => {
                           data-wow-delay=".3s"
                         >
                         
-                          <div className="top-label">Q2 - 2022</div>
-                          <div
-                            className="item-img bg-img wow imago"
-                            style={{
-                              backgroundImage: "url(/img/about/roadmap-3.jpg)",
-                            }}
-                          ></div>
-                          <div className="cont bgbox">
-                            <h6>NEN</h6>
-                            <h4>Smart certificates to facilitate on the spot verification for The Dutch Standardization Institute</h4>
-                          </div>
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide className="swiper-slide">
+                         
                         <div
-                          className="content wow fadeInUp"
-                          data-wow-delay=".3s"
-                        >
-                          <div
                             className="item-img bg-img wow imago"
                             style={{
                               backgroundImage: "url(/img/about/roadmap-4.jpg)",
                             }}
                           ></div>
                           <div className="cont bgbox">
-                            <h6>New Timeline Item</h6>
-                            <h4>Text will go here.</h4>
+                            <h6>Titanium Alpha</h6>
+                            <h4>Titanium Alpha on the Testnet</h4>
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide className="swiper-slide">
+                        <div
+                          className="content wow fadeInUp"
+                          data-wow-delay=".3s"
+                        >
+                        
+                          
+                         
+                        <div
+                            className="item-img bg-img wow imago"
+                            style={{
+                              backgroundImage: "url(/img/about/roadmap-5.jpg)",
+                            }}
+                          ></div>
+                          <div className="cont bgbox">
+                            <h6>Native Wallet Alpha</h6>
+                            <h4>Native Wallet Alpha Version will be delivered.</h4>
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide className="swiper-slide">
+                        <div
+                          className="content wow fadeInUp"
+                          data-wow-delay=".3s"
+                        >
+                        
+                        
+                          <div className="top-label">Q3 - 2022</div>
+                          <div
+                            className="item-img bg-img wow imago"
+                            style={{
+                              backgroundImage: "url(/img/about/roadmap-6.jpg)",
+                            }}
+                          ></div>
+                          <div className="cont bgbox">
+                            <h6>GoLand Registry</h6>
+                            <h4>The 1st stage of GoLand Code Update will be announced and details provided.</h4>
                           </div>
                         </div>
                       </SwiperSlide>
@@ -189,12 +212,29 @@ const Works2Slider = ({ subBG }) => {
                           <div
                             className="item-img bg-img wow imago"
                             style={{
-                              backgroundImage: "url(/img/about/roadmap-5.jpg)",
+                              backgroundImage: "url(/img/about/roadmap-7.jpg)",
                             }}
                           ></div>
                           <div className="cont bgbox">
-                            <h6>New Timeline Item</h6>
-                            <h4>Text will go here.</h4>
+                            <h6>NFT2.0 Partnership</h6>
+                            <h4>NFT2.0 Partnership Announcement</h4>
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide className="swiper-slide">
+                        <div
+                          className="content wow fadeInUp"
+                          data-wow-delay=".3s"
+                        >
+                          <div
+                            className="item-img bg-img wow imago"
+                            style={{
+                              backgroundImage: "url(/img/about/roadmap-8.jpg)",
+                            }}
+                          ></div>
+                          <div className="cont bgbox">
+                            <h6>Native Wallet Release</h6>
+                            <h4>LTO Native Wallet will be released.</h4>
                           </div>
                         </div>
                       </SwiperSlide>
