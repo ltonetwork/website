@@ -310,7 +310,7 @@ const Works2Slider = ({ subBG }) => {
                         >
                         
                         
-                        
+                         
                          <div
                             className="item-img bg-img wow imago"
                             style={{
