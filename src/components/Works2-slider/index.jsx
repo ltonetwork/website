@@ -226,7 +226,28 @@ const Works2Slider = ({ subBG }) => {
                           className="content wow fadeInUp"
                           data-wow-delay=".3s"
                         >
+                        
+                        
+                         >
                           <div
+                            className="item-img bg-img wow imago"
+                            style={{
+                              backgroundImage: "url(/img/about/roadmap-7.jpg)",
+                            }}
+                          ></div>
+                          <div className="cont bgbox">
+                            <h6>NFT2.0 Partnership</h6>
+                            <h4>NFT2.0 Partnership Announcement</h4>
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide className="swiper-slide">
+                        <div
+                          className="content wow fadeInUp"
+                          data-wow-delay=".3s"
+                        >
+                        
+                         <div
                             className="item-img bg-img wow imago"
                             style={{
                               backgroundImage: "url(/img/about/roadmap-8.jpg)",
@@ -235,6 +256,91 @@ const Works2Slider = ({ subBG }) => {
                           <div className="cont bgbox">
                             <h6>Native Wallet Release</h6>
                             <h4>LTO Native Wallet will be released.</h4>
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide className="swiper-slide">
+                        <div
+                          className="content wow fadeInUp"
+                          data-wow-delay=".3s"
+                        >
+                        
+                      
+                        
+                        
+                         <div
+                            className="item-img bg-img wow imago"
+                            style={{
+                              backgroundImage: "url(/img/about/roadmap-9.jpg)",
+                            }}
+                          ></div>
+                          <div className="cont bgbox">
+                            <h6>Titanium Mainnet Update</h6>
+                            <h4>Full release of our NFT2.0 Ownables tech.</h4>
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide className="swiper-slide">
+                        <div
+                          className="content wow fadeInUp"
+                          data-wow-delay=".3s"
+                        >
+                        
+                        
+                          <div className="top-label">Q4 - 2022</div>
+                        
+                        
+                        
+                         <div
+                            className="item-img bg-img wow imago"
+                            style={{
+                              backgroundImage: "url(/img/about/roadmap-10.jpg)",
+                            }}
+                          ></div>
+                          <div className="cont bgbox">
+                            <h6>Titanium Alloy</h6>
+                            <h4>Mainnet Update.</h4>
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide className="swiper-slide">
+                        <div
+                          className="content wow fadeInUp"
+                          data-wow-delay=".3s"
+                        >
+                        
+                        
+                        
+                         <div
+                            className="item-img bg-img wow imago"
+                            style={{
+                              backgroundImage: "url(/img/about/roadmap-11.jpg)",
+                            }}
+                          ></div>
+                          <div className="cont bgbox">
+                            <h6>NFT2.0 Partnership Announce</h6>
+                            <h4>NFT2.0 Partnership Announcement - Artist Focus.</h4>
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide className="swiper-slide">
+                        <div
+                          className="content wow fadeInUp"
+                          data-wow-delay=".3s"
+                        >
+                        
+                        
+                        
+                        
+                          <div
+                            className="item-img bg-img wow imago"
+                            style={{
+                              backgroundImage: "url(/img/about/roadmap-12.jpg)",
+                            }}
+                          ></div>
+                          <div className="cont bgbox">
+                            <h6>Embedded Smart Contracts</h6>
+                            <h4>Mainnet Upgrade</h4>
                           </div>
                         </div>
                       </SwiperSlide>
