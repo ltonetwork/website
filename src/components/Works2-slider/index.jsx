@@ -97,7 +97,7 @@ const Works2Slider = ({ subBG }) => {
                           className="content wow fadeInUp"
                           data-wow-delay=".3s"
                         >
-                          <div className="top-label">Q1 - 2022</div>
+                          <div className="top-label">Q2 - 2022</div>
                           <div
                             className="item-img bg-img wow imago"
                             style={{
@@ -122,8 +122,8 @@ const Works2Slider = ({ subBG }) => {
                             }}
                           ></div>
                           <div className="cont bgbox">
-                            <h6>SignRequest</h6>
-                            <h4>Immutable PDFs on LTO Network. Over 1 million business documents signed every year.</h4>
+                            <h6>Proofi Launch</h6>
+                            <h4>Our game changing identity solution, Proofi will be launched. </h4>
                           </div>
                         </div>
                       </SwiperSlide>
@@ -132,6 +132,25 @@ const Works2Slider = ({ subBG }) => {
                           className="content wow fadeInUp"
                           data-wow-delay=".3s"
                         >
+                        
+                        <div
+                            className="item-img bg-img wow imago"
+                            style={{
+                              backgroundImage: "url(/img/about/roadmap-3.jpg)",
+                            }}
+                          ></div>
+                          <div className="cont bgbox">
+                            <h6>Partnership Announcement</h6>
+                            <h4>A major partnership will be announced.</h4>
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide className="swiper-slide">
+                        <div
+                          className="content wow fadeInUp"
+                          data-wow-delay=".3s"
+                        >
+                        
                           <div className="top-label">Q2 - 2022</div>
                           <div
                             className="item-img bg-img wow imago"
