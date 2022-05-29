@@ -17,19 +17,18 @@
   {
     "id": 2,
     "partner": "LesA Casino DID Pilot",
-    "logo": "logo-triall.png",
-    "alt": "triall logo",
-    "callout": "Other Partner calls on the LTO Network to host the world's next generation of eClinical data",
-    "content": "Other Partner is integrating its APIs with CDS realizing the world's first end-to-end eClinical platform powered by blockchain. <br><br>LTO Network will be hosting this data.",
+    "logo": "lesa-logo.png",
+    "alt": "lesa logo",
+    "callout": "Revolutionizing how the gambling industry works — one casino at a time",
+    "content": "Sphereon built a solution which leverages our GDPR-friendly Verifiable Credentials and Decentralized Identifier privacy  technologies. It allows casino players to transfer their winnings using verified identity credentials. <br><br>We begin with London’s prestigious Les Ambassadeurs Casino.",
     "news_link": "#",
     "points": [
-      "Prevent tampering",
-      "Ensure transparency and integrity of research data",
-      "GDPR Friendly Solution",
-      "Ability to cater for 20,000 to 1 million data points per Clinical Trial"
+      "Multi-casino interoperability",
+      "Secure winnings payout via stable-coin wallets",
+      "Enhanced clientele experience",
+      "Innovate steps to AML (anti-money laundering) compliance"
     ]
   },
-]
   {
     "id": 3,
     "partner": "GoLandRegistry",
@@ -39,9 +38,10 @@
     "content": "Our blockchain-based solution to land registration management and data verification. <br><br>Systematic. Transparent. Secure.",
     "news_link": "#",
     "points": [
-      "Efficient land management.",
-      "Employ emerging tech to map the property registration process.",
-      "Decentralize occupancy certificates.",
-      "Enable property owners to demonstrate land title authenticity."
+      "Efficient land management",
+      "Employ emerging tech to map the property registration process",
+      "Decentralize occupancy certificates",
+      "Enable property owners to demonstrate land title authenticity"
     ]
-  },
+  }
+   ]
