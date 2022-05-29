@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "image": "/img/team/martijn.jpg",
+    "image": "/img/team/empty.png",
     "name": "Martijn",
     "title": "CFO",
     "color":"#ff00ff",
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "image": "/img/team/shawn-naderi.jpg",
+    "image": "/img/team/empty.png",
     "name": "Shawn Naderi",
     "title": "CMO",
     "color":"#ff00ff",
@@ -35,6 +35,16 @@
     "linkedin":"",
     "twitter":""
   },
+  
+  {
+    "id": 3,
+    "image": "/img/team/empty.png",
+    "name": "Borja",
+    "title": "Busines Development",
+    "color": "#00ccdd",
+    "linkedin":"",
+    "twitter":""
+  },
   {
     "id": 4,
     "image": "/img/team/andrea.jpg",
@@ -44,9 +54,18 @@
     "linkedin":"",
     "twitter":""
   },
+    {
+    "id": 5,
+    "image": "/img/team/empty.png",
+    "name": "Benas",
+    "title": "Dev",
+    "color": "#00ccdd",
+    "linkedin":"",
+    "twitter":""
+  },
   {
     "id": 5,
-    "image": "/img/team/maurits.jpg",
+    "image": "/img/team/empty.png",
     "name": "Maurits",
     "title": "Dev",
     "color": "#00ccdd",
