@@ -100,7 +100,6 @@ const handleFullScreenNavbar = () => {
 
   window.addEventListener('scroll',function(){
     const top = window.pageYOffset || document.documentElement.scrollTop;
-    console.log('doot scroll', top);
     if (top > 0) {
       document.getElementById('navi').classList.add('fixed');
     } else {
