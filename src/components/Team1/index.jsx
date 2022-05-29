@@ -9,7 +9,33 @@ import team1Data from "../../data/sections/team1.json";
 class Team1 extends React.Component {
   constructor(props) {
     super(props);
+
+    this.checkScroll = this.checkScroll.bind(this);
   }
+
+  checkScroll() {
+    const $slider = document.querySelector('.team-container');
+    const wTop = window.pageYOffset || document.documentElement.scrollTop;
+    const sTop = wTop + $slider.getBoundingClientRect().bottom;
+    const wHeight = window.innerHeight;
+    const wTrigger = wTop + wHeight;
+
+    if (wTrigger > sTop) {
+      this.slider.slickPlay();
+    } else {
+      this.slider.slickPause();
+    }    
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll',this.checkScroll);
+    this.checkScroll();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll',this.checkScroll);
+  }
+
   renderArrows = () => {
     return (
       <div className="navs mt-30 wow fadeInUp" data-wow-delay=".3s">
@@ -28,6 +54,7 @@ class Team1 extends React.Component {
       </div>
     );
   };
+
   render() {
     return (
       <section className="team section-padding">
@@ -50,7 +77,7 @@ class Team1 extends React.Component {
                   dots: false,
                   infinite: true,
                   arrows: true,
-                  autoplay: true,
+                  autoplay: false,
                   slidesToScroll: 1,
                   slidesToShow: 4,
                   responsive: [

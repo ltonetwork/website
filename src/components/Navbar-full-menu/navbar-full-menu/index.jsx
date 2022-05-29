@@ -114,18 +114,51 @@ const NavbarFullMenu = ({ theme, lr }) => {
                   <p><a href="https://twitter.com/theltonetwork">@TheLTONetwork</a></p>
                 </div>
                 <div className="item social-icon">
-                  <a className="icon" href="https://www.linkedin.com/company/ltonetwork/">
-                    <i className="fab fa-linkedin"></i>
-                  </a>
-                  <a className="icon" href="https://github.com/ltonetwork">
-                    <i className="fab fa-github"></i>
-                  </a>
-                  <a className="icon" href="https://www.youtube.com/channel/UCaHcF-xterKYTKSpY4xgKiw">
-                    <i className="fab fa-youtube"></i>
-                  </a>
-                  <a className="icon" href="https://reddit.com/r/LTONetwork">
-                    <i className="fab fa-reddit"></i>
-                  </a>
+                  <Link href="https://twitter.com/TheLTONetwork">
+                    <a className="icon mb-10" target="_blank" rel="nofollower">
+                      <i className="fab fa-twitter"></i>
+                    </a>
+                  </Link>
+                  <Link href="https://t.me/ltonetwork">
+                    <a className="icon mb-10" target="_blank" rel="nofollower">
+                      <i className="fab fa-telegram"></i>
+                    </a>
+                  </Link>
+                  <Link href="https://www.reddit.com/r/LTONetwork">
+                    <a className="icon mb-10" target="_blank" rel="nofollower">
+                      <i className="fab fa-reddit"></i>
+                    </a>
+                  </Link>
+                  <Link href="https://www.youtube.com/c/LTONetwork">
+                    <a className="icon mb-10" target="_blank" rel="nofollower">
+                      <i className="fab fa-youtube"></i>
+                    </a>
+                  </Link>
+                  <Link href="https://www.facebook.com/TheLTONetwork">
+                    <a className="icon mb-10" target="_blank" rel="nofollower">
+                      <i className="fab fa-facebook"></i>
+                    </a>
+                  </Link>
+                  <Link href="https://www.instagram.com/theltonetwork/">
+                    <a className="icon mb-10" target="_blank" rel="nofollower">
+                      <i className="fab fa-instagram"></i>
+                    </a>
+                  </Link>
+                  <Link href="https://www.linkedin.com/company/ltonetwork/">
+                    <a className="icon mb-10" target="_blank" rel="nofollower">
+                      <i className="fab fa-linkedin"></i>
+                    </a>
+                  </Link>
+                  <Link href="https://github.com/ltonetwork">
+                    <a className="icon mb-10" target="_blank" rel="nofollower">
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </Link>
+                  <Link href="https://blog.ltonetwork.com/">
+                    <a className="icon mb-10" target="_blank" rel="nofollower">
+                      <i className="fas fa-newspaper"></i>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -16,7 +16,7 @@ const Footer = () => {
   }
   const sendEmail = (ms) => new Promise((r) => setTimeout(r, ms));
   return (
-    <footer className="footer-half sub-bg section-padding pb-0">
+    <footer className="footer-half sub-bg pt-40 pb-40">
       <div className="container">
         <div className="row">
           <div className="col-lg-5">
@@ -45,47 +45,47 @@ const Footer = () => {
                 <h6 className="custom-font stit simple-btn">Follow Us</h6>
                 <div className="social">
                   <Link href="https://twitter.com/TheLTONetwork">
-                    <a className="icon" target="_blank">
+                    <a className="icon" target="_blank" rel="nofollower">
                       <i className="fab fa-twitter"></i>
                     </a>
                   </Link>
                   <Link href="https://t.me/ltonetwork">
-                    <a className="icon" target="_blank">
+                    <a className="icon" target="_blank" rel="nofollower">
                       <i className="fab fa-telegram"></i>
                     </a>
                   </Link>
                   <Link href="https://www.reddit.com/r/LTONetwork">
-                    <a className="icon" target="_blank">
+                    <a className="icon" target="_blank" rel="nofollower">
                       <i className="fab fa-reddit"></i>
                     </a>
                   </Link>
                   <Link href="https://www.youtube.com/c/LTONetwork">
-                    <a className="icon" target="_blank">
+                    <a className="icon" target="_blank" rel="nofollower">
                       <i className="fab fa-youtube"></i>
                     </a>
                   </Link>
                   <Link href="https://www.facebook.com/TheLTONetwork">
-                    <a className="icon" target="_blank">
+                    <a className="icon" target="_blank" rel="nofollower">
                       <i className="fab fa-facebook"></i>
                     </a>
                   </Link>
                   <Link href="https://www.instagram.com/theltonetwork/">
-                    <a className="icon" target="_blank">
+                    <a className="icon" target="_blank" rel="nofollower">
                       <i className="fab fa-instagram"></i>
                     </a>
                   </Link>
                   <Link href="https://www.linkedin.com/company/ltonetwork/">
-                    <a className="icon" target="_blank">
+                    <a className="icon" target="_blank" rel="nofollower">
                       <i className="fab fa-linkedin"></i>
                     </a>
                   </Link>
                   <Link href="https://github.com/ltonetwork">
-                    <a className="icon" target="_blank">
+                    <a className="icon" target="_blank" rel="nofollower">
                       <i className="fab fa-github"></i>
                     </a>
                   </Link>
                   <Link href="https://blog.ltonetwork.com/">
-                    <a className="icon" target="_blank">
+                    <a className="icon" target="_blank" rel="nofollower">
                       <i className="fas fa-newspaper"></i>
                     </a>
                   </Link>
@@ -94,7 +94,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-lg-5 offset-lg-2">
-            <div className="subscribe mb-50">
+            <div className="subscribe mt-50 mb-50">
               <h6 className="custom-font stit simple-btn">Newsletter</h6>
               <p>Sign up for subscribe out newsletter!</p>
               <Formik
@@ -126,12 +126,8 @@ const Footer = () => {
                 )}
               </Formik>
             </div>
+            <p className="pt-60">© 2022, LTO Network</p>
           </div>
-        </div>
-        <div className="copyrights text-center">
-          <p>
-            © 2022, LTO Network
-          </p>
         </div>
       </div>
     </footer>

@@ -47,12 +47,13 @@ const PressKit = (theme) => {
                     Logos
                     </h6>
                     <div className="col-lg-4 valign">
-                      <Link href="/download/logos" style="position:absolute; right:0;">
+                      <Link href="/downloads/LTO_logos.zip" style="position:absolute; right:0;">
                         <a
                           className={`press-kit-btn btn-curve ${
                             theme == "light" ? "btn-blc" : "btn-lit"
                           } wow fadeInUp`}
                           data-wow-delay=".5s"
+                          download
                         >
                           <span>Download</span>
                         </a>
@@ -64,12 +65,13 @@ const PressKit = (theme) => {
                     Fonts
                     </h6>
                     <div className="col-lg-4 valign">
-                      <Link href="/download/fonts" style="position:absolute; right:0;">
+                      <Link href="/downloads/LTO_fonts.zip" style="position:absolute; right:0;">
                         <a
                           className={`press-kit-btn btn-curve ${
                             theme == "light" ? "btn-blc" : "btn-lit"
                           } wow fadeInUp`}
                           data-wow-delay=".5s"
+                          download
                         >
                           <span>Download</span>
                         </a>
@@ -81,12 +83,14 @@ const PressKit = (theme) => {
                     Style Guide
                     </h6>
                     <div className="col-lg-4 valign">
-                      <Link href="/download/style-guide" style="position:absolute; right:0;">
+                      <Link href="/downloads/lto_style_guide_v1_1.pdf" style="position:absolute; right:0;">
                         <a
                           className={`press-kit-btn btn-curve ${
                             theme == "light" ? "btn-blc" : "btn-lit"
                           } wow fadeInUp`}
                           data-wow-delay=".5s"
+                          target="_blank"
+                          rel="nofollower"
                         >
                           <span>Download</span>
                         </a>
