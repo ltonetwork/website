@@ -77,6 +77,7 @@ body {
 }
 
 img {
+  max-width: 100%;
   width: 100%;
   height: auto;
 }
@@ -299,14 +300,22 @@ span:hover {
   justify-content: center;
   height: 100%;
   pointer-events: all;
+  padding-bottom: 200px;
 }
 
 .hero__image--text h1 {
   font-size: 115px;
   line-height: 1;
-  text-align: center;
   text-shadow: 0px 0px 5px rgba(255,255,255,0.5);
-  word-spacing: 99999px;
+}
+
+.hero__link {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -2032,11 +2041,16 @@ body {
   left: 0;
   width: 100%;
   text-align: center;
-  font-size: 10vw;
+  font-size: 120px;
   font-weight: 700;
   color: transparent;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
   opacity: 0.3;
+}
+@media screen and (max-width: 991px) {
+  .sec-head .tbg {
+    font-size: 10vw;
+  }
 }
 .sec-head.tr-head {
   text-align: right;
@@ -2236,10 +2250,37 @@ body {
   background-repeat: no-repeat;
 }
 
+.ownables .cont p, .ownables .cont .subtitle, .ownables h3 {
+  background: #11141b;
+  display: inline-block;
+  padding: 1px 5px;
+}
+
+.ownables .cont p {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  .ownables {
+    padding-bottom: 50px;
+    background-size: 200%;
+  }
+}
+
 .hybrid {
   background-image: url(/img/about/hybrid-bg.jpg);
   background-size: cover;
   background-position: center center;
+}
+
+.hybrid__content h4, .hybrid__content .subtitle, .hybrid__content .word, .hybrid__content .whitespace {
+  background: #11141b;
+  display: inline-block;
+}
+
+.hybrid__content .whitespace {
+  height: 32px;
+  vertical-align: bottom;
 }
 
 .press-kit__content h3, .press-kit__content span, .press-kit__content p {
@@ -2460,7 +2501,7 @@ body {
   padding: 0 50px;
 }
 .topnav .logo {
-  width: 200px;
+  width: 240px;
 }
 .topnav .menu-icon {
   margin-left: auto;
