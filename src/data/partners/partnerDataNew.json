@@ -28,5 +28,19 @@
       "GDPR Friendly Solution",
       "Ability to cater for 20,000 to 1 million data points per Clinical Trial"
     ]
-  }
+  },
 ]
+  {
+    "id": 3,
+    "partner": "GoLandRegistry",
+    "logo": "goland-logo.png",
+    "alt": "golandregistry logo",
+    "callout": "Anchoring and verifying land registry deeds — together with the United Nations.",
+    "content": "Our blockchain-based solution to land registration management and data verification. <br><br>Systematic. Transparent. Secure.",
+    "news_link": "#",
+    "points": [
+      "Efficient land management.",
+      "Employ emerging tech to map the property registration process.",
+      "Decentralize occupancy certificates.",
+      "Enable property owners to demonstrate land title authenticity."
+    ]
