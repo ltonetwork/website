@@ -6,7 +6,7 @@
     "alt": "triall logo inverted purple",
     "callout": "Triall calls on the LTO Network to host the world's next generation of eClinical data",
     "content": "Triall is integrating its APIs with CDS realizing the world's first end-to-end eClinical platform powered by blockchain. <br><br>LTO Network will be hosting this data.",
-    "news_link": "#",
+    "news_link": "https://blog.ltonetwork.com/lto-triall-cds/",
     "points": [
       "Prevent tampering.",
       "Ensure transparency and integrity of research data.",
@@ -36,7 +36,7 @@
     "alt": "golandregistry logo",
     "callout": "Anchoring and verifying land registry deeds — together with the United Nations.",
     "content": "Our blockchain-based solution to land registration management and data verification. <br><br>Systematic. Transparent. Secure.",
-    "news_link": "#",
+    "news_link": "https://unite.un.org/goLandRegistry/home",
     "points": [
       "Efficient land management.",
       "Employ emerging tech to map the property registration process.",
@@ -51,7 +51,7 @@
     "alt": "sphereon logo",
     "callout": "Together with Sphereon, we built the MyCompanyWallet app— a digital wallet for companies.",
     "content": "Our clients have the power to securely store, and selectively share their validated credential data. <br><br>We’re taking on-boarding to the next level.",
-    "news_link": "#",
+    "news_link": "https://sphereon.com/news-and-insights/sphereon-and-lto-create-mycompanywallet-app/",
     "points": [
       "Selective, modular data sharing.",
       "Exchange and validate sensitive information.",
@@ -66,7 +66,7 @@
     "alt": "nen logo",
     "callout": "With our brilliant friends at NEN, (Netherlands Standardization Institute) we built an instant smart certificate.",
     "content": "Verify official certificates in real-time with uncopyable smart QR codes anchored to our blockchain. <br><br>Making on the spot verification possible.",
-    "news_link": "#",
+    "news_link": "https://blog.ltonetwork.com/nen-q4-update/",
     "points": [
       "Instantaneous certificate verification.",
       "Increased transparency between involved parties.",
@@ -81,7 +81,7 @@
     "alt": "signrequest logo",
     "callout": "Providing assurnace that your document contents have not been tampered with.",
     "content": "When a document is signed, SignRequest stores the hashed (fingerprint) document and a timestamp on our blockchain, providing proof of when a document was signed. <br><br>Document authenticity, simplified.",
-    "news_link": "#",
+    "news_link": "https://blog.ltonetwork.com/signrequest-lto-network-digital-esignatures-blockchain/",
     "points": [
       "Immutable PDFs.",
       "Verifiable on-chain timestamps accessible anywhere.",
@@ -96,7 +96,7 @@
     "alt": "proofi logo",
     "callout": "Meet Proofi — our latest innovation in the digital identity space. Powered by Chainlink.",
     "content": "First impressions are everything, but the required KYC/AML steps can complicate onboarding procedures, making it frustrating for new clients. <br><br>Proofi fixes this problem once and for all by issuing verifiable credentials that can be used everywhere.",
-    "news_link": "#",
+    "news_link": "https://origin.proofi.com/home/",
     "points": [
       "One-time identity verification.",
       "Secure and store sensitive information.",
