@@ -16,7 +16,7 @@
   },
   {
     "id": 2,
-    "partner": "Other Partner",
+    "partner": "LesA Casino DID Pilot",
     "logo": "logo-triall.png",
     "alt": "triall logo",
     "callout": "Other Partner calls on the LTO Network to host the world's next generation of eClinical data",
@@ -44,3 +44,4 @@
       "Decentralize occupancy certificates.",
       "Enable property owners to demonstrate land title authenticity."
     ]
+  },
