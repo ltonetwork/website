@@ -42,6 +42,21 @@
       "Employ emerging tech to map the property registration process",
       "Decentralize occupancy certificates",
       "Enable property owners to demonstrate land title authenticity"
+     ]
+  },
+  {
+      "id": 4,
+    "partner": "Sphereon",
+    "logo": "sphereon-logo.png",
+    "alt": "sphereon logo",
+    "callout": "Together with Sphereon, we built the MyCompanyWallet app— a digital wallet for companies.",
+    "content": "Our clients have the power to securely store, and selectively share their validated credential data. <br><br>We’re taking on-boarding to the next level.",
+    "news_link": "#",
+    "points": [
+      "Selective, modular data sharing.",
+      "Exchange and validate sensitive information.",
+      "Secure, decentralized data transfer.",
+      "Significantly shorten and improve application and onboarding processes."
     ]
   }
    ]
