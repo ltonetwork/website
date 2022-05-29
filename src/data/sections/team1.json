@@ -74,7 +74,7 @@
   },
   {
     "id": 6,
-    "image": "/img/team/ben.jpg",
+    "image": "/img/team/empty.png",
     "name": "Ben",
     "title": "Marketing",
     "color": "#510094",
@@ -83,7 +83,7 @@
   },
   {
     "id": 7,
-    "image": "/img/team/christin.jpg",
+    "image": "/img/team/empty.png",
     "name": "Christin",
     "title": "Marketing",
     "color":"#510094",
@@ -101,7 +101,7 @@
   },
   {
     "id": 9,
-    "image": "/img/team/cees.jpg",
+    "image": "/img/team/empty.png",
     "name": "Cees",
     "title": "Marketing",
     "color":"#510094",
