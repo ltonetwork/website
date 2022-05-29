@@ -9,6 +9,14 @@
 @font-face {
   font-family: "Overpass LTO";
   font-style: normal;
+  font-weight: 300;
+  font-style: italic;
+  src: url("../fonts/Overpass/Overpass-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: "Overpass LTO";
+  font-style: normal;
   font-weight: 400;
   src: url("../fonts/Overpass/Overpass-Regular.ttf");
 }
