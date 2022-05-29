@@ -19,12 +19,12 @@ const AboutIntro = () => {
         <div className="about-intro__partners">
           <h3>Our Network Has Been Used By</h3>
           <div className="about-intro__partners__inner">
-            <Image src="/img/partners/un-logo.png" alt="UN Logo" width={100} height={91} />
-            <Image src="/img/partners/nen-logo.png" alt="NEN Logo" width={115} height={68} />
-            <Image src="/img/partners/signrequest-logo.png" alt="SignRequest Logo" width={225} height={58} />
-            <Image src="/img/partners/ibm-logo.png" alt="IBM Logo" width={119} height={47} />
-            <Image src="/img/partners/govned-logo.png" alt="Government of the Netherlands Logo" width={159} height={61} />
-            <Image src="/img/partners/cloud9-logo.png" alt="Cloud 9 Logo" width={173} height={87} />
+            <img src="/img/partners/un-logo.png" alt="UN Logo" style={{width:100,height:91}} />
+            <img src="/img/partners/nen-logo.png" alt="NEN Logo" style={{width:115,height:68}} />
+            <img src="/img/partners/signrequest-logo.png" alt="SignRequest Logo" style={{width:225,height:58}} />
+            <img src="/img/partners/ibm-logo.png" alt="IBM Logo" style={{width:119,height:47}} />
+            <img src="/img/partners/govned-logo.png" alt="Government of the Netherlands Logo" style={{width:159,height:61}} />
+            <img src="/img/partners/cloud9-logo.png" alt="Cloud 9 Logo" style={{width:173,height:87}} />
           </div>
         </div>
       </div>

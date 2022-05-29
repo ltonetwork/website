@@ -445,7 +445,7 @@ span:hover {
   margin: 0 -13px -26px;
 }
 
-.about-intro__partners__inner > span {
+.about-intro__partners__inner > img {
   margin: 0 13px 26px !important;
 }
 
@@ -486,14 +486,6 @@ span:hover {
 
   .about-intro__partners__inner {
     justify-content: center;
-  }
-
-  .about-intro__partners__inner > span {
-    /*flex: 0 0 calc(33.33% - 26px);*/
-  }
-
-  .about-intro__partners__inner img {
-    min-width: fit-content;
   }
 }
 
