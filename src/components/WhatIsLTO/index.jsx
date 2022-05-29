@@ -1,6 +1,5 @@
 import React from "react";
 import Split from "../Split";
-import Image from 'next/image';
 
 const AboutIntro = () => {
   return (
