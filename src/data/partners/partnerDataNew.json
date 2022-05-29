@@ -57,6 +57,51 @@
       "Exchange and validate sensitive information.",
       "Secure, decentralized data transfer.",
       "Significantly shorten and improve application and onboarding processes."
+     ]
+  },
+  {
+       "id": 5,
+    "partner": "NEN",
+    "logo": "nen-logo.png",
+    "alt": "nen logo",
+    "callout": "With our brilliant friends at NEN, (Netherlands Standardization Institute) we built an instant smart certificate.",
+    "content": "Verify official certificates in real-time with uncopyable smart QR codes anchored to our blockchain. <br><br>Making on the spot verification possible.",
+    "news_link": "#",
+    "points": [
+      "Instantaneous certificate verification.",
+      "Increased transparency between involved parties.",
+      "Secure and decentralized sharing.",
+      "Synced with NEN’s Certificate Registration System."  
+     ]
+  },
+  {
+       "id": 6,
+    "partner": "SignRequest",
+    "logo": "signrequest-logo.png",
+    "alt": "signrequest logo",
+    "callout": "Providing assurnace that your document contents have not been tampered with.",
+    "content": "When a document is signed, SignRequest stores the hashed (fingerprint) document and a timestamp on our blockchain, providing proof of when a document was signed. <br><br>Document authenticity, simplified.",
+    "news_link": "#",
+    "points": [
+      "Immutable PDFs.",
+      "Verifiable on-chain timestamps accessible anywhere.",
+      "No need for third-party verification.",
+      "Increased value for documents that are verifiable and independently auditable."
+     ]
+  },
+  {
+      "id": 7,
+    "partner": "Proofi",
+    "logo": "proofi-logo.png",
+    "alt": "proofi logo",
+    "callout": "Meet Proofi — our latest innovation in the digital identity space. Powered by Chainlink.",
+    "content": "First impressions are everything, but the required KYC/AML steps can complicate onboarding procedures, making it frustrating for new clients. <br><br>Proofi fixes this problem once and for all by issuing verifiable credentials that can be used everywhere.",
+    "news_link": "#",
+    "points": [
+      "One-time identity verification.",
+      "Secure and store sensitive information.",
+      "Enhanced protection options using Verifiable Credentials technology.",
+      "Seamless permission granting, all done cross-chain."
     ]
   }
    ]
