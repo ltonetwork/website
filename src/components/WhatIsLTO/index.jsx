@@ -1,0 +1,35 @@
+import React from "react";
+import Split from "../Split";
+import Image from 'next/image';
+
+const AboutIntro = () => {
+  return (
+    <section id="about" className="about-intro">
+      <div className="about-intro__bg"></div>
+      <div className="container">
+        <h2>What is LTO Network?</h2>
+        <div className="about-intro__text">
+          <p>Lto network is an award winning <span>HYBRID BLOCKCHAIN</span></p>
+          <p>It can be used to <span>Secure, Exchange & Verify</span> critical data digital assets and identities.</p>
+        </div>
+        <div className="about-intro__mission">
+          <h3>Our Mission</h3>
+          <div className="about-intro__mission__statement">“Build cutting edge solutions that promote decentralization across B2B, consumer and crypto to crypto usecases.”</div>
+        </div>
+        <div className="about-intro__partners">
+          <h3>Our Network Has Been Used By</h3>
+          <div className="about-intro__partners__inner">
+            <Image src="/img/partners/un-logo.png" alt="UN Logo" width={100} height={91} />
+            <Image src="/img/partners/nen-logo.png" alt="NEN Logo" width={115} height={68} />
+            <Image src="/img/partners/signrequest-logo.png" alt="SignRequest Logo" width={225} height={58} />
+            <Image src="/img/partners/ibm-logo.png" alt="IBM Logo" width={119} height={47} />
+            <Image src="/img/partners/govned-logo.png" alt="Government of the Netherlands Logo" width={159} height={61} />
+            <Image src="/img/partners/cloud9-logo.png" alt="Cloud 9 Logo" width={173} height={87} />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutIntro;

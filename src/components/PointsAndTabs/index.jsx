@@ -11,7 +11,7 @@ const MinimalArea = ({theme}) => {
   const [tabTitle, setTitle] = useState('MyCompany Wallet');
   const [tabContent, setContent] = useState('Details coming soon!')
   return (
-    <section className="min-area sub-bg section-padding pt-30 pb-60">
+    <section className="min-area sub-bg section-padding pt-30 pb-60 identity">
       <div className="container">
         <div className="row">
           <div className="col-lg-5 valign">

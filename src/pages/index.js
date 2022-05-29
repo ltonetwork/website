@@ -3,18 +3,15 @@ import NavbarFullMenu from "../components/Navbar-full-menu/navbar-full-menu";
 import HomeHero from "../components/HomeHero";
 import DarkTheme from "../layouts/Dark";
 
-import AboutIntro from "../components/About-intro";
-import Services4 from "../components/Services4";
+import WhatIsLTO from "../components/WhatIsLTO";
 
 import SectionWrapper from "../components/SectionWrapper";
 import BigTitle from "../components/BigTitle";
 
 import HybridArchitecture from "../components/Hybrid-architecture";
-import PrivatePublicLayers from "../components/PrivatePublicLayers";
-import DataAnchoring from "../components/DataAnchoring";
-import AnchoringPartners from "../components/AnchoringPartners";
+// import DataAnchoring from "../components/DataAnchoring";
+// import AnchoringPartners from "../components/AnchoringPartners";
 import IdentityPlatform from "../components/IdentityPlatform";
-import PointsAndTabs from "../components/PointsAndTabs";
 import TitaniumLitePaper from "../components/TitaniumLitePaper";
 
 import Team1 from "../components/Team1";
@@ -28,8 +25,7 @@ const ShowcaseDark = () => {
     <DarkTheme>
       <NavbarFullMenu />
       <HomeHero />
-      <AboutIntro/>
-      <Services4 withPadding withOutTitle/>
+      <WhatIsLTO/>
       <SectionWrapper> 
         <BigTitle 
           title="Key Tech & Benefits" 
@@ -38,11 +34,9 @@ const ShowcaseDark = () => {
           paddingTop="0" 
         />
         <HybridArchitecture/>
-        <PrivatePublicLayers/>
         {/*<DataAnchoring/>*/}
         {/*<AnchoringPartners/>*/}
         <IdentityPlatform/>
-        <PointsAndTabs theme="dark"/>
         <TitaniumLitePaper/>
       </SectionWrapper>
       <Team1/>

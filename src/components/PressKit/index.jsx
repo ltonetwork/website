@@ -21,29 +21,21 @@ const PressKit = (theme) => {
     slidesToScroll: 1,
   };
   return (
-    <section className="block-sec">
-      
+    <section className="block-sec press-kit">
       <div
         className="background bg-img section-padding"
-        style={{ backgroundImage: `url(/img/presskit/background.jpg)` }}
-        data-overlay-dark="8"
+        style={{ backgroundImage: `url(/img/about/press-kit-bg.png)` }}
       >
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-6 press-kit__content">
               <div className="vid-area">
                 <div className="cont">
-                  <h3 className="wow" data-splitting>
-                  Press Kit
-                  </h3>
-                <span className="pb-20 secondary-color subtitle">Our Press Kit and Branding Assets</span>
-                <p>
-                  LTO Network&apos;s branding should look clean, futuristic and minimal.
-                </p>
-                <br/>
-                  <p>
-                  You can access our latest branding elements here.
-                  </p>
+                  <h3 className="wow mb-10" data-splitting>Press Kit</h3>
+                  <span className="mb-20 secondary-color subtitle">Our Press Kit and Branding Assets</span>
+                  <p>LTO Network&apos;s branding should look clean, futuristic and minimal.</p>
+                  <br/>
+                  <p>You can access our latest branding elements here.</p>
                 </div>
               </div>
             </div>  

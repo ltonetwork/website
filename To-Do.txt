@@ -1,0 +1,20 @@
+To-Do
+
+[ ] Mobile version of Home Hero
+[x] Hybrid Architecture updates
+[ ] Identity Platform updates
+[x] Press Kit updates
+[x] Ownables updates
+[x] What is LTO Network? updates
+[ ] Partnerships & Projects updates
+[ ] News page
+
+Need from Client
+
+[ ] Add URL to "Ownables - Read Now" button
+
+
+Suggestions
+
+[ ] Remove "Ownables" BG on tablet/mobile
+[ ] Remove opacity from Hybrid Architecture bg when it gets to mobile

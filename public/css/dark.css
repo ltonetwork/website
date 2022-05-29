@@ -163,6 +163,7 @@ span:hover {
 .hero {
   width: 100%;
   position: relative;
+  /*touch-action: none;*/
 }
 .hero::after {
   content: "";
@@ -173,6 +174,19 @@ span:hover {
   right: 0;
   height: 100px;
   background: linear-gradient(to bottom, transparent, #0c0f16);
+}
+.hero__prompt {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  background: #0c0f16;
+  border-radius: 10px 10px 0 0;
+}
+.hero__prompt img {
+  width: 50px;
 }
 .hero__inner {
   position: relative;
@@ -189,6 +203,7 @@ span:hover {
   bottom: 0;
   right: 0;
   background: #0c0f16;
+  pointer-events: none;
 }
 .hero__inner.lto-animate::before {
   animation: intro 1s forwards;
@@ -198,6 +213,7 @@ span:hover {
   position: absolute;
   top: 0;
   left: 0;
+  pointer-events: none;
 }
 .hero__image img {
   width: 100%;
@@ -277,6 +293,33 @@ span:hover {
   animation: pulse 4s infinite;
   animation-delay: 1s;
 }
+.hero__image--text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  pointer-events: all;
+}
+
+.hero__image--text h1 {
+  font-size: 115px;
+  line-height: 1;
+  text-align: center;
+  text-shadow: 0px 0px 5px rgba(255,255,255,0.5);
+  word-spacing: 99999px;
+}
+
+@media screen and (max-width: 992px) {
+  .hero__image--text h1 {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero__image--text h1 {
+    font-size: 45px;
+  }
+}
 
 @keyframes pulse {
   0% {
@@ -325,6 +368,255 @@ span:hover {
 
 /* ====================== [ End Home Hero  ] ====================== */
 
+/* ====================== [ What Is LTO Network? ] ====================== */
+
+.about-intro {
+  padding: 75px 0;
+  position: relative;
+}
+
+.about-intro__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(/img/about/intro-left.png) left top -180px no-repeat, url(/img/about/intro-right.png) right bottom no-repeat; 
+}
+
+.about-intro .container {
+  max-width: 1055px;
+  position: relative;
+}
+
+.about-intro__text {
+  margin-bottom: 30px;
+}
+
+.about-intro h2 {
+  margin-bottom: 20px;
+}
+
+.about-intro__text p {
+  color: white;
+  font-size: 36px;
+  line-height: 1.3;
+  margin-bottom: 40px;
+}
+
+.about-intro__text p span {
+  color: var(--lto-secondary);
+}
+
+.about-intro__mission {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-intro__mission h3 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.about-intro__mission__statement {
+  background: linear-gradient(to right, #c82090, #6a14d1);
+  border-radius: 10px;
+  color: white;
+  font-size: 45px;
+  line-height: 52px;
+  letter-spacing: -1px;
+  padding: 30px 100px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.about-intro__partners {
+  text-align: center;
+}
+
+.about-intro__partners h3 {
+  margin-bottom: 15px;
+}
+
+.about-intro__partners__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin: 0 -13px -26px;
+}
+
+.about-intro__partners__inner > span {
+  margin: 0 13px 26px !important;
+}
+
+@media screen and (max-width: 992px) {
+  .about-intro__bg {
+    opacity: 0.5;
+    background: url(/img/about/intro-left.png) left top -210px no-repeat, url(/img/about/intro-right.png) right bottom no-repeat; 
+  }
+
+  .about-intro__text p {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .about-intro__mission__statement {
+    font-size: 35px;
+    line-height: 42px;
+    padding: 20px 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-intro__bg {
+    opacity: 0.25; 
+  }
+
+  .about-intro__text p {
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+
+  .about-intro__mission__statement {
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    padding: 15px 30px;
+  }
+
+  .about-intro__partners__inner {
+    justify-content: center;
+  }
+
+  .about-intro__partners__inner > span {
+    /*flex: 0 0 calc(33.33% - 26px);*/
+  }
+
+  .about-intro__partners__inner img {
+    min-width: fit-content;
+  }
+}
+
+/* ====================== [ End What Is LTO Network? ] ====================== */
+
+/* ====================== [ Partnerships Slider ] ====================== */
+
+.partner-carousel__callout {
+  padding-left: 15px;
+  border-left: 1px solid var(--lto-pink);
+  margin-bottom: 25px;
+}
+
+.partner-carousel h2 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.partner-carousel h3 {
+  text-transform: uppercase;
+  color: var(--lto-primary);  
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.partner-carousel p,
+.partner-carousel li {
+  font-size: 21px;
+  line-height: 1.5;
+  color: #c8c8c8;
+}
+
+.partner-carousel .btn-curve {
+  margin: 20px 0;
+}
+
+.partner-carousel__logo {
+  width: 200px;
+  float: right;
+}
+
+.partner-carousel .swiper-slide {
+  background: #050505;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.partner-carousel h3 span {
+  font-weight: 700;
+  display: block;
+}
+
+.partner-carousel ul {
+  padding-left: 60px;
+}
+
+.partner-carousel li {
+  list-style: disc;
+  margin-bottom: 20px;
+  color: var(--lto-secondary);
+}
+
+.partner-carousel .swiper-slide-active .noraidus .cont {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.partner-carousel .next-ctrl,
+.partner-carousel .prev-ctrl {
+  color: #000;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 0;
+  background: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.partner-carousel .next-ctrl:after,
+.partner-carousel .prev-ctrl:after {
+  display: none;
+}
+.partner-carousel .swiper-button-next.swiper-button-disabled, 
+.partner-carousel .swiper-button-prev.swiper-button-disabled {
+  opacity: 0 !important;
+}
+
+.partner-carousel .simp-next,
+.partner-carousel .simp-prev {
+  color: #fff;
+  top: auto;
+  bottom: 0;
+}
+.partner-carousel .simp-next:after,
+.partner-carousel .simp-prev:after {
+  display: none;
+}
+
+.partner-carousel .simp-next {
+  right: 30px;
+}
+
+.partner-carousel .simp-prev {
+  left: 30px;
+}
+
+.partner-carousel:hover .next-ctrl,
+.partner-carousel:hover .prev-ctrl {
+  opacity: 1;
+}
+
+@media screen and (max-width: 991px) {
+  .partner-carousel .swiper-slide {
+    padding: 20px 30px;
+  }
+}
+
 
 /* ====================== [ By Will Midgette  ] ====================== */
 .min-content-block{
@@ -350,13 +642,23 @@ body{
   font-size: 1.5rem;
 }
 
-.section-wrapper{
-  padding: 50px;
+.section-wrapper {
+  padding: 50px 0;
+}
+
+.section-wrapper .sec-head, .hybrid, .ownables, .identity {
+  padding-left: 50px !important;
+  padding-right: 50px !important;
 }
 
 @media screen and (max-width: 767px) {
   .section-wrapper {
-    padding: 0 15px;   
+    padding: 0;   
+  }
+
+  .section-wrapper .sec-head, .hybrid, .ownables, .identity {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 }
 
@@ -435,6 +737,9 @@ body{
 
 .col-lg-6.light-purple-bg {
   border-radius: 10px 0 0 10px;
+  background-image: url(/img/about/pp-layers-left.png);
+  background-size: cover;
+  background-position: right center;
 }
 
 .dark-purple-bg{
@@ -443,6 +748,9 @@ body{
 
 .col-lg-6.dark-purple-bg {
   border-radius: 0 10px 10px 0;
+  background-image: url(/img/about/pp-layers-right.png);
+  background-size: cover;
+  background-position: right center;
 }
 
 @media screen and (max-width: 991px) {
@@ -1846,6 +2154,34 @@ body {
   border-radius: 30px;
 }
 
+.identity {
+  background-image: url(/img/about/identity-bg.jpg);
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.ownables {
+  background-image: url(/img/about/ownables-bg.png);
+  background-size: 100%;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+
+.hybrid {
+  background-image: url(/img/about/hybrid-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.press-kit__content h3, .press-kit__content span, .press-kit__content p {
+  background: #282a2e;
+  padding: 1px 5px;
+}
+
+.press-kit__content p {
+  display: inline-block;
+  margin-bottom: 10px;
+}
 .press-kit-btn.btn-curve{
   background-color: #fff;
 }
@@ -2041,6 +2377,9 @@ body {
   -webkit-transition: all 0.7s;
   -o-transition: all 0.7s;
   transition: all 0.7s;
+}
+.topnav.fixed {
+  background: #121620;
 }
 .topnav .container,
 .topnav .container-fluid {

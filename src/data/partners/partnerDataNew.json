@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "partner": "Triall",
+    "logo": "logo-triall.png",
+    "alt": "triall logo",
+    "callout": "Triall calls on the LTO Network to host the world's next generation of eClinical data",
+    "content": "Triall is integrating its APIs with CDS realizing the world's first end-to-end eClinical platform powered by blockchain. <br><br>LTO Network will be hosting this data.",
+    "news_link": "#",
+    "points": [
+      "Prevent tampering",
+      "Ensure transparency and integrity of research data",
+      "GDPR Friendly Solution",
+      "Ability to cater for 20,000 to 1 million data points per Clinical Trial"
+    ]
+  },
+  {
+    "id": 2,
+    "partner": "Other Partner",
+    "logo": "logo-triall.png",
+    "alt": "triall logo",
+    "callout": "Other Partner calls on the LTO Network to host the world's next generation of eClinical data",
+    "content": "Other Partner is integrating its APIs with CDS realizing the world's first end-to-end eClinical platform powered by blockchain. <br><br>LTO Network will be hosting this data.",
+    "news_link": "#",
+    "points": [
+      "Prevent tampering",
+      "Ensure transparency and integrity of research data",
+      "GDPR Friendly Solution",
+      "Ability to cater for 20,000 to 1 million data points per Clinical Trial"
+    ]
+  }
+]

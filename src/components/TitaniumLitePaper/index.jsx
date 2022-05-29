@@ -3,8 +3,6 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ModalVideo from "react-modal-video";
-import "react-modal-video/css/modal-video.css";
 import Link from "next/link"
 
 const TitaniumLitePaper = (theme) => {
@@ -21,10 +19,10 @@ const TitaniumLitePaper = (theme) => {
     slidesToScroll: 1,
   };
   return (
-    <section className="block-sec sub-bg">
+    <section className="block-sec sub-bg ownables">
       
       <div
-        className="background bg-img section-padding pt-0"
+        className="section-padding pt-40"
       >
         <div className="container">
           <div className="row">
