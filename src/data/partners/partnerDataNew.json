@@ -2,8 +2,8 @@
   {
     "id": 1,
     "partner": "Triall",
-    "logo": "logo-triall.png",
-    "alt": "triall logo",
+    "logo": "triall-logo-inverted-purple.png",
+    "alt": "triall logo inverted purple",
     "callout": "Triall calls on the LTO Network to host the world's next generation of eClinical data",
     "content": "Triall is integrating its APIs with CDS realizing the world's first end-to-end eClinical platform powered by blockchain. <br><br>LTO Network will be hosting this data.",
     "news_link": "#",
