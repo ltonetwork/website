@@ -14,7 +14,7 @@ const AboutIntro = () => {
         </div>
         <div className="about-intro__mission">
           <h3>Our Mission</h3>
-          <div className="about-intro__mission__statement">“Build cutting edge solutions that promote decentralization across B2B, consumer and crypto to crypto usecases.”</div>
+          <div className="about-intro__mission__statement">“Build the leading platform for cutting edge next generations blockchain apps that focus on identities, media and ownership.”</div>
         </div>
         <div className="about-intro__partners">
           <h3>Our Network Has Been Used By</h3>
