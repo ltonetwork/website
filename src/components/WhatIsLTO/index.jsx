@@ -1,5 +1,6 @@
 import React from "react";
 import Split from "../Split";
+import Link from "next/link";
 
 const AboutIntro = () => {
   return (
@@ -8,7 +9,7 @@ const AboutIntro = () => {
       <div className="container">
         <h2>What is LTO Network?</h2>
         <div className="about-intro__text">
-          <p>Lto network is an award winning <span>HYBRID BLOCKCHAIN</span></p>
+          <p>LTO network is an award winning <span>HYBRID BLOCKCHAIN</span></p>
           <p>It can be used to <span>Secure, Exchange & Verify</span> critical data digital assets and identities.</p>
         </div>
         <div className="about-intro__mission">
@@ -24,6 +25,11 @@ const AboutIntro = () => {
             <img src="/img/partners/ibm-logo.png" alt="IBM Logo" style={{width:119,height:47}} />
             <img src="/img/partners/govned-logo.png" alt="Government of the Netherlands Logo" style={{width:159,height:61}} />
             <img src="/img/partners/cloud9-logo.png" alt="Cloud 9 Logo" style={{width:173,height:87}} />
+          </div>
+          <div className="text-center mt-50">
+            <Link href="/partnerships">
+              <a className="btn-curve btn-lit bg-color"><span>Explore Projects</span></a>
+            </Link>
           </div>
         </div>
       </div>

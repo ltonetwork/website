@@ -5,7 +5,7 @@ import layersData from "../../data/sections/layersdata.json";
 const HybridArchitecture = () => {
   return (
     <section className="intro-section section-padding pt-20 pb-0 sub-bg hybrid">
-      <div className="container">
+      <div className="container hybrid__content">
         <div className="htit mb-20 cont">
           <h4 className="section-title">Hybrid Architecture</h4>
         </div>
@@ -15,8 +15,8 @@ const HybridArchitecture = () => {
             <p className="wow txt words chars splitting" data-splitting>
             What makes <em>LTO Network</em> unique is that it’s a hybrid blockchain with a public and private layer. All data being public is the very thing that makes blockchain special, but sometimes information needs to stay private.
             </p>			
-            <p>A hybrid chain allows some information to be shared privately while still relying on public consensus to ensure integrity.</p> 
             <br/>
+            <p>A hybrid chain allows some information to be shared privately while still relying on public consensus to ensure integrity.</p> 
           </Split>
         </div>
       </div>

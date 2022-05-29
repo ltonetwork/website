@@ -38,7 +38,7 @@ const IdentityPlatform = () => {
             </div>
           </div>
           <div className="col-lg-6 offset-lg-1 valign">
-            <img src="/img/about/cobalt-promo.png" alt="Cobalt by LTO Network - Powered by Mainnet Update" style={{ width: 'auto' }} />
+            <img src="/img/about/cobalt-promo-big.png" alt="Cobalt by LTO Network - Powered by Mainnet Update" style={{ width:'450px',marginLeft:'auto' }} />
           </div>
         </div>
       </div>

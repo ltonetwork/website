@@ -80,7 +80,7 @@ const PartnerSlider = () => {
                         <h2>{partner.partner}</h2>
                         <p className="partner-carousel__callout">{partner.callout}</p>
                         <p dangerouslySetInnerHTML={{__html: partner.content}}></p>
-                        {partner.news_link != '' && <a className="btn-curve btn-lit bg-color" target="_blank" rel="noreferrer" href={partner.news_link}>View News</a>}
+                        {partner.news_link != '' && <a className="btn-curve btn-lit bg-color" target="_blank" rel="noreferrer" href={partner.news_link}><span>View News</span></a>}
                       </div>
                       <div className="col-lg-6">
                         <h3>Project <span>Explorer</span></h3>
@@ -126,7 +126,7 @@ const PartnerSlider = () => {
                       <h2>{partner.partner}</h2>
                       <p className="partner-carousel__callout">{partner.callout}</p>
                       <p dangerouslySetInnerHTML={{__html: partner.content}}></p>
-                      {partner.news_link != '' && <a className="btn-curve btn-lit bg-color" target="_blank" rel="noreferrer" href={partner.news_link}>View News</a>}
+                      {partner.news_link != '' && <a className="btn-curve btn-lit bg-color" target="_blank" rel="noreferrer" href={partner.news_link}><span>View News</span></a>}
                     </div>
                     <div className="col-lg-6">
                       <h3>Project <span>Explorer</span></h3>
