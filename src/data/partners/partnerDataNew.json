@@ -2,6 +2,7 @@
   {
     "id": 1,
     "partner": "Triall",
+    "background": "triall-bg.png",
     "logo": "triall-logo-inverted-purple.png",
     "alt": "triall logo inverted purple",
     "callout": "Triall calls on the LTO Network to host the world's next generation of eClinical data",
@@ -17,6 +18,7 @@
   {
     "id": 2,
     "partner": "LesA Casino DID Pilot",
+    "background": "",
     "logo": "lesa-logo.png",
     "alt": "lesa logo",
     "callout": "Revolutionizing how the gambling industry works — one casino at a time",
@@ -32,6 +34,7 @@
   {
     "id": 3,
     "partner": "GoLandRegistry",
+    "background": "",
     "logo": "goland-logo.png",
     "alt": "golandregistry logo",
     "callout": "Anchoring and verifying land registry deeds — together with the United Nations.",
@@ -45,8 +48,9 @@
      ]
   },
   {
-      "id": 4,
+    "id": 4,
     "partner": "Sphereon",
+    "background": "",
     "logo": "sphereon-logo.png",
     "alt": "sphereon logo",
     "callout": "Together with Sphereon, we built the MyCompanyWallet app— a digital wallet for companies.",
@@ -60,8 +64,9 @@
      ]
   },
   {
-       "id": 5,
+    "id": 5,
     "partner": "NEN",
+    "background": "",
     "logo": "nen-logo.png",
     "alt": "nen logo",
     "callout": "With our brilliant friends at NEN, (Netherlands Standardization Institute) we built an instant smart certificate.",
@@ -75,8 +80,9 @@
      ]
   },
   {
-       "id": 6,
+    "id": 6,
     "partner": "SignRequest",
+    "background": "",
     "logo": "signrequest-logo.png",
     "alt": "signrequest logo",
     "callout": "Providing assurnace that your document contents have not been tampered with.",
@@ -90,8 +96,9 @@
      ]
   },
   {
-      "id": 7,
+    "id": 7,
     "partner": "Proofi",
+    "background": "",
     "logo": "proofi-logo.png",
     "alt": "proofi logo",
     "callout": "Meet Proofi — our latest innovation in the digital identity space. Powered by Chainlink.",
@@ -104,4 +111,4 @@
       "Seamless permission granting, all done cross-chain."
     ]
   }
-   ]
+]

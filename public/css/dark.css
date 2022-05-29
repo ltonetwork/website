@@ -534,6 +534,20 @@ span:hover {
   padding: 30px 40px;
 }
 
+.partner-carousel .swiper-slide__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: right center;
+}
+
+.partner-carousel .swiper-slide__content {
+  position: relative;
+}
+
 .partner-carousel h3 span {
   font-weight: 700;
   display: block;
@@ -544,9 +558,23 @@ span:hover {
 }
 
 .partner-carousel li {
-  list-style: disc;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   color: var(--lto-secondary);
+  position: relative;
+}
+
+.partner-carousel li::before {
+  content: "";
+  width: 50px;
+  height: 34px;
+  display: inline-block;
+  background: url(/img/partners/checkmark.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  position: absolute;
+  right: calc(100% + 10px);
+  top: -2px;
 }
 
 .partner-carousel .swiper-slide-active .noraidus .cont {

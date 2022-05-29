@@ -61,12 +61,13 @@ const PartnerSlider = () => {
                     className="content wow fadeInUp"
                     data-wow-delay=".3s"
                   >
-                    <div className="row">
+                    {partner.background != '' && <div className="swiper-slide__bg" style={{backgroundImage: `url(/img/partners/${partner.background})`}}></div>}
+                    <div className="row swiper-slide__content">
                       <div className="col-lg-6">
                         <h2>{partner.partner}</h2>
                         <p className="partner-carousel__callout">{partner.callout}</p>
                         <p dangerouslySetInnerHTML={{__html: partner.content}}></p>
-                        {partner.news_link != '' && <a className="btn-curve" href="{partner.news_link}">View News</a>}
+                        {partner.news_link != '' && <a className="btn-curve" href={partner.news_link}>View News</a>}
                       </div>
                       <div className="col-lg-6">
                         <h3>Project <span>Explorer</span></h3>
