@@ -1,6 +1,43 @@
 import React from 'react';
 import Link from "next/link";
 
+const orientHero = () => {  
+    const hero = document.querySelector('.hero');
+    const cont = document.querySelector('.hero__inner');
+    const heroH = hero.offsetHeight;
+    const heroW = hero.offsetWidth;
+  
+    console.log('orient hero', heroH, heroW, heroW/1.6);
+    if (heroH > heroW/1.6) {
+        hero.classList.add('hero--vert');
+        hero.classList.remove('hero--horz');
+        cont.style.width = (heroH * 1.6) + 'px';
+        cont.style.height = '100%';
+
+        const nudgeAmount = (((heroH * 1.6) - heroW) / 2) * 0.65;
+
+        document.querySelectorAll('.nudge-left').forEach(function(layer, index){
+          // nudge left
+          layer.style.left = '-' + nudgeAmount + 'px';
+        });
+
+        document.querySelectorAll('.nudge-right').forEach(function(layer, index){
+          // nudge right
+          layer.style.left = nudgeAmount + 'px';
+        });
+    } else {
+        hero.classList.add('hero--horz');
+        hero.classList.remove('hero--vert');
+        cont.style.width = '100%';
+        cont.style.height = (heroW / 1.6) + 'px';
+        
+        document.querySelectorAll('.nudge-left, .nudge-right').forEach(function(layer, index){
+          // nudge right
+          layer.style.left = '0px';
+        });
+    }
+}
+
 const heroMouseMove = (e) => {
     const hero = document.querySelector('.hero');
     const layers = document.querySelectorAll('.hero__image');
@@ -69,6 +106,8 @@ class HomeHero extends React.Component {
 
         if (document.readyState == 'complete') { loadHero(); }
         window.addEventListener('load',loadHero);
+        window.addEventListener('resize',orientHero);
+        orientHero();
     }
 
     render() {
@@ -81,13 +120,13 @@ class HomeHero extends React.Component {
                 <div className="hero__image" data-x="0.09" data-y="0.09" data-scale="1.15"><img src="/img/hero/layer-smallField.png"/></div>
                 <div className="hero__image" data-x="0.13" data-y="0.13" data-scale="1.15"><img src="/img/hero/layer-bigField.png"/></div>
                 <div className="hero__image hero__image--text" data-x="0.15" data-y="1.5" data-scale="1"><h1>Start <br/>Your <br/>Journey</h1></div>
-                <div className="hero__image hero__image--leaf7" data-x="0.17" data-y="0.17" data-scale="1.19"><img src="/img/hero/layer-leaf7Trans.png"/></div>
-                <div className="hero__image hero__image--leaf6" data-x="0.22" data-y="0.22" data-scale="1.2"><img src="/img/hero/layer-leaf6Trans.png"/></div>
-                <div className="hero__image" data-x="0.25" data-y="0.25" data-scale="1.2"><img src="/img/hero/layer-leaf5.png"/></div>
-                <div className="hero__image hero__image--leaf4" data-x="0.28" data-y="0.28" data-scale="1.22"><img src="/img/hero/layer-leaf4Trans.png"/></div>
-                <div className="hero__image" data-x="0.3" data-y="0.3" data-scale="1.25"><img src="/img/hero/layer-leaf3.png"/></div>
-                <div className="hero__image hero__image--leaf2" data-x="0.2" data-y="0.2" data-scale="1.18"><img src="/img/hero/layer-leaf2Trans.png"/></div>
-                <div className="hero__image hero__image--leaf1" data-x="0.28" data-y="0.28" data-scale="1.25"><img src="/img/hero/layer-leaf1Trans.png"/></div>
+                <div className="hero__image hero__image--leaf7 nudge-left" data-x="0.17" data-y="0.17" data-scale="1.19"><img src="/img/hero/layer-leaf7Trans.png"/></div>
+                <div className="hero__image hero__image--leaf6 nudge-left" data-x="0.22" data-y="0.22" data-scale="1.2"><img src="/img/hero/layer-leaf6Trans.png"/></div>
+                <div className="hero__image hero__image--leaf5 nudge-left" data-x="0.25" data-y="0.25" data-scale="1.2"><img src="/img/hero/layer-leaf5.png"/></div>
+                <div className="hero__image hero__image--leaf4 nudge-right" data-x="0.28" data-y="0.28" data-scale="1.22"><img src="/img/hero/layer-leaf4Trans.png"/></div>
+                <div className="hero__image hero__image--leaf3 nudge-right" data-x="0.3" data-y="0.3" data-scale="1.25"><img src="/img/hero/layer-leaf3.png"/></div>
+                <div className="hero__image hero__image--leaf2 nudge-right" data-x="0.2" data-y="0.2" data-scale="1.18"><img src="/img/hero/layer-leaf2Trans.png"/></div>
+                <div className="hero__image hero__image--leaf1 nudge-right" data-x="0.28" data-y="0.28" data-scale="1.25"><img src="/img/hero/layer-leaf1Trans.png"/></div>
               </div>
               <div className="hero__prompt">
                 <img src="/img/hero/down-arrow-glow.png" alt="Scroll down" />
