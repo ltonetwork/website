@@ -10,11 +10,11 @@ const AboutIntro = () => {
         <h2>What is LTO Network?</h2>
         <div className="about-intro__text">
           <p>LTO Network is an award-winning <span>HYBRID BLOCKCHAIN</span></p>
-          <p>It can be used to <span>Secure, Exchange & Verify</span> critical data digital assets and identities.</p>
+          <p>It can be used to <span>Secure, Exchange, & Verify</span> critical data, digital assets, and identities.</p>
         </div>
         <div className="about-intro__mission">
           <h3>Our Mission</h3>
-          <div className="about-intro__mission__statement">“Build the leading platform for cutting edge next-gen blockchain apps focusing on B2B, identities, media and ownership.”</div>
+          <div className="about-intro__mission__statement">“Build the leading platform for cutting-edge next-gen blockchain apps focusing on B2B, identities, media, and ownership.”</div>
         </div>
         <div className="about-intro__partners">
           <h3>Our Network Has Been Used By</h3>
