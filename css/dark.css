@@ -6506,6 +6506,10 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+.footer-half .subscribe .msg-alert {
+  position: absolute;
+  top: calc(100% + 10px);
+}
 .footer-half .subscribe form input {
   padding: 15px;
   width: 100%;
