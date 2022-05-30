@@ -17,12 +17,6 @@ class MyDocument extends Document {
           <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
 
-      
-      <meta property="og:site_name" content="LTO Network">
-<meta property="og:title" content="Next-gen blockchain for B2B, Identity and Digital collectibles.">
-<meta name="twitter:image" content="https://www.ltonetwork.com/img/logo-light.svg">
-<meta property="og:description" content="LTO Network is the next-gen blockchain for B2B, Identity and Digital collectibles." />
-      
           {/* Google Fonts */}
           <link
             href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
