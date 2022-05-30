@@ -1,12 +1,13 @@
+import React, {useEffect} from "react";
 import Head from "next/head";
 
 const CurrencyWidget = () => {
-  setTimeout(function(){ 
+  useEffect(() => {
     var script = document.createElement('script');
     script.src = 'https://files.coinmarketcap.com/static/widget/currency.js';
     var head = document.getElementsByTagName("head")[0];
     head.appendChild(script);
-  })
+  });
   return (
     <>
       {//@ts-ignore

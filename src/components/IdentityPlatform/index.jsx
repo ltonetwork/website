@@ -32,7 +32,7 @@ const IdentityPlatform = () => {
                   <p className="pl-0">Decentralized revocation registry for verifiable credentials. Verifiable presentations can be shared over private layer to comply with GDPR.</p>
                 </li>
                 <li className="wow fadeInUp" data-wow-delay=".6s">
-                  <img src="/img/about/gdpr-compliant.png" alt="GDPR Compliant" style={{ width: 'auto', marginLeft: 'auto' }}  />
+                  <img src="/img/about/gdpr.png" alt="GDPR Compliant" style={{ width: '183px' }}  />
                 </li>
               </ul>
             </div>
