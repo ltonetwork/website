@@ -70,11 +70,11 @@ const PartnerSlider = () => {
             >
               {partnersDataNew.map((partner, index) => (
                 <SwiperSlide className="swiper-slide" key={index}>
+                  {partner.background != '' && <div className="swiper-slide__bg" style={{backgroundImage: `url(/img/partners/${partner.background})`}}></div>}
                   <div
                     className="content wow fadeInUp"
                     data-wow-delay=".3s"
                   >
-                    {partner.background != '' && <div className="swiper-slide__bg" style={{backgroundImage: `url(/img/partners/${partner.background})`}}></div>}
                     <div className="row swiper-slide__content">
                       <div className="col-lg-6">
                         <h2>{partner.partner}</h2>
@@ -83,7 +83,7 @@ const PartnerSlider = () => {
                         <p dangerouslySetInnerHTML={{__html: partner.content}}></p>
                         <img className="partner-carousel__logo" src={`/img/partners/${partner.logo}`} alt={partner.alt} />
                       </div>
-                      <div className="col-lg-6">
+                      <div className="col-lg-6 d-flex flex-column">
                         <h3>Project <span>Explorer</span></h3>
                         <ul>
                         {
@@ -104,13 +104,13 @@ const PartnerSlider = () => {
             ref={navigationNextRef}
             className="swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer"
           >
-            <i className="ion-ios-arrow-right"></i>
+            <img src="/img/hero/down-arrow-glow.png" alt="Scroll left" />
           </div>
           <div
             ref={navigationPrevRef}
             className="swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer"
           >
-            <i className="ion-ios-arrow-left"></i>
+            <img src="/img/hero/down-arrow-glow.png" alt="Scroll right" />
           </div>
         </div>
         {mobile ? (
