@@ -13,7 +13,7 @@ const IdentityPlatform = () => {
           <Split>
             <span className="pb-20 secondary-color subtitle">PRIVACY AND REGULATORY COMPLIANCE</span>
             <p className="wow txt words chars splitting" data-splitting>
-            LTO Network’s privacy-friendly identity platform allows for GDPR compliant solutions that enable customers to work in DeFi whilst maintaining ownership of their identity and sensitive data. Our tools allow DeFi projects to follow regulatory frameworks and opens up a whole new sector of commerce.
+            LTO Network’s privacy-friendly identity platform allows for GDPR-compliant solutions that enable customers to work in DeFi whilst maintaining ownership of their identity and sensitive data. Our tools allow DeFi projects to follow regulatory frameworks and opens up a whole new sector of commerce.
             </p>
           </Split>
         </div>
