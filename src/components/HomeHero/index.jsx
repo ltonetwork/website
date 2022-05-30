@@ -110,6 +110,13 @@ class HomeHero extends React.Component {
         orientHero();
     }
 
+    scrollToAbout = () => {
+      window.scrollTo({
+        top: document.getElementById('about').offsetTop - 50,
+        behavior: 'smooth',
+      });
+    };
+
     render() {
         return (
             <div className="hero" onMouseMove={heroMouseMove} onTouchMove={heroMouseMove}>
@@ -131,7 +138,7 @@ class HomeHero extends React.Component {
               <div className="hero__prompt">
                 <img src="/img/hero/down-arrow-glow.png" alt="Scroll down" />
               </div>
-              <a href="#about" className="hero__link"></a>  
+              <div onClick={() => this.scrollToAbout()} className="hero__link"></div>  
             </div>
         );
     }
