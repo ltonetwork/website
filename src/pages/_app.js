@@ -17,8 +17,8 @@ function MyApp({ Component, pageProps }) {
         <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
-    
-    <meta property="og:title" content="LTO Network - Start Your Journey" />
+        <meta property="og:title" content="LTO Network - Start Your Journey" />
+        <meta property="og:description" content="Next-Gen blockchain for B2B, Identities, Privacy, Ownership and Digital Collectibles." />
 
       </Head>
       <LoadingScreen />
