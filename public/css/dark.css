@@ -525,7 +525,6 @@ span:hover {
 }
 
 .partner-carousel h2 {
-  text-transform: uppercase;
   margin-bottom: 15px;
 }
 
@@ -562,7 +561,7 @@ span:hover {
 }
 
 .partner-carousel .swiper-wrapper {
-  align-items: center;
+  /*align-items: center;*/
 }
 
 .partner-carousel .swiper-slide {
@@ -573,6 +572,12 @@ span:hover {
   transition: opacity 400ms;
   box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
   overflow: hidden;
+  height: auto;
+}
+
+.partner-carousel .swiper-slide .content,
+.partner-carousel .swiper-slide .content .swiper-slide__content {
+  height: 100%;
 }
 
 .partner-carousel .swiper-slide.swiper-slide-active {
