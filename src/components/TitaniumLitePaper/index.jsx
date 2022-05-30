@@ -32,7 +32,7 @@ const TitaniumLitePaper = (theme) => {
             <div className="col-lg-5">
               <div className="vid-area">
                 <div className="cont">
-                  <span className="pb-20 secondary-color subtitle">TRULY DECENTRALIZED DIGITAL COLLECTABLES</span>
+                  <span className="pb-20 secondary-color subtitle">TRULY DECENTRALIZED DIGITAL COLLECTIBLES</span>
                   <p>
                   Ownables can contain media files, images, songs, 3D models and much more. Whatever the content, the owner has full possession over the asset.
                   </p>
