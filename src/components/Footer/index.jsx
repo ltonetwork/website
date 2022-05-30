@@ -3,6 +3,8 @@ import React from "react";
 import { Formik, Form, Field } from "formik";
 import Link from "next/link";
 import appData from "../../data/app.json";
+import Mailchimp from 'react-mailchimp-form'
+
 
 const Footer = () => {
   function validateEmail(value) {
@@ -97,34 +99,17 @@ const Footer = () => {
             <div className="subscribe mt-50 mb-50">
               <h6 className="custom-font stit simple-btn">Newsletter</h6>
               <p>Sign up for subscribe out newsletter!</p>
-              <Formik
-                initialValues={{
-                  subscribe: "",
-                }}
-                onSubmit={async (values) => {
-                  await sendEmail(500);
-                  alert(JSON.stringify(values, null, 2));
-                  // Reset the values
-                  values.subscribe = "";
-                }}
-              >
-                {({ errors, touched }) => (
-                  <Form>
-                    <div className="form-group custom-font">
-                      <Field
-                        validate={validateEmail}
-                        type="email"
-                        name="subscribe"
-                        placeholder="Your Email"
-                      />
-                      {errors.email && touched.email && (
-                        <div>{errors.email}</div>
-                      )}
-                      <button className="cursor-pointer">Subscribe</button>
-                    </div>
-                  </Form>
-                )}
-              </Formik>
+              <Mailchimp
+                action='https://ltonetwork.us17.list-manage.com/subscribe/post?u=1508bdb96b4379a9aeb07c6e8&amp;id=dcfb5f7916'
+                fields={[
+                  {
+                    name: 'EMAIL',
+                    placeholder: 'Email',
+                    type: 'email',
+                    required: true
+                  }
+                ]}
+              />
             </div>
             <p className="pt-60">© 2022, LTO Network</p>
           </div>
