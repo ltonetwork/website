@@ -102,6 +102,25 @@
   {
     "id": 9,
     "image": "/img/team/empty.png",
+    "name": "Jason",
+    "title": "Co-ordinator",
+    "color":"#510094",
+    "linkedin":"",
+    "twitter":""
+  }
+  {
+    "id": 10,
+    "image": "/img/team/empty.png",
+    "name": "Tegan",
+    "title": "Business Admin",
+    "color":"#510094",
+    "linkedin":"",
+    "twitter":""
+  }
+
+  {
+    "id": 11,
+    "image": "/img/team/empty.png",
     "name": "Cees",
     "title": "Marketing",
     "color":"#510094",
@@ -109,3 +128,5 @@
     "twitter":""
   }
 ]
+
+
