@@ -2,11 +2,11 @@
   {
     "id": 1,
     "title": "Private Layer",
-    "content": "Blockchain application can access the private layer and pass information to make privacy aware applications where private data is shielded from the outside world."
+    "content": "Blockchain applications can access the private layer and pass information to make privacy-aware applications where private data is shielded from the outside world."
   },
   {
     "id": 2,
     "title": "Public Layer",
-    "content": "This is where the event itself gets logged and verified in a way that's visible to the public"
+    "content": "This is where the event itself gets logged and verified in a way that's visible to the public."
   }
 ]
