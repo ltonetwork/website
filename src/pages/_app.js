@@ -17,6 +17,19 @@ function MyApp({ Component, pageProps }) {
         <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
+    
+    <meta property="og:title" content="LTO Network - Start Your Journey" />
+<meta property="og:type" content="website" />
+
+<meta property="og:image" content="https://www.ltonetwork.com/img/logo-light.svg" />
+<meta property="og:url" content="https://ltonetwork.com" />
+<meta property="og:description" content="Next-Gen blockchain for B2B, Identities, Privacy, Ownership and Digital Collectibles." />
+
+<meta name="twitter:image" content="https://www.ltonetwork.com/img/logo-light.svg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="LTO Network - Start Your Journey" />
+<meta name="twitter:description" content="Next-Gen blockchain for B2B, Identities, Privacy, Ownership and Digital Collectibles." />
+    
       </Head>
       <LoadingScreen />
       <ScrollToTop />
