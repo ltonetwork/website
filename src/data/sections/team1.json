@@ -15,7 +15,7 @@
     "title": "CFO",
     "color":"#ff00ff",
     "linkedin":"https://www.linkedin.com/in/migchelsen",
-    "twitter":"#martijn-twitter"
+    "twitter":""
   },
   {
     "id": 3,
@@ -23,8 +23,8 @@
     "name": "Shawn Naderi",
     "title": "CMO",
     "color":"#ff00ff",
-    "linkedin":"#shawn-linkedin",
-    "twitter":"#shawn-twitter"
+    "linkedin":"",
+    "twitter":"https://twitter.com/itsnaderi"
   },
   {
     "id": 3,
