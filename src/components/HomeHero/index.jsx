@@ -66,9 +66,6 @@ const heroMouseMove = (e) => {
         const moveX = Math.max(maxX,Math.min(minX,ratioX * diffX));
         const moveY = Math.max(maxY,Math.min(minY,ratioY * diffY));
         
-        // layer.style.left = moveX+'px';
-        // layer.style.top = moveY+'px';
-        // layer.style.transform = 'scale('+scale+')';
         layer.style.transform = 'translate3d('+moveX+'px,'+moveY+'px,0px) scale('+scale+')';
     });
 }
@@ -84,6 +81,9 @@ const loadHero = () =>{
         layer.style.transform = 'scale('+scale+')';
       }
     });
+
+    window.addEventListener('resize',orientHero);
+    orientHero();
 
     setTimeout(function(){
         const sunLayer = document.querySelector('.hero__image--sun');
@@ -106,8 +106,6 @@ class HomeHero extends React.Component {
 
         if (document.readyState == 'complete') { loadHero(); }
         window.addEventListener('load',loadHero);
-        window.addEventListener('resize',orientHero);
-        orientHero();
     }
 
     scrollToAbout = () => {

@@ -34,8 +34,8 @@ const PartnerSlider = () => {
   const navigationNextRef = React.useRef(null);
 
   return (
-    <div className="container partner-carousel-container">
-      <div className="pb-60">
+    <div className="partner-carousel-container mb-60">
+      <div className="container">
         <div className="swiper-container partner-carousel">
           {!load && !mobile ? (
             <Swiper
@@ -78,9 +78,10 @@ const PartnerSlider = () => {
                     <div className="row swiper-slide__content">
                       <div className="col-lg-6">
                         <h2>{partner.partner}</h2>
+                        <span className="pb-20 secondary-color subtitle">{partner.subtitle}</span>
                         <p className="partner-carousel__callout">{partner.callout}</p>
                         <p dangerouslySetInnerHTML={{__html: partner.content}}></p>
-                        {partner.news_link != '' && <a className="btn-curve btn-lit bg-color" target="_blank" rel="noreferrer" href={partner.news_link}><span>View News</span></a>}
+                        <img className="partner-carousel__logo" src={`/img/partners/${partner.logo}`} alt={partner.alt} />
                       </div>
                       <div className="col-lg-6">
                         <h3>Project <span>Explorer</span></h3>
@@ -91,7 +92,7 @@ const PartnerSlider = () => {
                           ))
                         }
                         </ul>
-                        <img className="partner-carousel__logo" src={`/img/partners/${partner.logo}`} alt={partner.alt} />
+                        {partner.news_link != '' && <a className="btn-curve btn-lit bg-color" target="_blank" rel="noreferrer" href={partner.news_link}><span>View News</span></a>}
                       </div>
                     </div>
                   </div>
@@ -124,9 +125,10 @@ const PartnerSlider = () => {
                   <div className="row swiper-slide__content">
                     <div className="col-lg-6">
                       <h2>{partner.partner}</h2>
+                      <span className="pb-20 secondary-color subtitle">{partner.subtitle}</span>
                       <p className="partner-carousel__callout">{partner.callout}</p>
                       <p dangerouslySetInnerHTML={{__html: partner.content}}></p>
-                      {partner.news_link != '' && <a className="btn-curve btn-lit bg-color" target="_blank" rel="noreferrer" href={partner.news_link}><span>View News</span></a>}
+                      <img className="partner-carousel__logo" src={`/img/partners/${partner.logo}`} alt={partner.alt} />
                     </div>
                     <div className="col-lg-6">
                       <h3>Project <span>Explorer</span></h3>
@@ -137,7 +139,7 @@ const PartnerSlider = () => {
                         ))
                       }
                       </ul>
-                      <img className="partner-carousel__logo" src={`/img/partners/${partner.logo}`} alt={partner.alt} />
+                      {partner.news_link != '' && <a className="btn-curve btn-lit bg-color" target="_blank" rel="noreferrer" href={partner.news_link}><span>View News</span></a>}
                     </div>
                   </div>
                 </div>

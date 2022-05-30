@@ -3,7 +3,6 @@ import Head from "next/head";
 import Script from "next/script";
 import ScrollToTop from "../components/Scroll-to-top";
 import LoadingScreen from "../components/Loading-Screen";
-import Cursor from '../components/Cursor';
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
@@ -19,7 +18,6 @@ function MyApp({ Component, pageProps }) {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <Cursor />
       <LoadingScreen />
       <ScrollToTop />
       <Component {...pageProps} />
