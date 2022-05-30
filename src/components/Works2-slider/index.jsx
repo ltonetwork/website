@@ -159,8 +159,8 @@ const Works2Slider = ({ subBG }) => {
                             }}
                           ></div>
                           <div className="cont bgbox">
-                            <h6>Titanium Alpha</h6>
-                            <h4>Titanium Alpha on the Testnet</h4>
+                            <h6>TITANIUM Alpha</h6>
+                            <h4>TITANIUM Alpha on the Testnet</h4>
                           </div>
                         </div>
                       </SwiperSlide>
