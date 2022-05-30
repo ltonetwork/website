@@ -36,7 +36,7 @@ const Footer = () => {
                     <span>General Inquiries : </span> <Link href="mailto:support@ltonetwork.com"><a>support@ltonetwork.com</a></Link>
                   </li>
                   <li>
-                    <span>Press & Media Relations : </span> <Link href="mailto:support@ltonetwork.com"><a>press@ltonetwork.com</a></Link>
+                    <span>Press & Media Relations : </span> <Link href="mailto:press@ltonetwork.com"><a>press@ltonetwork.com</a></Link>
                   </li>
                   <li>
                     <span>Address : </span> LTO Network B.V. <br/>Helicopterstraat 25h, 1059 CE <br/>Amsterdam, Netherlands
