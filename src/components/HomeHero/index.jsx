@@ -9,32 +9,52 @@ const orientHero = () => {
   
     console.log('orient hero', heroH, heroW, heroW/1.6);
     if (heroH > heroW/1.6) {
-        hero.classList.add('hero--vert');
-        hero.classList.remove('hero--horz');
-        cont.style.width = (heroH * 1.6) + 'px';
-        cont.style.height = '100%';
-
-        const nudgeAmount = (((heroH * 1.6) - heroW) / 2) * 0.65;
-
-        document.querySelectorAll('.nudge-left').forEach(function(layer, index){
-          // nudge left
-          layer.style.left = '-' + nudgeAmount + 'px';
-        });
-
-        document.querySelectorAll('.nudge-right').forEach(function(layer, index){
-          // nudge right
-          layer.style.left = nudgeAmount + 'px';
-        });
+      hero.classList.add('hero--vert');
+      hero.classList.remove('hero--horz');
+      cont.style.width = (heroH * 1.6) + 'px';
+      cont.style.height = '100%';
+      
+      // const nudgeAmount = (((heroH * 1.6) - heroW) / 2) * 0.65;
+      const nudgePerc = (((((heroH * 1.6) - heroW) / 2) / (heroH * 1.6))*100)*1.4;
+      const nudgeAmount = nudgePerc / 2;
+      
+      console.log('nudge perc',nudgePerc, '-' + (100 - (nudgePerc * 100)) + '%');
+      
+      document.querySelectorAll('.nudge-left').forEach(function(layer, index){
+        if (layer.classList.contains('stay-top')) {
+          layer.style.left = (nudgeAmount * 0.5) + '%';
+          layer.style.top = '-' + (nudgeAmount * 0.2) + '%';
+        } else {
+          layer.style.left = (nudgeAmount * 0.7) + '%';
+          layer.style.top = nudgeAmount + '%';
+        }
+        layer.style.width = (100 - nudgePerc) + '%';
+        layer.style.height = (100 - nudgePerc) + '%';
+      });
+      
+      document.querySelectorAll('.nudge-right').forEach(function(layer, index){
+        if (layer.classList.contains('stay-bot')) {
+          layer.style.top = (nudgeAmount * 2.25) + '%';
+        } else {
+          layer.style.top = nudgeAmount + '%';
+        }
+        layer.style.left = (nudgeAmount * 1.4) + '%';
+        layer.style.width = (100 - nudgePerc) + '%';
+        layer.style.height = (100 - nudgePerc) + '%';
+      });
     } else {
-        hero.classList.add('hero--horz');
-        hero.classList.remove('hero--vert');
-        cont.style.width = '100%';
-        cont.style.height = (heroW / 1.6) + 'px';
-        
-        document.querySelectorAll('.nudge-left, .nudge-right').forEach(function(layer, index){
-          // nudge right
-          layer.style.left = '0px';
-        });
+      hero.classList.add('hero--horz');
+      hero.classList.remove('hero--vert');
+      cont.style.width = '100%';
+      cont.style.height = (heroW / 1.6) + 'px';
+      
+      document.querySelectorAll('.nudge-left, .nudge-right').forEach(function(layer, index){
+        // nudge right
+        layer.style.left = '0px';
+        layer.style.top = '0px';
+        layer.style.width = '100%';
+        layer.style.height = '100%';
+      });
     }
 }
 
@@ -127,9 +147,9 @@ class HomeHero extends React.Component {
                 <div className="hero__image hero__image--text" data-x="0.15" data-y="1.5" data-scale="1"><h1>Start <br/>Your <br/>Journey</h1></div>
                 <div className="hero__image hero__image--leaf7 nudge-left" data-x="0.17" data-y="0.17" data-scale="1.19"><img src="/img/hero/layer-leaf7Trans.png"/></div>
                 <div className="hero__image hero__image--leaf6 nudge-left" data-x="0.22" data-y="0.22" data-scale="1.2"><img src="/img/hero/layer-leaf6Trans.png"/></div>
-                <div className="hero__image hero__image--leaf5 nudge-left" data-x="0.25" data-y="0.25" data-scale="1.2"><img src="/img/hero/layer-leaf5.png"/></div>
-                <div className="hero__image hero__image--leaf4 nudge-right" data-x="0.28" data-y="0.28" data-scale="1.22"><img src="/img/hero/layer-leaf4Trans.png"/></div>
-                <div className="hero__image hero__image--leaf3 nudge-right" data-x="0.3" data-y="0.3" data-scale="1.25"><img src="/img/hero/layer-leaf3.png"/></div>
+                <div className="hero__image hero__image--leaf5 nudge-left stay-top" data-x="0.25" data-y="0.25" data-scale="1.2"><img src="/img/hero/layer-leaf5.png"/></div>
+                <div className="hero__image hero__image--leaf4 nudge-right stay-bot" data-x="0.28" data-y="0.28" data-scale="1.22"><img src="/img/hero/layer-leaf4Trans.png"/></div>
+                <div className="hero__image hero__image--leaf3 nudge-right stay-bot" data-x="0.3" data-y="0.3" data-scale="1.25"><img src="/img/hero/layer-leaf3.png"/></div>
                 <div className="hero__image hero__image--leaf2 nudge-right" data-x="0.2" data-y="0.2" data-scale="1.18"><img src="/img/hero/layer-leaf2Trans.png"/></div>
                 <div className="hero__image hero__image--leaf1 nudge-right" data-x="0.28" data-y="0.28" data-scale="1.25"><img src="/img/hero/layer-leaf1Trans.png"/></div>
               </div>
