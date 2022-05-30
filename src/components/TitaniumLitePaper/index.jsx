@@ -44,7 +44,7 @@ const TitaniumLitePaper = (theme) => {
             <div className="col-lg-6 offset-lg-1">
               <div className="testim-box" style={{ backgroundImage: `url(/img/titanium-litepaper/background.jpg)` }}>
                 <div className="head-box">
-                  <h4 className="wow fadeInLeft min-content-block" data-wow-delay=".5s">Titanium LitePaper</h4>
+                  <h4 className="wow fadeInLeft min-content-block" data-wow-delay=".5s">TITANIUM Litepaper</h4>
                   <Link href="https://ltonetwork.com/documents/LTO%20Network%20-%20TITANIUM.pdf">
                     <a
                       className={`btn-curve ${
