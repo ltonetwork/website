@@ -53,7 +53,7 @@
   {
     "id": 4,
     "partner": "MyCompanyWallet",
-    "background": "sphereon-bg.jpg",
+    "background": "sphereon-bg.png",
     "logo": "sphereon-logo.png",
     "alt": "sphereon logo",
     "subtitle": "Decentralized Identifier Wallet",
@@ -70,7 +70,7 @@
   {
     "id": 5,
     "partner": "NEN",
-    "background": "nen-bg.jpg",
+    "background": "nen-bg.png",
     "logo": "nen-logo.png",
     "alt": "nen logo",
     "subtitle": "Data Anchoring and Smart Verification",
@@ -87,7 +87,7 @@
   {
     "id": 6,
     "partner": "SignRequest",
-    "background": "signrequest-bg.jpg",
+    "background": "signrequest-bg.png",
     "logo": "signrequest-logo.png",
     "alt": "signrequest logo",
     "subtitle": "Tamper Prevention on Documents",
@@ -104,7 +104,7 @@
   {
     "id": 7,
     "partner": "Proofi",
-    "background": "proof-bg.jpg",
+    "background": "proof-bg.png",
     "logo": "proofi-logo.png",
     "alt": "proofi logo",
     "subtitle": "Cross-Chain Priacy Aware KYC Solution",
