@@ -163,8 +163,9 @@ span:hover {
 
 .hero {
   width: 100%;
+  height: 100vh;
   position: relative;
-  /*touch-action: none;*/
+  overflow: hidden;
 }
 .hero::after {
   content: "";
@@ -190,9 +191,13 @@ span:hover {
   width: 50px;
 }
 .hero__inner {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   overflow: hidden;
-  padding-top: 62.51%;
+  width: 100%;
+  height: 100vh;
   background: #0c0f16;
 }
 .hero__inner::before {
@@ -218,6 +223,7 @@ span:hover {
 }
 .hero__image img {
   width: 100%;
+  height: 100%;
   position: relative;
 }
 .hero__image--sun {
@@ -296,6 +302,7 @@ span:hover {
 }
 .hero__image--text {
   display: flex;
+  z-index: 10;
   align-items: center;
   justify-content: center;
   height: 100%;
