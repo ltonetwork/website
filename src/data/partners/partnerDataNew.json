@@ -91,7 +91,7 @@
     "logo": "signrequest-logo.png",
     "alt": "signrequest logo",
     "subtitle": "Tamper Prevention on Documents",
-    "callout": "Providing assurnace that your document contents have not been tampered with.",
+    "callout": "Providing assurance that your document contents have not been tampered with.",
     "content": "When a document is signed, SignRequest stores the hashed (fingerprint) document and a timestamp on our blockchain, providing proof of when a document was signed. <br><br>Document authenticity, simplified.",
     "news_link": "https://blog.ltonetwork.com/signrequest-lto-network-digital-esignatures-blockchain/",
     "points": [
