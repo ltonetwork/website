@@ -4,7 +4,7 @@ import Link from "next/link";
 const BlogsThreeColumn1 = ({ subBG }) => {
   useEffect(() => {
     console.log('loading blog!');
-    parse('https://cors-anywhere.herokuapp.com/https://blog.ltonetwork.com/rss/', 'feed', 'feed-wrap');
+    parse('/data/news.xml', 'feed', 'feed-wrap');
   }, []);
 
   return (

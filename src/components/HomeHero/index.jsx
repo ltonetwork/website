@@ -7,7 +7,6 @@ const orientHero = () => {
     const heroH = hero.offsetHeight;
     const heroW = hero.offsetWidth;
   
-    console.log('orient hero', heroH, heroW, heroW/1.6);
     if (heroH > heroW/1.6) {
       hero.classList.add('hero--vert');
       hero.classList.remove('hero--horz');
@@ -17,8 +16,6 @@ const orientHero = () => {
       // const nudgeAmount = (((heroH * 1.6) - heroW) / 2) * 0.65;
       const nudgePerc = (((((heroH * 1.6) - heroW) / 2) / (heroH * 1.6))*100)*1.4;
       const nudgeAmount = nudgePerc / 2;
-      
-      console.log('nudge perc',nudgePerc, '-' + (100 - (nudgePerc * 100)) + '%');
       
       document.querySelectorAll('.nudge-left').forEach(function(layer, index){
         if (layer.classList.contains('stay-top')) {
@@ -91,7 +88,6 @@ const heroMouseMove = (e) => {
 }
 
 const loadHero = () =>{ 
-    console.log('loading Hero...');
     // apply initial scales
     document.querySelectorAll('.hero__image').forEach(function(layer, index){
       const scale = parseFloat(layer.dataset.scale);
@@ -107,11 +103,9 @@ const loadHero = () =>{
 
     setTimeout(function(){
         const sunLayer = document.querySelector('.hero__image--sun');
-        document.querySelector('.hero__inner').classList.add('lto-animate');                
-        console.log('fade in hero...');
+        document.querySelector('.hero__inner').classList.add('lto-animate');    
         setTimeout(function(){
             sunLayer.classList.add('lto-animate');
-            console.log('sunrise...');
             setTimeout(function(){
                 sunLayer.classList.remove('lto-animate');
                 sunLayer.style.transform = 'translate3d(0px,0px,0px) scale(1.1)';
@@ -122,10 +116,13 @@ const loadHero = () =>{
 
 class HomeHero extends React.Component {
     componentDidMount() {
-        console.log('home hero mounted');
-
         if (document.readyState == 'complete') { loadHero(); }
         window.addEventListener('load',loadHero);
+    }
+
+    componentWillUnmount() {
+      window.removeEventListener('load',loadHero);
+      window.removeEventListener('resize',orientHero);
     }
 
     scrollToAbout = () => {
