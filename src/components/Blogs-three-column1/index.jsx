@@ -4,11 +4,11 @@ import Link from "next/link";
 const BlogsThreeColumn1 = ({ subBG }) => {
   useEffect(() => {
     console.log('loading blog!');
-    parse('/data/news.xml', 'feed', 'feed-wrap');
+    parse('https://blog.ltonetwork.com/rss/', 'feed', 'feed-wrap');
   }, []);
 
   return (
-    <section className={`blog-grid section-padding ${subBG ? "sub-bg" : ""}`}>
+    <section className={`blog-grid section-padding pt-100 ${subBG ? "sub-bg" : ""}`}>
       <div className="container" id="feed-wrap">
         <div className="sec-head custom-font text-center">
           <h6 className="wow fadeIn" data-wow-delay=".5s">
@@ -19,7 +19,7 @@ const BlogsThreeColumn1 = ({ subBG }) => {
           </h3>
           <span className="tbg">Blogs</span>
         </div>
-        <div className="row" id="feed">
+        <div className="row work-carousel caroul" id="feed">
         </div>
       </div>
     </section>
@@ -39,9 +39,31 @@ function parse(rssUrl, rssList, rssListW) {
       const result = event.target.responseText;
 
       let data = [];
+      const chineseRegex1 = /[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\uff66-\uff9f]/g;
+      const chineseRegex2 = /\p{Han}/g;
+      const russianRegex = /[а-яА-ЯЁё]/g;
+      const turkishRegex = /[ığüşöçĞÜŞÖÇİ]/g;
+      const spanishRegex = /\sy\s/g;
 
       result.split('<item>').forEach(element => {
-        const postTitle = element.split('<title>')[1].split('</title>')[0];
+        var postAuthor = undefined; // item 0 (blog link/title) has no author
+        if (element.includes('<dc:creator>')) {
+          var postAuthor = element.split('<dc:creator>')[1].split('</dc:creator>')[0];
+          postAuthor = fixCData(postAuthor).trim();
+        };
+
+        if (postAuthor == 'Takeshi') return;
+
+        const postTitle = fixCData(element.split('<title>')[1].split('</title>')[0]);
+
+        if (
+          chineseRegex1.test(postTitle) || 
+          chineseRegex2.test(postTitle) ||
+          russianRegex.test(postTitle) ||
+          turkishRegex.test(postTitle) ||
+          spanishRegex.test(postTitle)
+        ) { return; }
+
         const postLink = element.split('<link>')[1].split('</link>')[0];
 
         var postDate = undefined; // item 0 (blog link/title) has no pubDate
@@ -49,25 +71,20 @@ function parse(rssUrl, rssList, rssListW) {
           var postDate = element.split('<pubDate>')[1].split('</pubDate>')[0];
         };
 
-        var postAuthor = undefined; // item 0 (blog link/title) has no author
-        if (element.includes('<dc:creator>')) {
-          var postAuthor = element.split('<dc:creator>')[1].split('</dc:creator>')[0];
-        };
-
         var postImage = undefined;
         if (element.includes('<media')) {
-          var postImage = element.split('<media:content url="')[1].split(' medium')[0];
+          var postImage = element.split('<media:content url="')[1].split('" medium')[0];
         }
 
         let post = {};
-        post.postTitle = fixCData(postTitle);
+        post.postTitle = postTitle;
         post.postLink = postLink;
         post.postDate = postDate;
         post.postImage = postImage;
-        post.postAuthor = fixCData(postAuthor);
+        post.postAuthor = postAuthor;
         data.push(post);
 
-        console.log('parsing...', post.postTitle);
+        // console.log('parsing...', post.postTitle, post.postAuthor, spanishRegex.test(postTitle));
       });
 
       addPosts(data, 1, 6, rssList, rssListW);
@@ -81,20 +98,40 @@ function addPosts(data, start, finish, rssList, rssListW) {
 
   for (var i = start; i <= finish; i++) {
     if (data[i] === undefined) return;
+    console.log(data[i].postImage);
+    // var newPost = 
+    //   `<a href="${data[i].postLink}" class="col-lg-4 col-md-6 mb-30 wow fadeInUp" data-wow-delay=".3s">
+    //     <div class="item bg-img h-100" style="background-image: url(${data[i].postImage})">
+    //       <div class="cont d-flex flex-column h-100">
+    //         <span class="date custom-font">
+    //           <i>${data[i].postDate.substring(5, 7)}</i> ${data[i].postDate.substring(8, 11)} ${data[i].postDate.substring(12, 16)}
+    //         </span>
+    //         <div class="info custom-font">
+    //           <span class="author">by / ${data[i].postAuthor}</span>
+    //         </div>
+    //         <h6>${data[i].postTitle}</h6>
+    //         <div class="btn-more custom-font" style="margin-top: auto;">
+    //           <span class="simple-btn">Read More</span>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </a>`;
     var newPost = 
-      `<a href="${data[i].postLink}" class="col-lg-4 col-md-6 mb-30 wow fadeInUp" data-wow-delay=".3s">
-        <div class="item bg-img h-100" style="background-image: url(${data[i].postImage})">
-          <div class="cont d-flex flex-column h-100">
-            <span class="date custom-font">
-              <i>${data[i].postDate.substring(5, 7)}</i> ${data[i].postDate.substring(8, 11)} ${data[i].postDate.substring(12, 16)}
-            </span>
-            <div class="info custom-font">
-              <span class="author">by / ${data[i].postAuthor}</span>
-            </div>
-            <h6>${data[i].postTitle}</h6>
-            <div class="btn-more custom-font" style="margin-top: auto;">
-              <span class="simple-btn">Read More</span>
-            </div>
+      `<a href="${data[i].postLink}" class="col-lg-4 col-md-6 mb-30 wow fadeInUp content" data-wow-delay=".3s" style="height:auto;">
+        <div
+          class="item-img bg-img wow imago"
+          style='background-image: url(${data[i].postImage});background-position:center center;'
+        ></div>
+        <div class="cont bgbox" style="display:flex;flex-direction:column;">
+          <span class="date custom-font">
+            ${data[i].postDate.substring(5, 7)} ${data[i].postDate.substring(8, 11)} ${data[i].postDate.substring(12, 16)}
+          </span>
+
+          <h6>by / ${data[i].postAuthor}</h6>
+          <h4 style="margin-bottom: 20px;">${data[i].postTitle}</h4>
+
+          <div class="btn-more custom-font" style="margin-top: auto;">
+            <span class="simple-btn">Read More</span>
           </div>
         </div>
       </a>`;
