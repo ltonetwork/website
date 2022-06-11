@@ -148,6 +148,10 @@ span:hover {
   text-decoration: none;
 }
 
+b, strong {
+  font-weight: 700;
+}
+
 .container {
   max-width: 1200px;
 }
@@ -506,6 +510,184 @@ span:hover {
 }
 
 /* ====================== [ End What Is LTO Network? ] ====================== */
+
+/* ====================== [ Start How-To Blocks ] ====================== */
+
+#howTo--FAQ .feat p {
+  display: none;
+  padding-left: 40px;
+}
+
+#howTo--FAQ .feat h6 {
+  padding-left: 40px;
+  padding-top: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+#howTo--FAQ .feat h6 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#howTo--NodeOperator p {
+  counter-reset: node;
+  margin-top: 10px;
+}
+
+#howTo--NodeOperator a {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+#howTo--NodeOperator a::before {
+  counter-increment: node;
+  content: counter(node) '.';
+  font-size: 22px;
+  line-height: 1.65;
+  margin-right: 10px;
+  opacity: 0.5;
+  font-weight: 700;
+}
+
+.whitepaper-box span {
+  display: flex;
+  align-items: center;
+}
+
+#howTo--NodeOperator a::after,
+.whitepaper-box span::after {
+  content: '';
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8ZyBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIj4KICA8cGF0aCB0cmFuc2Zvcm09Im1hdHJpeCgxOS43MzMgMCAwIDE5LjczMyAxMzkuMjEgMTM5LjIxKSIgZD0ibTE4IDEzdjZjMCAwLjUzMDUzLTAuMjEwODMgMS4wMzkxLTAuNTg1OTYgMS40MTQyLTAuMzc0OTQgMC4zNzUxMy0wLjg4MzY5IDAuNTg1NzYtMS40MTQyIDAuNTg1NzZoLTExYy0wLjUzMDUzIDAtMS4wMzkzLTAuMjEwNjMtMS40MTQyLTAuNTg1NzYtMC4zNzUxMy0wLjM3NTEzLTAuNTg1NzYtMC44ODM2OS0wLjU4NTc2LTEuNDE0MnYtMTFjMC0wLjUzMDMzIDAuMjEwNjMtMS4wMzkxIDAuNTg1NzYtMS40MTQyIDAuMzc0OTQtMC4zNzQ5NCAwLjg4MzY5LTAuNTg1NzYgMS40MTQyLTAuNTg1NzZoNiIvPgogIDxwYXRoIHRyYW5zZm9ybT0ibWF0cml4KDE5LjczMyAwIDAgMTkuNzMzIDEzOS4yMSAxMzkuMjEpIiBkPSJtMTUgMy4wMDAxaDZ2NiIvPgogIDxwYXRoIHRyYW5zZm9ybT0ibWF0cml4KDE5LjczMyAwIDAgMTkuNzMzIDEzOS4yMSAxMzkuMjEpIiBkPSJtOS45OTk5IDE0IDExLTExIi8+CiA8L2c+Cjwvc3ZnPgo=);
+  background-size: 100%;
+  height: 25px;
+  width: 25px;
+  flex: 0 0 25px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /*background-color: red;*/
+  margin-left: 5px;
+  transform: translateY(-2px);
+  filter: invert(1);
+  transition: transform 300ms;
+  transform-origin: center bottom;
+  position: relative;
+}
+
+#howTo--NodeOperator a:hover::after,
+.whitepaper-box:hover span::after {
+  transform: scale(1.2);
+}
+
+#howTo--Integrator .dark-purple-bg {
+  border-radius: 10px 0 0 10px;
+}
+
+#howTo--Integrator .integrator-intro p {
+  margin-bottom: 15px;
+}
+
+#howTo--Lease .dark-purple-bg {
+  border-radius: 10px 0 0 0;
+}
+
+#howTo--Lease .light-purple-bg {
+  border-radius: 0 10px 0 0;
+}
+
+#howTo--Lease .pink-bg {
+  border-radius: 0 0 10px 10px;
+}
+
+#howTo--Lease .lease-intro p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+#howTo--Integrator .min-area .col-lg-6:first-child,
+#howTo--Lease .min-area .col-lg-6:first-child {
+  padding-right: 0;
+}
+
+#howTo--Integrator .min-area .col-lg-6:last-child,
+#howTo--Lease .min-area .col-lg-6:last-child {
+  padding-left: 0;
+} 
+
+#howTo--Integrator .min-area .content ul.feat li p,
+#howTo--Lease .min-area .content p {
+  font-size: 18px;
+}
+
+#howTo--Lease .min-area .content ul li:after {
+  top: 11px;
+}
+
+#howTo--Integrator .min-area .content ul.feat li p a,
+#howTo--Lease a {
+  color: white;
+  text-decoration: underline;
+}
+
+#howTo--Integrator .content,
+#howTo--Lease .content {
+  padding: 30px;
+  height: 100%;
+}
+
+#howTo--Lease .pink-bg {
+  padding: 30px;
+}
+
+#howTo--Lease .pink-bg p {
+  font-size: 18px;
+  color: white;
+}
+
+#howTo--Lease .pink-bg a {
+  font-weight: 700;
+}
+
+#howTo--Lease .pink-bg a span {
+  text-decoration: underline;
+}
+
+.whitepaper-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #373737;
+  border-top: 2px solid var(--lto-secondary);
+  padding: 30px 15px;
+  text-align: center;
+  font-size: 22px;
+}
+
+#howTo--Litepapers .content {
+  padding: 30px;
+  border: 1px solid #373737;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+}
+
+#howTo--Litepapers .content p {
+  margin: 15px 0;
+}
+
+#howTo--Litepapers .content h6 {
+  margin-top: 25px;
+}
+
+#howTo--Litepapers .content blockquote {
+  padding-left: 40px;
+}
+
+/* ====================== [ End How-To Blocks ] ====================== */
 
 /* ====================== [ Partnerships Slider ] ====================== */
 
