@@ -33,9 +33,7 @@ const HybridArchitecture = () => {
                 </h4>
               </Split>
               <Split>
-                <p className="wow txt words chars splitting" data-splitting>
-                <p>{layersData[0].content}</p>
-                </p>
+                <p className="wow txt words chars splitting" data-splitting>{layersData[0].content}</p>
               </Split>
             </div>
           </div>
@@ -50,9 +48,7 @@ const HybridArchitecture = () => {
                 </h4>
               </Split>
               <Split>
-                <p className="wow txt words chars splitting" data-splitting>
-                <p>{layersData[1].content}</p>
-                </p>
+                <p className="wow txt words chars splitting" data-splitting>{layersData[1].content}</p>
               </Split>
             </div>
           </div>

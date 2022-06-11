@@ -1,0 +1,89 @@
+/* eslint-disable @next/next/no-img-element */
+import React, { useState } from "react";
+import featuresEffect from "../../../common/featuresEffect";
+import { thumparallaxDown } from "../../../common/thumparallax";
+import Split from "../../Split";
+import Link from 'next/link';
+
+const FAQ = () => {
+  const [ active, setActive ] = useState(null);
+  React.useEffect(() => {
+    featuresEffect();
+    setTimeout(() => {
+      thumparallaxDown();
+    }, 1000);
+  }, []);
+  return (
+    <section id="howTo--FAQ" className="min-area sub-bg">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6">
+            <div className="img">
+              <img
+                className="thumparallax-down"
+                src="/img/min-area.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="col-lg-6 valign">
+            <div className="content">
+              <Split>
+                <h4
+                  className="wow custom-font words chars splitting"
+                  data-splitting
+                >
+                  F.A.Q.
+                </h4>
+              </Split>
+              <ul className="feat">
+                <li className="wow fadeInUp" data-wow-delay=".2s" onClick={ () => setActive(active == 1 ? null : 1) }>
+                  <h6>
+                    <span>1</span> How much LTO do I need to have in order to start the mining process?
+                  </h6>
+                  <p style={ active==1 ? { display:'block'} : {display : 'none'} }>
+                    In order to activate mining, the node needs not less than 1000 LTO (for testnet we can always provide you with that, do not hesitate to contact us ).
+                  </p>
+                </li>
+                <li className="wow fadeInUp" data-wow-delay=".4s" onClick={ () => setActive(active == 2 ? null : 2) }>
+                  <h6>
+                    <span>2</span> Where can i get the link for last mainnet state?
+                  </h6>
+                  <p style={ active==2 ? { display:'block'} : {display : 'none'} }>
+                    The last mainnet state can be found <Link href="https://nodes.lto.network/api-docs/index.html"><a>here</a></Link>.
+                  </p>
+                </li>
+                <li className="wow fadeInUp" data-wow-delay=".6s" onClick={ () => setActive(active == 3 ? null : 3) }>
+                  <h6>
+                    <span>3</span> What is the incentive to run my own full node instead of leasing my coins?
+                  </h6>
+                  <p style={ active==3 ? { display:'block'} : {display : 'none'} }>
+                    More revenue if you have enough people leasing to you and payout is not 100%. Also you can provide services on LTO Network with your node. Running a node might be profitable later on but it&apos;s not at the moment. If it is it&apos;s only marginal.
+                  </p>
+                </li>
+                <li className="wow fadeInUp" data-wow-delay=".8s" onClick={ () => setActive(active == 4 ? null : 4) }>
+                  <h6>
+                    <span>4</span> I want to automatically send my tokens to multiple wallets on the LTO platform. Is there a program or bot?
+                  </h6>
+                  <p style={ active==4 ? { display:'block'} : {display : 'none'} }>
+                    Yes, there are payout scripts that are used by node owners to pay leasers. These can also be used/adjusted to do other automated transfers, for example: <Link href="https://github.com/justmvg/LTO_LPoSDistributor"><a>LTO_LPoSDistributor</a></Link>.
+                  </p>
+                </li>
+                <li className="wow fadeInUp" data-wow-delay="1s" onClick={ () => setActive(active == 5 ? null : 5) }>
+                  <h6>
+                    <span>5</span> Is there a dedicated tech chat for LTO Network?
+                  </h6>
+                  <p style={ active==5 ? { display:'block'} : {display : 'none'} }>
+                    Yes - please visit the <Link href="https://t.me/ltotech"><a>LTO TechLab Channel</a></Link> on Telegram.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default FAQ;

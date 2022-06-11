@@ -1,28 +1,27 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Clients1Data from "../../data/sections/clients1.json";
+import ExchangesData from "../../data/howTo/exchanges.json";
 import Split from "../Split";
+import Link from 'next/link';
 
 const Clients1 = ({ theme, subBG }) => {
-  var first = Clients1Data.slice(0, Clients1Data.length / 2);
-  var second = Clients1Data.slice(4, Clients1Data.length);
+  var first = ExchangesData.slice(0, ExchangesData.length / 2);
+  var second = ExchangesData.slice(ExchangesData.length / 2, ExchangesData.length);
   return (
-    <section className={`clients section-padding ${subBG ? 'sub-bg' : ''}`}>
+    <section className={`clients section-padding pt-10 ${subBG ? 'sub-bg' : ''}`}>
       <div className="container">
         <div className="row">
-          <div className="col-lg-4 valign">
-            <div className="sec-head custom-font mb-0">
-              <h6>Clients</h6>
-              <h3>
-                Our <br /> Clients
-              </h3>
+          <div className="col-lg-5 valign">
+            <div className="sec-head custom-font mb-0 ml-0">
+              <h6>Tutorials for</h6>
+              <h3>Exchanges</h3>
             </div>
           </div>
-          <div className="col-lg-8">
+          <div className="col-lg-6 offset-lg-1">
             <div>
               <div className="row bord">
                 {first.map((item) => (
-                  <div key={item.id} className="col-md-3 col-6 brands">
+                  <div key={item.id} className="col-md-4 col-6 brands">
                     <div
                       className="item wow fadeIn"
                       data-wow-delay={`${
@@ -44,13 +43,13 @@ const Clients1 = ({ theme, subBG }) => {
                           <img src={item.darkImage} alt="" />
                         )}
                         <Split>
-                          <a
-                            href="#0"
+                          <Link href={item.url}><a
+                            target="_blank"
                             className="link words chars splitting"
                             data-splitting
                           >
-                            {item.url}
-                          </a>
+                            {item.name}
+                          </a></Link>
                         </Split>
                       </div>
                     </div>
@@ -59,20 +58,7 @@ const Clients1 = ({ theme, subBG }) => {
               </div>
               <div className="row">
                 {second.map((item) => (
-                  <div
-                    key={item.id}
-                    className={`${
-                      item.id == 5
-                        ? "col-md-3 col-6 brands sm-mb30"
-                        : item.id == 6
-                        ? "col-md-3 col-6 brands sm-mb30"
-                        : item.id == 7
-                        ? "col-md-3 col-6 brands"
-                        : item.id == 8
-                        ? "col-md-3 col-6 brands"
-                        : ""
-                    }`}
-                  >
+                  <div key={item.id} className="col-md-4 col-6 brands">
                     <div
                       className="item wow fadeIn"
                       data-wow-delay={`${
@@ -94,13 +80,13 @@ const Clients1 = ({ theme, subBG }) => {
                           <img src={item.darkImage} alt="" />
                         )}
                         <Split>
-                          <a
-                            href="#0"
+                          <Link href={item.url}><a
+                            target="_blank"
                             className="link words chars splitting"
                             data-splitting
                           >
-                            {item.url}
-                          </a>
+                            {item.name}
+                          </a></Link>
                         </Split>
                       </div>
                     </div>
