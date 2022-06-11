@@ -13,7 +13,7 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
-          npm ci
+          npm ci --legacy-peer-deps
           npm run export
           touch out/.nojekyll
 
