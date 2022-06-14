@@ -15,7 +15,7 @@ const BlogsThreeColumn1 = ({ subBG }) => {
             Latest News
           </h6>
           <h3 className="wow" data-splitting>
-            Our Blogs.
+            News & Updates
           </h3>
           <span className="tbg">Blogs</span>
         </div>
