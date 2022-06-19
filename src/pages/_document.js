@@ -16,19 +16,33 @@ class MyDocument extends Document {
           <meta name="author" content="LTO Network" />
           <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
- <meta property="og:title" content="LTO Network - Start Your Journey" />
-<meta property="og:type" content="website" />
+          <meta property="og:title" content="LTO Network - Start Your Journey" />
+          <meta property="og:type" content="website" />
 
-<meta property="og:image" content="https://www.ltonetwork.com/img/logo-light.svg" />
-<meta property="og:url" content="https://ltonetwork.com" />
-<meta property="og:description" content="Next-Gen blockchain for B2B, Identities, Privacy, Ownership and Digital Collectibles." />
+          <meta property="og:image" content="https://www.ltonetwork.com/img/logo-light.svg" />
+          <meta property="og:url" content="https://ltonetwork.com" />
+          <meta property="og:description" content="Next-Gen blockchain for B2B, Identities, Privacy, Ownership and Digital Collectibles." />
 
-<meta name="twitter:image" content="https://www.ltonetwork.com/img/logo-light.svg" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="LTO Network - Start Your Journey" />
-<meta name="twitter:description" content="Next-Gen blockchain for B2B, Identities, Privacy, Ownership and Digital Collectibles." />
-      
-      
+          <meta name="twitter:image" content="https://www.ltonetwork.com/img/logo-light.svg" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="LTO Network - Start Your Journey" />
+          <meta name="twitter:description" content="Next-Gen blockchain for B2B, Identities, Privacy, Ownership and Digital Collectibles." />
+
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          <script
+            async
+            src='https://www.googletagmanager.com/gtag/js?id=G-MF9PZPR17H'
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-MF9PZPR17H');
+          `,
+            }}
+          />
 
       
           {/* Google Fonts */}
