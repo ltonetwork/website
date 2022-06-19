@@ -513,22 +513,58 @@ b, strong {
 
 /* ====================== [ Start How-To Blocks ] ====================== */
 
+#howTo--FAQ .feat {
+  padding-left: 30px;
+}
+
 #howTo--FAQ .feat p {
   display: none;
-  padding-left: 40px;
+  padding-left: 70px;
+  font-size: 16px;
+  color: white;
 }
 
 #howTo--FAQ .feat h6 {
-  padding-left: 40px;
+  padding-left: 70px;
   padding-top: 4px;
   position: relative;
   cursor: pointer;
+  color: var(--lto-secondary);
 }
 
-#howTo--FAQ .feat h6 span {
+#howTo--FAQ .feat h6::before {
+  content: "";
+  background: url(/img/how-to/down-arrow.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 50px;
+  height: 25px;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  transform: rotate(-90deg);
+  transition: transform 350ms;
+}
+
+#howTo--FAQ .feat li::before {
+  content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  left: -30px;
+  height: 0;
+  background: #e500ed;
+  width: 1px;
+  transition: height 300ms;
+}
+
+#howTo--FAQ .feat li.active::before {
+  height: 90%;
+}
+
+#howTo--FAQ .feat li.active h6::before {
+  transform: rotate(0);
+  filter: brightness(0) saturate(100%) invert(78%) sepia(58%) saturate(3876%) hue-rotate(135deg) brightness(92%) contrast(101%);
 }
 
 #howTo--NodeOperator p {
@@ -537,49 +573,41 @@ b, strong {
 }
 
 #howTo--NodeOperator a {
-  font-size: 18px;
+  font-size: 28px;
+  font-weight: 300;
   display: flex;
+  flex-direction:  column;
   align-items: center;
   color: white;
+  transition: color 300ms;
 }
 
-#howTo--NodeOperator a::before {
-  counter-increment: node;
-  content: counter(node) '.';
-  font-size: 22px;
-  line-height: 1.65;
-  margin-right: 10px;
-  opacity: 0.5;
-  font-weight: 700;
-}
-
-.whitepaper-box span {
-  display: flex;
-  align-items: center;
-}
-
-#howTo--NodeOperator a::after,
-.whitepaper-box span::after {
+#howTo--NodeOperator a::after {
   content: '';
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8ZyBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIj4KICA8cGF0aCB0cmFuc2Zvcm09Im1hdHJpeCgxOS43MzMgMCAwIDE5LjczMyAxMzkuMjEgMTM5LjIxKSIgZD0ibTE4IDEzdjZjMCAwLjUzMDUzLTAuMjEwODMgMS4wMzkxLTAuNTg1OTYgMS40MTQyLTAuMzc0OTQgMC4zNzUxMy0wLjg4MzY5IDAuNTg1NzYtMS40MTQyIDAuNTg1NzZoLTExYy0wLjUzMDUzIDAtMS4wMzkzLTAuMjEwNjMtMS40MTQyLTAuNTg1NzYtMC4zNzUxMy0wLjM3NTEzLTAuNTg1NzYtMC44ODM2OS0wLjU4NTc2LTEuNDE0MnYtMTFjMC0wLjUzMDMzIDAuMjEwNjMtMS4wMzkxIDAuNTg1NzYtMS40MTQyIDAuMzc0OTQtMC4zNzQ5NCAwLjg4MzY5LTAuNTg1NzYgMS40MTQyLTAuNTg1NzZoNiIvPgogIDxwYXRoIHRyYW5zZm9ybT0ibWF0cml4KDE5LjczMyAwIDAgMTkuNzMzIDEzOS4yMSAxMzkuMjEpIiBkPSJtMTUgMy4wMDAxaDZ2NiIvPgogIDxwYXRoIHRyYW5zZm9ybT0ibWF0cml4KDE5LjczMyAwIDAgMTkuNzMzIDEzOS4yMSAxMzkuMjEpIiBkPSJtOS45OTk5IDE0IDExLTExIi8+CiA8L2c+Cjwvc3ZnPgo=);
   background-size: 100%;
-  height: 25px;
-  width: 25px;
+  height: 50px;
+  width: 50px;
   flex: 0 0 25px;
+  opacity: 0;
   background-position: center center;
   background-repeat: no-repeat;
   /*background-color: red;*/
   margin-left: 5px;
-  transform: translateY(-2px);
-  filter: invert(1);
-  transition: transform 300ms;
+  transform: translateY(5px);
+  filter: invert(78%) sepia(58%) saturate(3876%) hue-rotate(135deg) brightness(92%) contrast(101%);;
+  transition: transform 300ms, opacity 300ms;
   transform-origin: center bottom;
   position: relative;
 }
 
-#howTo--NodeOperator a:hover::after,
-.whitepaper-box:hover span::after {
-  transform: scale(1.2);
+#howTo--NodeOperator a:hover {
+  color: #ff00ff;
+}
+
+#howTo--NodeOperator a:hover::after {
+  transform: scale(1.2) translateY(5px);
+  opacity: 1;
 }
 
 #howTo--Integrator .dark-purple-bg {
@@ -606,16 +634,6 @@ b, strong {
   margin-bottom: 10px;
   font-size: 16px;
 }
-
-#howTo--Integrator .min-area .col-lg-6:first-child,
-#howTo--Lease .min-area .col-lg-6:first-child {
-  padding-right: 0;
-}
-
-#howTo--Integrator .min-area .col-lg-6:last-child,
-#howTo--Lease .min-area .col-lg-6:last-child {
-  padding-left: 0;
-} 
 
 #howTo--Integrator .min-area .content ul.feat li p,
 #howTo--Lease .min-area .content p {
@@ -655,17 +673,19 @@ b, strong {
   text-decoration: underline;
 }
 
-.whitepaper-box {
+#howTo--Buy h5 {
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  min-height: 70px;
+}
+
+#howTo--Buy iframe {
   width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #373737;
-  border-top: 2px solid var(--lto-secondary);
-  padding: 30px 15px;
-  text-align: center;
-  font-size: 22px;
+}
+
+#howTo--Exchanges .brands .item {
+  background: #12141b;
 }
 
 #howTo--Litepapers .content {
@@ -685,6 +705,49 @@ b, strong {
 
 #howTo--Litepapers .content blockquote {
   padding-left: 40px;
+}
+
+#howTo--TOC button {
+  appearance: none;
+  background: none;
+  color: white;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 1px solid rgba(255 255 255 / 25%);
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 300ms;
+}
+
+#howTo--TOC button:hover {
+  border: 1px solid rgba(255 255 255 / 70%);
+  color: var(--lto-secondary);
+}
+
+@media screen and (min-width: 992px) {
+  #howTo--Integrator .min-area .col-lg-6:first-child,
+  #howTo--Lease .min-area .col-lg-6:first-child {
+    padding-right: 0;
+  }
+
+  #howTo--Integrator .min-area .col-lg-6:last-child,
+  #howTo--Lease .min-area .col-lg-6:last-child {
+    padding-left: 0;
+  }   
+}
+
+@media screen and (max-width: 991px) {
+  #howTo--Lease .dark-purple-bg {
+    border-radius: 10px 10px 0 0;
+  }
+
+  #howTo--Lease .light-purple-bg {
+    border-radius: 0;
+  }
+
+  #howTo--Lease .pink-bg {
+    border-radius: 0 0 10px 10px;
+  }
 }
 
 /* ====================== [ End How-To Blocks ] ====================== */
@@ -2012,6 +2075,10 @@ body {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   visibility: hidden;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .cursor-inner {
