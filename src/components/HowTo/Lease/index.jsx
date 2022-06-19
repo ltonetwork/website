@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Lease = () => {
     return (
-        <section id="howTo--Lease" className="intro-section pt-50 pb-70 section-padding">
+        <section id="howTo--Lease" className="intro-section pt-50 pb-70 section-padding sub-bg">
           <div className="container lease-intro">
             <div className="htit mb-20 cont text-center">
               <span className="secondary-color subtitle">HOW TO</span>

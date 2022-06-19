@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "image": "/img/team/empty.png",
+    "name": "Technical Paper",
+    "link": "https://lto.network/documents/LTO%20Network%20-%20Technical%20Paper.pdf",
+    "color": "#ff00ff"
+  },
+  {
+    "id": 2,
+    "image": "/img/team/empty.png",
+    "name": "Identities Paper",
+    "link": "https://ltonetwork.com/documents/LTO%20Network%20-%20Identities%20Paper.pdf",
+    "color":"#510094"
+  },
+  {
+    "id": 3,
+    "image": "/img/team/empty.png",
+    "name": "Identities Tech",
+    "link": "https://ltonetwork.com/documents/LTO%20Network%20-%20Identities%20Tech.pdf",
+    "color":"#00ccdd"
+  },
+  {
+    "id": 4,
+    "image": "/img/team/empty.png",
+    "name": "Ownables Lite Paper",
+    "link": "https://blog.ltonetwork.com/litepaper/",
+    "color": "#510094"
+  }
+]

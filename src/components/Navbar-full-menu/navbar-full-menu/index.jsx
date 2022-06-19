@@ -106,6 +106,13 @@ const NavbarFullMenu = ({ theme, lr }) => {
                   <CurrencyWidget />
                 </div>
                 <div className="item">
+                  <Link href="https://explorer.lto.network/dashboard">
+                    <a className="d-flex align-items-center">
+                      <img src="/img/lto-explorer.png" alt="" style={{ width: 20, marginRight: 5 }} /> LTO Explorer
+                    </a>
+                  </Link>
+                </div>
+                <div className="item">
                   <h6>Telegram</h6>
                   <p><a href="https://t.me/ltonetwork">@ltonetwork</a></p>
                 </div>

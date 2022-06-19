@@ -1,38 +1,104 @@
 [
   {
     "id": 1,
-    "darkImage": "/img/clients/brands/dark/01.png",
+    "darkImage": "/img/how-to/exchanges/binance.svg",
     "name": "Binance",
     "url": "https://docs.ltonetwork.com/tutorials/buying-and-staking-lto/exchanges/binance"
   },
   {
     "id": 2,
-    "darkImage": "/img/clients/brands/dark/02.png",
+    "darkImage": "/img/how-to/exchanges/AscendEX.svg",
     "name": "AscendEX (Bitmax)",
     "url": "https://docs.ltonetwork.com/tutorials/buying-and-staking-lto/exchanges/bitmax"
   },
   {
     "id": 3,
-    "darkImage": "/img/clients/brands/dark/03.png",
+    "darkImage": "#",
     "name": "Uniswap",
     "url": "https://docs.ltonetwork.com/tutorials/buying-and-staking-lto/exchanges/uniswap"
   },
   {
     "id": 4,
-    "darkImage": "/img/clients/brands/dark/04.png",
+    "darkImage": "/img/how-to/exchanges/pancakeswap-cake-logo.svg",
     "name": "Pancake Swap",
     "url": "https://docs.ltonetwork.com/tutorials/buying-and-staking-lto/exchanges/pancake-swap"
   },
   {
     "id": 5,
-    "darkImage": "/img/clients/brands/dark/05.png",
+    "darkImage": "/img/how-to/exchanges/kucoin-token-kcs-seeklogo.com.svg",
     "name": "Kucoin",
     "url": "#"
   },
   {
     "id": 6,
-    "darkImage": "/img/clients/brands/dark/06.png",
-    "name": "Other Exchanges",
-    "url": "https://docs.ltonetwork.com/tutorials/buying-and-staking-lto/exchanges/other-exchanges"
+    "darkImage": "/img/how-to/exchanges/Biconomy-Logo.jpeg",
+    "name": "Biconomy",
+    "url": "#"
+  },
+  {
+    "id": 7,
+    "darkImage": "/img/how-to/exchanges/Bitrue.svg",
+    "name": "Bitrue",
+    "url": "#"
+  },
+  {
+    "id": 8,
+    "darkImage": "/img/how-to/exchanges/bitvavo-logo-freelogovectors.net_.png",
+    "name": "Bitvavo",
+    "url": "#"
+  },
+  {
+    "id": 9,
+    "darkImage": "/img/how-to/exchanges/gate-io-seeklogo.com.svg",
+    "name": "Gate.io",
+    "url": "#"
+  },
+  {
+    "id": 10,
+    "darkImage": "/img/how-to/exchanges/hotbit-logo-freelogovectors.net_-768x768.png",
+    "name": "Hotbit",
+    "url": "#"
+  },
+  {
+    "id": 11,
+    "darkImage": "/img/how-to/exchanges/latoken-la-logo.svg",
+    "name": "LA Token",
+    "url": "#"
+  },
+  {
+    "id": 12,
+    "darkImage": "/img/how-to/exchanges/logo_social_share.png",
+    "name": "LiteBit",
+    "url": "#"
+  },
+  {
+    "id": 13,
+    "darkImage": "/img/how-to/exchanges/Mandala_Logo_Horizontal.svg",
+    "name": "Mandala",
+    "url": "#"
+  },
+  {
+    "id": 14,
+    "darkImage": "/img/how-to/exchanges/omgfin-1.svg",
+    "name": "OMGFIN",
+    "url": "#"
+  },
+  {
+    "id": 15,
+    "darkImage": "/img/how-to/exchanges/pionex-logo-freelogovectors.net_.png",
+    "name": "Pionex",
+    "url": "#"
+  },
+  {
+    "id": 16,
+    "darkImage": "/img/how-to/exchanges/sitelogo_axdezb.png",
+    "name": "Bitcoiva",
+    "url": "#"
+  },
+  {
+    "id": 17,
+    "darkImage": "/img/how-to/exchanges/vault-enterprise.svg",
+    "name": "Vault",
+    "url": "#"
   }
 ]
