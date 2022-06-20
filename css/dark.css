@@ -573,22 +573,43 @@ b, strong {
 }
 
 #howTo--NodeOperator a {
-  font-size: 28px;
+  font-size: 35px;
   font-weight: 300;
   display: flex;
   flex-direction:  column;
   align-items: center;
   color: white;
   transition: color 300ms;
+  position: relative;
+  min-height: 222px;
+  justify-content: center;
+  text-align: center;
+}
+
+#howTo--NodeOperator img {
+  position:  absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.45;
+  /*width: 390px;*/
+  height: 222px;
+  max-width: unset;
+  width: unset;
+  transition: opacity 350ms;
+}
+
+#howTo--NodeOperator span {
+  position: relative;
+  padding-top: 40px;
 }
 
 #howTo--NodeOperator a::after {
   content: '';
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8ZyBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIj4KICA8cGF0aCB0cmFuc2Zvcm09Im1hdHJpeCgxOS43MzMgMCAwIDE5LjczMyAxMzkuMjEgMTM5LjIxKSIgZD0ibTE4IDEzdjZjMCAwLjUzMDUzLTAuMjEwODMgMS4wMzkxLTAuNTg1OTYgMS40MTQyLTAuMzc0OTQgMC4zNzUxMy0wLjg4MzY5IDAuNTg1NzYtMS40MTQyIDAuNTg1NzZoLTExYy0wLjUzMDUzIDAtMS4wMzkzLTAuMjEwNjMtMS40MTQyLTAuNTg1NzYtMC4zNzUxMy0wLjM3NTEzLTAuNTg1NzYtMC44ODM2OS0wLjU4NTc2LTEuNDE0MnYtMTFjMC0wLjUzMDMzIDAuMjEwNjMtMS4wMzkxIDAuNTg1NzYtMS40MTQyIDAuMzc0OTQtMC4zNzQ5NCAwLjg4MzY5LTAuNTg1NzYgMS40MTQyLTAuNTg1NzZoNiIvPgogIDxwYXRoIHRyYW5zZm9ybT0ibWF0cml4KDE5LjczMyAwIDAgMTkuNzMzIDEzOS4yMSAxMzkuMjEpIiBkPSJtMTUgMy4wMDAxaDZ2NiIvPgogIDxwYXRoIHRyYW5zZm9ybT0ibWF0cml4KDE5LjczMyAwIDAgMTkuNzMzIDEzOS4yMSAxMzkuMjEpIiBkPSJtOS45OTk5IDE0IDExLTExIi8+CiA8L2c+Cjwvc3ZnPgo=);
   background-size: 100%;
-  height: 50px;
-  width: 50px;
-  flex: 0 0 25px;
+  height: 80px;
+  width: 80px;
   opacity: 0;
   background-position: center center;
   background-repeat: no-repeat;
@@ -603,6 +624,10 @@ b, strong {
 
 #howTo--NodeOperator a:hover {
   color: #ff00ff;
+}
+
+#howTo--NodeOperator a:hover img {
+  opacity: 0.1;
 }
 
 #howTo--NodeOperator a:hover::after {
@@ -711,7 +736,7 @@ b, strong {
   appearance: none;
   background: none;
   color: white;
-  margin: 0 5px;
+  margin: 0 5px 10px;
   cursor: pointer;
   border: 1px solid rgba(255 255 255 / 25%);
   padding: 10px 20px;
@@ -751,6 +776,20 @@ b, strong {
 }
 
 /* ====================== [ End How-To Blocks ] ====================== */
+
+/* ====================== [ Start Footer ] ====================== */
+
+.footer-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer-half a:hover {
+  color: var(--lto-secondary);
+}
+
+/* ====================== [ End Footer ] ====================== */
 
 /* ====================== [ Partnerships Slider ] ====================== */
 
@@ -4756,7 +4795,9 @@ body {
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
-  max-width: 75px;
+  max-width: 110px;
+  max-height: 70px;
+  width: unset;
   margin: auto;
 }
 .clients .brands .img .link {
@@ -6722,7 +6763,7 @@ body {
   font-weight: 300;
   margin-bottom: 30px;
 }
-.footer-half .cont .logo {
+.footer-half .logo {
   width: 190px;
   margin-bottom: 15px;
 }
