@@ -5,7 +5,6 @@ import Link from "next/link";
 import appData from "../../data/app.json";
 import Mailchimp from 'react-mailchimp-form'
 
-
 const Footer = () => {
   function validateEmail(value) {
     let error;
@@ -21,15 +20,42 @@ const Footer = () => {
     <footer className="footer-half sub-bg pt-40 pb-40">
       <div className="container">
         <div className="row">
+          <div className="col-lg-6 col-md-6">
+            <div className="logo">
+              <Link href="/">
+                <a>
+                  <img src={`${appData.lightLogo}`} alt="" />
+                </a>
+              </Link>
+            </div>
+            <ul>
+              <li className="footer-title">Quick links</li>
+              <li><Link href="/partners-clients/"><a className="footer-item">Partners &amp; Clients</a></Link></li>
+              <li><Link href="/use-cases/"><a className="footer-item">Use cases</a></Link></li>
+              <li><Link href="https://explorer.ltonetwork.com" target="_blank"><a className="footer-item">Explorer</a></Link></li>
+              <li><Link href="https://wallet.lto.network" target="_blank"><a className="footer-item">Wallet</a></Link></li>
+              <li><Link href="https://blog.ltonetwork.com/staking-and-leasing-lto-network-node-guide/" target="_blank"><a className="footer-item">Staking Guide</a></Link></li>
+              <li><Link href="https://blog.ltonetwork.com/blockchain-adoption-real-world/" target="_blank"><a className="footer-item">Integrator Portal</a></Link></li>
+              <li><Link href="https://research.binance.com/projects/lto-network/" target="_blank"><a className="footer-item">Binance Research</a></Link></li>
+              <li><Link href="https://coinmarketcap.com/currencies/lto-network/" target="_blank"><a className="footer-item">CoinMarketCap</a></Link></li>
+            </ul>
+          </div>
+          <div className="col-lg-5 offset-lg-1 mt-50 col-md-6">
+            <ul>
+              <li className="footer-title">Documents</li>
+              <li><Link href="/documents/LTO%20Network%20-%20Identities%20Paper.pdf" target="_blank"><a className="footer-item">Identities Paper</a></Link></li>
+              <li><Link href="/documents/LTO%20Network%20-%20Identities%20Tech.pdf" target="_blank"><a className="footer-item">Identities Technical Paper</a></Link></li>
+              <li className="footer-title mt-20">GDPR</li>
+              <li><Link href="/documents/privacy-policy.pdf"><a className="footer-item" target="_blank">Privacy Policy</a></Link></li>
+              <li><Link href="/documents/cookie-statement.pdf"><a className="footer-item" target="_blank">Cookie Statement</a></Link></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="row">
           <div className="col-lg-5">
             <div className="cont">
-              <div className="logo">
-                <Link href="/">
-                  <a>
-                    <img src={`${appData.lightLogo}`} alt="" />
-                  </a>
-                </Link>
-              </div>
               <div className="con-info custom-font">
                 <ul>
                   <li>
@@ -96,7 +122,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-lg-5 offset-lg-2">
-            <div className="subscribe mt-50 mb-50">
+            <div className="subscribe mb-50">
               <h6 className="custom-font stit simple-btn">Newsletter</h6>
               <p>Sign up for subscribe out newsletter!</p>
               <Mailchimp
@@ -111,7 +137,8 @@ const Footer = () => {
                 ]}
               />
             </div>
-            <p className="pt-60">© 2022, LTO Network</p>
+            <p className="pt-30">© 2022, LTO Network</p>
+            <p>Incorporated by <Link href="https://www.firm24.com/bv-oprichten/"><a target="_blank" style={{color: "var(--lto-secondary)" }}>Firm24</a></Link></p>
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ const FAQ = () => {
   return (
     <section id="howTo--FAQ" className="pt-80 pb-80 min-area sub-bg" style={{
           backgroundImage: "url(/img/how-to/faq-bg.jpg)",
-          backgroundPosition: "center bottom", 
+          backgroundPosition: "center top", 
           backgroundRepeat: "no-repeat", 
           backgroundSize: "100%"}}>
       <div className="container">

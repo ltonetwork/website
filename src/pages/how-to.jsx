@@ -9,7 +9,7 @@ import TOC from '../components/HowTo/TOC';
 import FAQ from "../components/HowTo/FAQ";
 import NodeOperator from "../components/HowTo/NodeOperator";
 // import Integrator from "../components/HowTo/Integrator";
-import Lease from "../components/HowTo/Lease";
+// import Lease from "../components/HowTo/Lease";
 import Exchanges from "../components/Exchanges";
 import Buy from "../components/HowTo/Buy";
 import Whitepapers from "../components/HowTo/Whitepapers";
@@ -29,8 +29,8 @@ const HowToDark = () => {
       <FAQ />
       <NodeOperator />
       {/*<Integrator />*/}
-      <Lease />
-      <div style={{
+      {/*<Lease />*/}
+      <div className="sub-bg" style={{
           backgroundImage: "url(/img/how-to/exchange-bg.jpg)",
           backgroundPosition: "center bottom", 
           backgroundRepeat: "no-repeat", 

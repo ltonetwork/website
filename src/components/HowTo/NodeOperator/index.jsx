@@ -14,16 +14,36 @@ const NodeOperator = () => {
           <div className="container pt-30 pb-30">
             <div className="row">
               <div className="col-lg-3" style={{"padding": "30px"}}>
-                <Link href="https://docs.ltonetwork.com/node/public-node"><a target="_blank">Public Node</a></Link>
+                <Link href="https://docs.ltonetwork.com/node/public-node">
+                  <a target="_blank">
+                    <img src="/img/how-to/node-1.png" alt="" />
+                    <span>Public Node</span>
+                  </a>
+                </Link>
               </div>
               <div className="col-lg-3" style={{"padding": "30px"}}>
-                <Link href="https://docs.ltonetwork.com/node/anchor-node"><a target="_blank">Anchor Node</a></Link>
+                <Link href="https://docs.ltonetwork.com/node/anchor-node">
+                  <a target="_blank">
+                    <img src="/img/how-to/node-2.png" alt="" />
+                    <span>Anchor Node</span>
+                  </a>
+                </Link>
               </div>
               <div className="col-lg-3" style={{"padding": "30px"}}>
-                <Link href="https://docs.ltonetwork.com/node/identity-node"><a target="_blank">Identity Node</a></Link>
+                <Link href="https://docs.ltonetwork.com/node/identity-node">
+                  <a target="_blank">
+                    <img src="/img/how-to/node-3.png" alt="" />
+                    <span>Identity Node</span>
+                  </a>
+                </Link>
               </div>
               <div className="col-lg-3" style={{"padding": "30px"}}>
-                <Link href="https://docs.ltonetwork.com/node/workflow-node"><a target="_blank">Workflow Node</a></Link>
+                <Link href="https://docs.ltonetwork.com/node/workflow-node">
+                  <a target="_blank">
+                    <img src="/img/how-to/node-4.png" alt="" />
+                    <span>Workflow Node</span>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>

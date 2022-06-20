@@ -105,10 +105,17 @@ const NavbarFullMenu = ({ theme, lr }) => {
                 <div className="item">
                   <CurrencyWidget />
                 </div>
-                <div className="item">
+                <div className="item mb-10">
                   <Link href="https://explorer.lto.network/dashboard">
-                    <a className="d-flex align-items-center">
-                      <img src="/img/lto-explorer.png" alt="" style={{ width: 20, marginRight: 5 }} /> LTO Explorer
+                    <a className="d-flex align-items-center" target="_blank">
+                      <img src="/img/explorer-icon.png" alt="" style={{ width: 20, marginRight: 8 }} /> LTO Explorer
+                    </a>
+                  </Link>
+                </div>
+                <div className="item">
+                  <Link href="https://wallet.lto.network/">
+                    <a className="d-flex align-items-center" target="_blank">
+                      <img src="/img/wallet-icon.png" alt="" style={{ width: 20, marginRight: 8 }} /> LTO Wallet
                     </a>
                   </Link>
                 </div>

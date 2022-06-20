@@ -15,15 +15,15 @@ const Buy = ({ subBG }) => {
             <div className="row">
               <div className="col-lg-4">
                 <h5>Buying LTO on <br/>a Centralized Exchange</h5>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/eecw2ImHWlM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zhdFIyx6S8c" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               </div>
               <div className="col-lg-4">
                 <h5>Buying LTO on a DEX</h5>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/eecw2ImHWlM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hcn5uMv4bH8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               </div>
               <div className="col-lg-4">
                 <h5>How to Lease/Stake LTO on our mainnet</h5>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/eecw2ImHWlM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yKpQBa1oP98" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               </div>
             </div>
           </div>
