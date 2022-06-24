@@ -35,10 +35,10 @@ const FAQ = () => {
               <ul className="feat mt-50">
                 <li className={`wow fadeInUp ${ active==1 ? 'active' : ''}`} data-wow-delay=".2s" onClick={ () => setActive(active == 1 ? null : 1) }>
                   <h6>
-                    How much LTO do I need to have in order to start the mining process?
+                    Is there a dedicated LTO Network wallet?
                   </h6>
                   <p style={ active==1 ? { display:'block'} : {display : 'none'} }>
-                    In order to activate mining, the node needs not less than 1000 LTO (for testnet we can always provide you with that, do not hesitate to contact us ).
+                    Yes! You can find LTO Network’s mainnet wallet here: https://wallet.lto.network. LTO Network is also planning to launch a dedicated mobile wallet in 2022. For more information, please read the blog: https://blog.ltonetwork.com/wallet-partnership/
                   </p>
                 </li>
                 <li className={`wow fadeInUp ${ active==2 ? 'active' : ''}`} data-wow-delay=".4s" onClick={ () => setActive(active == 2 ? null : 2) }>
