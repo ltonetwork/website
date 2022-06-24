@@ -70,7 +70,7 @@ const FAQ = () => {
                     Is there a dedicated tech chat for LTO Network?
                   </h6>
                   <p style={ active==5 ? { display:'block'} : {display : 'none'} }>
-                    Yes - please visit the <Link href="https://t.me/ltotech"><a>LTO TechLab Channel</a></Link> on Telegram.
+                    Yes, please visit the LTO Network TechLab Telegram channel <Link href="https://t.me/ltotech"><a>here</a></Link>.
                   </p>
                 </li>
               </ul>
