@@ -124,7 +124,7 @@ const Footer = () => {
           <div className="col-lg-5 offset-lg-2">
             <div className="subscribe mb-50">
               <h6 className="custom-font stit simple-btn">Newsletter</h6>
-              <p>Sign up for subscribe out newsletter!</p>
+              <p>Sign up for our newsletter!</p>
               <Mailchimp
                 action='https://ltonetwork.us17.list-manage.com/subscribe/post?u=1508bdb96b4379a9aeb07c6e8&amp;id=dcfb5f7916'
                 fields={[
