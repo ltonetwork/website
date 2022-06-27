@@ -38,31 +38,31 @@ const FAQ = () => {
                     Is there a dedicated LTO Network wallet?
                   </h6>
                   <p style={ active==1 ? { display:'block'} : {display : 'none'} }>
-                    Yes! You can find LTO Network’s mainnet wallet here: https://wallet.lto.network. LTO Network is also planning to launch a dedicated mobile wallet in 2022. For more information, please read the blog: https://blog.ltonetwork.com/wallet-partnership/
+                    Yes! You can find LTO Network’s mainnet wallet <Link href="https://wallet.lto.network"><a>here</a></Link>. LTO Network is also planning to launch a dedicated mobile wallet in 2022. For more information, please read the article on <Link href="https://blog.ltonetwork.com/wallet-partnership/"><a>Wallet Partnerships</a></Link>.
                   </p>
                 </li>
                 <li className={`wow fadeInUp ${ active==2 ? 'active' : ''}`} data-wow-delay=".4s" onClick={ () => setActive(active == 2 ? null : 2) }>
                   <h6>
-                    Where can i get the link for last mainnet state?
+                    Is there a dedicated tech chat for LTO Network?
                   </h6>
                   <p style={ active==2 ? { display:'block'} : {display : 'none'} }>
-                    The last mainnet state can be found <Link href="https://nodes.lto.network/api-docs/index.html"><a>here</a></Link>.
+                     Yes, please visit the LTO Network TechLab Telegram channel <Link href="https://t.me/ltotech"><a>here</a></Link>.
                   </p>
                 </li>
                 <li className={`wow fadeInUp ${ active==3 ? 'active' : ''}`} data-wow-delay=".6s" onClick={ () => setActive(active == 3 ? null : 3) }>
                   <h6>
-                    What is the incentive to run my own full node instead of leasing my coins?
+                    What is the maximum supply of LTO Network?
                   </h6>
                   <p style={ active==3 ? { display:'block'} : {display : 'none'} }>
-                    More revenue if you have enough people leasing to you and payout is not 100%. Also you can provide services on LTO Network with your node. Running a node might be profitable later on but it&apos;s not at the moment. If it is it&apos;s only marginal.
+                    LTO Network has a hard-coded maximum supply of 500M LTO. With a current total supply of around 400M LTO (as of June 2022) thanks to previous burn events, it is not expected that the maximum supply of 500M LTO will ever be reached again. As transactions on LTO Mainnet increase, LTO will be burned due to the transaction burn mechanism. When the amount of burned tokens overtakes the amount of minted tokens, LTO Network will become deflationary.
                   </p>
                 </li>
                 <li className={`wow fadeInUp ${ active==4 ? 'active' : ''}`} data-wow-delay=".8s" onClick={ () => setActive(active == 4 ? null : 4) }>
                   <h6>
-                    I want to automatically send my tokens to multiple wallets on the LTO platform. Is there a program or bot?
+                    How much LTO is burned every day?
                   </h6>
                   <p style={ active==4 ? { display:'block'} : {display : 'none'} }>
-                    Yes, there are payout scripts that are used by node owners to pay leasers. These can also be used/adjusted to do other automated transfers, for example: <Link href="https://github.com/justmvg/LTO_LPoSDistributor"><a>LTO_LPoSDistributor</a></Link>.
+                    The amount of LTO tokens burned depends on the amount of transactions taking place. Currently, 50% of the paid transaction costs are burned.
                   </p>
                 </li>
                 <li className={`wow fadeInUp ${ active==5 ? 'active' : ''}`} data-wow-delay="1s" onClick={ () => setActive(active == 5 ? null : 5) }>
