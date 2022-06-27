@@ -67,10 +67,18 @@ const FAQ = () => {
                 </li>
                 <li className={`wow fadeInUp ${ active==5 ? 'active' : ''}`} data-wow-delay="1s" onClick={ () => setActive(active == 5 ? null : 5) }>
                   <h6>
-                    Is there a dedicated tech chat for LTO Network?
+                    How is APY established on LTO Network’s mainnet?
                   </h6>
                   <p style={ active==5 ? { display:'block'} : {display : 'none'} }>
-                    Yes, please visit the LTO Network TechLab Telegram channel <Link href="https://t.me/ltotech"><a>here</a></Link>.
+                    The APY on LTO’s mainnet comes from two parts. First, a standard amount of LTO is minted as a reward. This amount decreases a tiny bit with every block and is only possible because LTO Network has burned over 100M LTO tokens in the past, creating space to mint new LTO while staying under the hard-coded supply limit of 500M LTO. The second part comes from the actual transactions on LTO Network’s mainnet. The costs paid for such transactions are partly burned and the remainder is distributed to the node as rewards.
+                  </p>
+                </li>
+                <li className={`wow fadeInUp ${ active==6 ? 'active' : ''}`} data-wow-delay=".8s" onClick={ () => setActive(active == 6 ? null : 6) }>
+                  <h6>
+                    How much LTO is burned every day?
+                  </h6>
+                  <p style={ active==4 ? { display:'block'} : {display : 'none'} }>
+                    The amount of LTO tokens burned depends on the amount of transactions taking place. Currently, 50% of the paid transaction costs are burned.
                   </p>
                 </li>
               </ul>
