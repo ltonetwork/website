@@ -111,6 +111,7 @@ const FAQ = () => {
                   </h6>
                   <p style={ active==4 ? { display:'block'} : {display : 'none'} }>
                     Yes, there is a community maintained payout script available for community nodes <Link href="https://github.com/justmvg/LTO_LPoSDistributor/"><a>here</a></Link>.
+                  </p>
                 </li>
               </ul>
             </div>
