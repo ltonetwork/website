@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "image": "/img/team/empty.png",
+    "image": "/img/team/martijn.png",
     "name": "Martijn Migchelsen",
     "title": "CFO",
     "color":"#ff00ff",
@@ -28,7 +28,7 @@
   },
   {
     "id": 3,
-    "image": "/img/team/arnold-daniels.jpg",
+    "image": "/img/team/arnold_v3.png",
     "name": "Arnold Daniels",
     "title": "Chief Architect",
     "color": "#00ccdd",
@@ -38,7 +38,7 @@
   
   {
     "id": 3,
-    "image": "/img/team/empty.png",
+    "image": "/img/team/borja.png",
     "name": "Borja",
     "title": "Busines Development",
     "color": "#00ccdd",
@@ -56,7 +56,7 @@
   },
     {
     "id": 5,
-    "image": "/img/team/empty.png",
+    "image": "/img/team/benas.png",
     "name": "Benas",
     "title": "Dev",
     "color": "#00ccdd",
@@ -126,11 +126,19 @@
     "linkedin":"",
     "twitter":""
   },
-  {
-    "id": 13,
+      "id": 13,
     "image": "/img/team/empty.png",
     "name": "Cees",
     "title": "Marketing",
+    "color":"#510094",
+    "linkedin":"",
+    "twitter":""
+  },
+  {
+    "id": 14,
+    "image": "/img/team/dog.png",
+    "name": "Woof",
+    "title": "Food Quality Officer",
     "color":"#510094",
     "linkedin":"",
     "twitter":""
