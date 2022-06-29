@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "image": "/img/team/empty.png",
-    "name": "Technical Paper",
+    "image": "/img/how-to/lto_whitepaper_technical.png",
+    "name": "LTO Whitepaper",
     "link": "https://lto.network/documents/LTO%20Network%20-%20Technical%20Paper.pdf",
     "color": "#ff00ff"
   },
@@ -15,15 +15,15 @@
   },
   {
     "id": 3,
-    "image": "/img/team/empty.png",
+    "image": "/img/how-to/lto_identities_tech_litepaper.png",
     "name": "Identities Tech",
     "link": "https://ltonetwork.com/documents/LTO%20Network%20-%20Identities%20Tech.pdf",
     "color":"#00ccdd"
   },
   {
     "id": 4,
-    "image": "/img/team/empty.png",
-    "name": "Ownables Lite Paper",
+    "image": "/img/how-to/lto_ownables_litepaper.png",
+    "name": "Ownables Litepaper",
     "link": "https://blog.ltonetwork.com/litepaper/",
     "color": "#510094"
   }
