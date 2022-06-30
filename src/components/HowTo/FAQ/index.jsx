@@ -69,7 +69,7 @@ const FAQ = () => {
                   <h6>
                     How is APY established on LTO Network’s mainnet?
                   </h6>
-                  <p style={ active==4 ? { display:'block'} : {display : 'none'} }>
+                  <p style={ active==5 ? { display:'block'} : {display : 'none'} }>
                     The APY on LTO’s mainnet comes from two parts. First, a standard amount of LTO is minted as a reward. This amount decreases a tiny bit with every block and is only possible because LTO Network has burned over 100M LTO tokens in the past, creating space to mint new LTO while staying under the hard-coded supply limit of 500M LTO. The second part comes from the actual transactions on LTO Network’s mainnet. The costs paid for such transactions are partly burned and the remainder is distributed to the node as rewards.
                   </p>
                 </li>
@@ -77,7 +77,7 @@ const FAQ = () => {
                   <h6>
                     Can I run a LTO mainnet node myself?
                   </h6>
-                  <p style={ active==4 ? { display:'block'} : {display : 'none'} }>
+                  <p style={ active==6 ? { display:'block'} : {display : 'none'} }>
                     Yes! LTO Network is a hybrid permissionless layer-1 blockchain that anyone can build on. You can start your own <Link href="https://docs.ltonetwork.com/node/public-node"><a>public</a></Link>, <Link href="https://docs.ltonetwork.com/node/anchor-node"><a>anchor</a></Link>, <Link href="https://docs.ltonetwork.com/node/identity-node"><a>identity</a></Link>, or <Link href="https://docs.ltonetwork.com/node/workflow-node"><a>workflow</a></Link> node.
                   </p>
                 </li>
@@ -85,7 +85,7 @@ const FAQ = () => {
                   <h6>
                     How many LTO tokens do I need for my own LTO node to start mining?
                   </h6>
-                  <p style={ active==4 ? { display:'block'} : {display : 'none'} }>
+                  <p style={ active==7 ? { display:'block'} : {display : 'none'} }>
                     In order to activate mining, your LTO node needs at least 1000 LTO either directly in the node or leased to the node from another wallet. Leases take about 16.6 hours before they participate in the node balance. Depending on the current APY (which is equal across all nodes helping to secure LTO Network’s mainnet) and the costs of running your node, additional LTO tokens might need to be staked/leased in order to break even. Want to try on <Link href="https://docs.ltonetwork.com/node/public-node/installation-guide/lto_mainnet"><a>testnet</a></Link> first? Please do not hesitate to contact us in the <Link href="https://t.me/ltotech"><a>Techlab Telegram channel</a></Link> to get some LTO testnet tokens. 
                   </p>
                 </li>
@@ -93,7 +93,7 @@ const FAQ = () => {
                   <h6>
                     Where can I find the latest mainnet state?
                   </h6>
-                  <p style={ active==4 ? { display:'block'} : {display : 'none'} }>
+                  <p style={ active==8 ? { display:'block'} : {display : 'none'} }>
                     The latest mainnet state can be found <Link href="https://nodes.lto.network/api-docs/index.html"><a>here</a></Link>.
                   </p>
                 </li>
@@ -101,7 +101,7 @@ const FAQ = () => {
                   <h6>
                     Does it matter if I lease my tokens or run my own node?
                   </h6>
-                  <p style={ active==4 ? { display:'block'} : {display : 'none'} }>
+                  <p style={ active==9 ? { display:'block'} : {display : 'none'} }>
                     It is your choice. Those that run their own node get 100% of the rewards, while leasing to a community node often involves a commission/node fee to the node owner. Anyone can start a (community) node and attract leasers to said node with their offered service. Those that run their own node are actively helping secure the LTO Network mainnet and are able to vote directly during consensus vote events like mainnet upgrades. Leasers are dependent on the vote of the community node they lease to, but can change their lease at any time to add their weight to another node if they do not agree with the cast vote.
                   </p>
                 </li>
@@ -109,7 +109,7 @@ const FAQ = () => {
                   <h6>
                     Is there a payout script available for community nodes?
                   </h6>
-                  <p style={ active==4 ? { display:'block'} : {display : 'none'} }>
+                  <p style={ active==10 ? { display:'block'} : {display : 'none'} }>
                     Yes, there is a community maintained payout script available for community nodes <Link href="https://github.com/justmvg/LTO_LPoSDistributor/"><a>here</a></Link>.
                   </p>
                 </li>
