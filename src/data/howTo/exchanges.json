@@ -3,13 +3,13 @@
     "id": 1,
     "darkImage": "/img/how-to/exchanges/binance.svg",
     "name": "Binance",
-    "url": "https://docs.ltonetwork.com/tutorials/buying-and-staking-lto/exchanges/binance"
+    "url": "https://www.binance.com/en/trade/LTO_USDT"
   },
   {
     "id": 2,
-    "darkImage": "/img/how-to/exchanges/AscendEX.svg",
-    "name": "AscendEX (Bitmax)",
-    "url": "https://docs.ltonetwork.com/tutorials/buying-and-staking-lto/exchanges/bitmax"
+    "darkImage": "/img/how-to/exchanges/binance_us_logo.svg",
+    "name": "Binance.US",
+    "url": "https://www.binance.us/en/trade/pro/lto_usd"
   },
   {
     "id": 3,
@@ -20,85 +20,91 @@
   {
     "id": 4,
     "darkImage": "/img/how-to/exchanges/pancakeswap-cake-logo.svg",
-    "name": "Pancake Swap",
+    "name": "PancakeSwap",
     "url": "https://docs.ltonetwork.com/tutorials/buying-and-staking-lto/exchanges/pancake-swap"
   },
   {
     "id": 5,
     "darkImage": "/img/how-to/exchanges/kucoin-token-kcs-seeklogo.com.svg",
-    "name": "Kucoin",
-    "url": "#"
+    "name": "KuCoin",
+    "url": "https://www.kucoin.com/trade/LTO-USDT"
   },
   {
     "id": 6,
     "darkImage": "/img/how-to/exchanges/Biconomy-Logo.jpeg",
     "name": "Biconomy",
-    "url": "#"
+    "url": "https://www.biconomy.com/exchange?coin=LTO_USDT"
   },
   {
     "id": 7,
     "darkImage": "/img/how-to/exchanges/Bitrue.svg",
     "name": "Bitrue",
-    "url": "#"
+    "url": "https://www.bitrue.com/trade/lto_usdt"
   },
   {
     "id": 8,
     "darkImage": "/img/how-to/exchanges/bitvavo-logo-freelogovectors.net_.png",
     "name": "Bitvavo",
-    "url": "#"
+    "url": "https://account.bitvavo.com/markets/LTO-EUR"
   },
   {
     "id": 9,
     "darkImage": "/img/how-to/exchanges/gate-io-seeklogo.com.svg",
     "name": "Gate.io",
-    "url": "#"
+    "url": "https://www.gate.io/trade/LTO_USDT"
   },
   {
     "id": 10,
     "darkImage": "/img/how-to/exchanges/hotbit-logo-freelogovectors.net_-768x768.png",
     "name": "Hotbit",
-    "url": "#"
+    "url": "https://www.hotbit.io/exchange?symbol=LTO_USDT"
   },
   {
     "id": 11,
     "darkImage": "/img/how-to/exchanges/latoken-la-logo.svg",
     "name": "LA Token",
-    "url": "#"
+    "url": "https://latoken.com/exchange/LTO_USDT"
   },
   {
     "id": 12,
     "darkImage": "/img/how-to/exchanges/logo_social_share.png",
     "name": "LiteBit",
-    "url": "#"
+    "url": "https://www.litebit.eu/en/buy/lto-network"
   },
   {
     "id": 13,
     "darkImage": "/img/how-to/exchanges/Mandala_Logo_Horizontal.svg",
     "name": "Mandala",
-    "url": "#"
+    "url": "https://trade.mandala.exchange/en/trade/basic/LTO_USDT"
   },
   {
     "id": 14,
     "darkImage": "/img/how-to/exchanges/omgfin-1.svg",
     "name": "OMGFIN",
-    "url": "#"
+    "url": "https://omgfin.com/exchange/trade/market/LTOUSDT"
   },
   {
     "id": 15,
     "darkImage": "/img/how-to/exchanges/pionex-logo-freelogovectors.net_.png",
     "name": "Pionex",
-    "url": "#"
+    "url": "https://www.pionex.com/en-US/trade/LTO_USDT"
   },
   {
     "id": 16,
     "darkImage": "/img/how-to/exchanges/sitelogo_axdezb.png",
     "name": "Bitcoiva",
-    "url": "#"
+    "url": "https://www.bitcoiva.com/trade/LTO_USDT"
   },
   {
     "id": 17,
-    "darkImage": "/img/how-to/exchanges/vault-enterprise.svg",
-    "name": "Vault",
-    "url": "#"
+    "darkImage": "/img/how-to/exchanges/AscendEX.svg",
+    "name": "AscendEX (Bitmax)",
+    "url": "https://ascendex.com/en/cashtrade-spottrading/usdt/lto"
+  },
+  {
+    "id": 18,
+    "darkImage": "/img/how-to/exchanges/Coinmetro-Exchange-Logo.png",
+    "name": "Coinmetro",
+    "url": "https://go.coinmetro.com/express/buy/LTO/USD"
   }
 ]
