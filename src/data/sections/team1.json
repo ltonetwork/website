@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "image": "/img/team/empty.png",
+    "image": "/img/team/Shawn.jpg",
     "name": "Shawn Naderi",
     "title": "CMO",
     "color":"#ff00ff",
@@ -83,7 +83,7 @@
   },
   {
     "id": 8,
-    "image": "/img/team/empty.png",
+    "image": "/img/team/ben.png",
     "name": "Ben",
     "title": "Marketing",
     "color": "#510094",
@@ -92,7 +92,7 @@
   },
   {
     "id": 9,
-    "image": "/img/team/empty.png",
+    "image": "/img/team/Christin.jpg",
     "name": "Christin",
     "title": "Marketing",
     "color":"#510094",
