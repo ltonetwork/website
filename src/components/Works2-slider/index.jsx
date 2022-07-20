@@ -152,6 +152,7 @@ const Works2Slider = ({ subBG }) => {
                         >
                         
                          <div className="top-label">Q3 - 2022</div>
+                         
                           
                     
                         <div
