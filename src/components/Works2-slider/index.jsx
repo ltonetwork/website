@@ -139,7 +139,18 @@ const Works2Slider = ({ subBG }) => {
                               backgroundImage: "url(/img/about/roadmap-3.jpg)",
                             }}
                           ></div>
-                          <div className="cont bgbox">
+                        
+                        
+                         <div className="top-label">Q3 - 2022</div>
+                          <div
+                            className="item-img bg-img wow imago"
+                            style={{
+                              backgroundImage: "url(/img/about/roadmap-6.jpg)",
+                            }}
+                          ></div>
+                        
+                        
+                        <div className="cont bgbox">
                             <h6>Partnership Announcement</h6>
                             <h4>A major partnership will be announced.</h4>
                           </div>
@@ -151,13 +162,6 @@ const Works2Slider = ({ subBG }) => {
                           data-wow-delay=".3s"
                         >
                         
-                         <div className="top-label">Q3 - 2022</div>
-                          <div
-                            className="item-img bg-img wow imago"
-                            style={{
-                              backgroundImage: "url(/img/about/roadmap-6.jpg)",
-                            }}
-                          ></div>
                         <div
                             className="item-img bg-img wow imago"
                             style={{
