@@ -193,6 +193,46 @@ const Works2Slider = ({ subBG }) => {
                           data-wow-delay=".3s"
                         >
                         
+                        <div
+                            className="item-img bg-img wow imago"
+                            style={{
+                              backgroundImage: "url(/img/about/roadmap-generic.jpg)",
+                            }}
+                          ></div>
+                          <div className="cont bgbox">
+                            <h6>New DeFi Partnership</h6>
+                            <h4>A new partnership will be announced.</h4>
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide className="swiper-slide">
+                        <div
+                          className="content wow fadeInUp"
+                          data-wow-delay=".3s"
+                        >
+                        
+                        
+                        
+                           
+                        <div
+                            className="item-img bg-img wow imago"
+                            style={{
+                              backgroundImage: "url(/img/about/roadmap-generic.jpg)",
+                            }}
+                          ></div>
+                          <div className="cont bgbox">
+                            <h6>New Media Partnership</h6>
+                            <h4>A new media based partnership will be announced.</h4>
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide className="swiper-slide">
+                        <div
+                          className="content wow fadeInUp"
+                          data-wow-delay=".3s"
+                        >
+                        
+                        
                         
                           <div
                             className="item-img bg-img wow imago"
