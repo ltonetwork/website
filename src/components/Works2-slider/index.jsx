@@ -151,6 +151,7 @@ const Works2Slider = ({ subBG }) => {
                           data-wow-delay=".3s"
                         >
                         
+                          <div className="top-label">Q3 - 2022</div>
                          
                         <div
                             className="item-img bg-img wow imago"
@@ -191,7 +192,6 @@ const Works2Slider = ({ subBG }) => {
                         >
                         
                         
-                          <div className="top-label">Q3 - 2022</div>
                           <div
                             className="item-img bg-img wow imago"
                             style={{
