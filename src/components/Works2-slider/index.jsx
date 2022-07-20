@@ -139,18 +139,7 @@ const Works2Slider = ({ subBG }) => {
                               backgroundImage: "url(/img/about/roadmap-3.jpg)",
                             }}
                           ></div>
-                        
-                        
-                         <div className="top-label">Q3 - 2022</div>
-                          <div
-                            className="item-img bg-img wow imago"
-                            style={{
-                              backgroundImage: "url(/img/about/roadmap-6.jpg)",
-                            }}
-                          ></div>
-                        
-                        
-                        <div className="cont bgbox">
+                          <div className="cont bgbox">
                             <h6>Partnership Announcement</h6>
                             <h4>A major partnership will be announced.</h4>
                           </div>
@@ -162,6 +151,7 @@ const Works2Slider = ({ subBG }) => {
                           data-wow-delay=".3s"
                         >
                         
+                         
                         <div
                             className="item-img bg-img wow imago"
                             style={{
@@ -201,7 +191,13 @@ const Works2Slider = ({ subBG }) => {
                         >
                         
                         
-                          
+                          <div className="top-label">Q3 - 2022</div>
+                          <div
+                            className="item-img bg-img wow imago"
+                            style={{
+                              backgroundImage: "url(/img/about/roadmap-6.jpg)",
+                            }}
+                          ></div>
                           <div className="cont bgbox">
                             <h6>GoLand Registry</h6>
                             <h4>The 1st stage of GoLand Code Update will be announced and details provided.</h4>
