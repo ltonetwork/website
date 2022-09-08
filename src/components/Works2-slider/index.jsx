@@ -251,23 +251,8 @@ const Works2Slider = ({ subBG }) => {
                           className="content wow fadeInUp"
                           data-wow-delay=".3s"
                         >
-                          <div
-                            className="item-img bg-img wow imago"
-                            style={{
-                              backgroundImage: "url(/img/about/roadmap-7.jpg)",
-                            }}
-                          ></div>
-                          <div className="cont bgbox">
-                            <h6>NFT2.0 Partnership</h6>
-                            <h4>NFT2.0 Partnership Announcement</h4>
-                          </div>
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide className="swiper-slide">
-                        <div
-                          className="content wow fadeInUp"
-                          data-wow-delay=".3s"
-                        >
+                        
+                          <div className="top-label">Q4 - 2022</div>
                         
                         
                           <div
@@ -287,6 +272,7 @@ const Works2Slider = ({ subBG }) => {
                           className="content wow fadeInUp"
                           data-wow-delay=".3s"
                         >
+                        
                         
                          <div
                             className="item-img bg-img wow imago"
@@ -326,9 +312,6 @@ const Works2Slider = ({ subBG }) => {
                           className="content wow fadeInUp"
                           data-wow-delay=".3s"
                         >
-                        
-                        
-                          <div className="top-label">Q4 - 2022</div>
                         
                         
                         
