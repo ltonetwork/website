@@ -214,15 +214,15 @@ const Works2Slider = ({ subBG }) => {
                         
                         
                            
-                        <div
+                       <div
                             className="item-img bg-img wow imago"
                             style={{
-                              backgroundImage: "url(/img/about/roadmap-generic.jpg)",
+                              backgroundImage: "url(/img/about/roadmap-11.jpg)",
                             }}
                           ></div>
                           <div className="cont bgbox">
-                            <h6>New Media Partnership</h6>
-                            <h4>A new media based partnership will be announced.</h4>
+                            <h6>NFT2.0 Partnership Announce</h6>
+                            <h4>NFT2.0 Partnership Announcement - Media Focus.</h4>
                           </div>
                         </div>
                       </SwiperSlide>
