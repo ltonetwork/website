@@ -196,7 +196,7 @@ const Works2Slider = ({ subBG }) => {
                         <div
                             className="item-img bg-img wow imago"
                             style={{
-                              backgroundImage: "url(/img/about/roadmap-generic.jpg)",
+                              backgroundImage: "url(/img/about/roadmap-3.jpg)",
                             }}
                           ></div>
                           <div className="cont bgbox">
