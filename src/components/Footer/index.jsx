@@ -48,6 +48,7 @@ const Footer = () => {
               <li className="footer-title mt-20">GDPR</li>
               <li><Link href="/documents/privacy-policy.pdf"><a className="footer-item" target="_blank">Privacy Policy</a></Link></li>
               <li><Link href="/documents/cookie-statement.pdf"><a className="footer-item" target="_blank">Cookie Statement</a></Link></li>
+              <li><Link href="/documents/Terms and Conditions LTO Network B.V. - 16.01.2019.pdf"><a className="footer-item" target="_blank">Terms and conditions</a></Link></li>
             </ul>
           </div>
         </div>
@@ -64,12 +65,9 @@ const Footer = () => {
                   <li>
                     <span>Press & Media Relations : </span> <Link href="mailto:press@ltonetwork.com"><a>press@ltonetwork.com</a></Link>
                   </li>
-                  <li>
-                    <span>Address : </span> LTO Network B.V. <br/>Helicopterstraat 25h, 1059 CE <br/>Amsterdam, Netherlands
-                  </li>
                 </ul>
               </div>
-              <div className="social-icon">
+              <div className="social-icon pt-50">
                 <h6 className="custom-font stit simple-btn">Follow Us</h6>
                 <div className="social">
                   <Link href="https://twitter.com/TheLTONetwork">
@@ -137,7 +135,7 @@ const Footer = () => {
                 ]}
               />
             </div>
-            <p className="pt-30">© 2022, LTO Network</p>
+            <p className="pt-10">© 2022, LTO Network</p>
             <p>Incorporated by <Link href="https://www.firm24.com/bv-oprichten/"><a target="_blank" style={{color: "var(--lto-secondary)" }}>Firm24</a></Link></p>
           </div>
         </div>
