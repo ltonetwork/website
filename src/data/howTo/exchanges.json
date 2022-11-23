@@ -106,5 +106,11 @@
     "darkImage": "/img/how-to/exchanges/Coinmetro-Exchange-Logo.png",
     "name": "Coinmetro",
     "url": "https://go.coinmetro.com/express/buy/LTO/USD"
+  },
+  {
+    "id": 19,
+    "darkImage": "/img/how-to/exchanges/coinmerce-logo.webp",
+    "name": "Coinmerce",
+    "url": "https://coinmerce.io/en/"
   }
 ]
