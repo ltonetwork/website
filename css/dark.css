@@ -5217,7 +5217,7 @@ body {
   position: relative;
   height: 480px;
   line-height: 0;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
 }
 .work-carousel .content:hover .item-ig {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
