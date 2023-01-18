@@ -16,7 +16,7 @@ import TitaniumLitePaper from "../components/TitaniumLitePaper";
 
 import Team1 from "../components/Team1";
 import PressKit from "../components/PressKit";
-import Works2Slider from "../components/Works2-slider";
+import Works2023Slider from "../components/Works2023-slider";
 
 import Footer from "../components/Footer";
 
@@ -41,7 +41,7 @@ const ShowcaseDark = () => {
       </SectionWrapper>
       <Team1/>
       <PressKit/>
-      <Works2Slider />
+      <Works2023Slider />
       <Footer />
     </DarkTheme>
   );
