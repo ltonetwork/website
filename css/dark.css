@@ -5258,7 +5258,8 @@ body {
 }
 
 .work-carousel.caroul .content .item-img {
-  height: 200px;
+  height: auto;
+  padding-top: 66%;
 }
 
 .work-carousel .noraidus .item-img {
