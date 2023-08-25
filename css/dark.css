@@ -6856,6 +6856,202 @@ body {
 }
 
 /* ====================== [ End Footer ] ====================== */
+/* ====================== [ Start Home 2023 ] ====================== */
+
+.section-2023 .container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.section-2023 iframe {
+  max-width: 100%;
+}
+
+.title-2023 {
+  font-weight: 200;
+  font-size: 70px;
+  line-height: 1.2;
+  color: #00FFFF;
+}
+
+.subtitle-2023 {
+  font-weight: 200;
+  font-size: 48px;
+  color: #00FFFF;
+}
+
+.section-2023 p {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 1.4;
+  color: white;
+}
+
+.link-2023 {
+  position: relative;
+  font-weight: 300;
+  font-size: 42px;
+  line-height: 1;
+  color: #F615FF;
+  transition: 300ms;
+}
+
+.link-2023::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  bottom: -8px;
+  background: #F615FF;
+  transition: 300ms;
+}
+
+.link-2023:hover {
+  color: white !important;
+}
+
+.link-2023:hover::after {
+  bottom: -5px;
+}
+
+#home--HybridPower {
+  background-image: url('../img/home-2023/hybrid-strip.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 16px;
+}
+
+.metric-boxes {
+  display: flex;
+  gap: 40px;
+}
+
+.metric-boxes__item {
+  border-radius: 15px;
+  background: linear-gradient(to right, #B01DA1, #6A14D1);
+  padding: 30px 22px 18px;
+  width: 25%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-boxes__item span:nth-child(1) {
+  font-weight: 200;
+  font-size: 50px;
+  line-height: 1;
+  margin-top: auto;
+}
+
+.metric-boxes__item span:nth-child(2) {
+  font-weight: 200;
+  font-size: 26px;
+  margin-top: -10px;
+}
+
+.metric-boxes__item p {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+#home--TrueAssetOwnership {
+  background-color: #11141B;
+  background-image: url('../img/home-2023/tao-side.png'), url('../img/home-2023/tao-bg.jpg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: right top 100px, left bottom;
+  background-size: 400px, 100%;
+  position: relative;
+  padding-bottom: 500px;
+}
+
+#home--TrueAssetOwnership p {
+  max-width: 51%;
+}
+
+#home--TrueAssetOwnership img {
+  position: absolute;
+  bottom: 60px;
+  right: 30px;
+  width: 500px;
+}
+
+#home--Ownables {
+  position: relative;
+}
+
+#home--Ownables img {
+  width: auto;
+}
+
+#home--Ownables .ownables-bg {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  z-index: -1;
+}
+
+#home--Ownables .title-image {
+  width: 500px;
+}
+
+#home--Proofi a {
+  color: #872AFF;
+}
+
+#home--Proofi a::after {
+  background: #872AFF; 
+}
+
+.proofi-logo {
+  margin-bottom: 35px;
+}
+
+.flex-box {
+  display: flex;
+  align-items: flex-end;
+}
+
+.flex-box__left {
+  flex: 0 0 60%;
+  padding-right: 30px;
+}
+
+.flex-box__right {
+  flex: 0 0 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-box__right img {
+  width: 340px;
+}
+
+#home--YourWalletIsYou {
+  background: rgba(109, 5, 255, 0.1);
+}
+
+#home--YourWalletIsYou a {
+  color: #00CEEA;
+}
+
+#home--YourWalletIsYou a::after {
+  background: #00CEEA; 
+}
+
+.team.section-2023 .sec-head {
+  max-width: 300px;
+  margin-left: 0;
+}
+
+/* ====================== [ End Home 2023 ] ====================== */
+@media screen and (max-width: 1120px) {
+  #home--TrueAssetOwnership {
+    background-position: right top 245px, left bottom;
+    background-size: 330px, 100%;
+  }
+}
 /* ====================== [ Start Responsive ] ====================== */
 @media screen and (max-width: 991px) {
   .section-padding {
@@ -7123,6 +7319,88 @@ body {
   .next-prog .box .copy-cap h1 {
     font-size: 40px;
   }
+  /* [ Home 2023 Tablet Responsive ] */
+  .title-2023 {
+    font-size: 60px;
+  }
+
+  .subtitle-2023 {
+    font-size: 42px;
+  }
+
+  .section-2023 p {
+    font-size: 32px;
+  }
+
+  #home--HybridPower {
+    background-size: 17px;
+  }
+
+  #home--HybridPower .subtitle-2023 {
+    margin-top: 60px !important;
+  }
+
+  .metric-boxes {
+    flex-wrap: wrap;    
+    gap: 30px;
+    margin-top: 25px !important;
+    margin-bottom: 60px !important;
+  }
+
+  .metric-boxes__item {
+    width: calc(50% - 30px);
+  }
+
+  .metric-boxes__item span:nth-child(1) {
+    font-size: 42px;
+  }
+
+  .metric-boxes__item p {
+    font-size: 20px;
+  }
+
+  #home--TrueAssetOwnership {
+    padding-top: 60px !important;
+    background-image: url(../img/home-2023/tao-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 100%;
+    padding-bottom: 100px;
+  }
+
+  #home--TrueAssetOwnership p {
+    max-width: 100%;
+  }
+
+  #home--TrueAssetOwnership img {
+    position: static;    
+  }
+
+  #home--Ownables {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+
+  #home--YourWalletIsYou {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+
+  .flex-box {
+    flex-direction: column;
+    align-items: flex-start;
+  } 
+
+  .flex-box__left {
+    flex: 0 0 auto;
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+
+  .flex-box__right {
+    flex: 0 0 auto;
+    align-items: flex-start;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -7346,6 +7624,43 @@ body {
   .team-crv .img-box .img.sizmd {
     margin-bottom: 30px;
   }
+  /* [ Home 2023 Large Mobile Responsive ] */
+  .title-2023 {
+    font-size: 50px;
+  }
+
+  .subtitle-2023 {
+    font-size: 38px;
+  }
+
+  .section-2023 p {
+    font-size: 26px;
+  }
+
+  .metric-boxes__item p {
+    font-size: 20px;
+  }
+
+  #home--HybridPower {
+    background-size: 18px;
+  }
+
+  #home--HybridPower .subtitle-2023 {
+    margin-top: 50px !important;
+  }
+
+  .metric-boxes {
+    flex-wrap: wrap;
+    margin-bottom: 20px !important;*/
+  }
+
+  .link-2023 {
+    font-size: 36px;
+  }
+
+  #home--Ownables a {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -7476,6 +7791,69 @@ body {
   .testimonials:hover .arrows .prev {
     opacity: 0;
     right: 0;
+  }
+
+  /* [ Home 2023 Small Mobile Responsive ] */
+  .section-2023 .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .title-2023 {
+    font-size: 44px;
+  }
+
+  .subtitle-2023 {
+    font-size: 36px;
+  }
+
+  .section-2023 p {
+    font-size: 22px;
+  }
+
+  .link-2023 {
+    font-size: 28px;
+  }
+
+  #home--HybridPower {
+    background: none;
+    padding-bottom: 40px !important;
+  }
+
+  #home--HybridPower .subtitle-2023 {
+    margin-top: 40px !important;
+  }
+
+  .metric-boxes {
+    gap: 15px;
+  }
+
+  .metric-boxes__item {
+    padding: 15px 10px 8px;
+    width: calc(50% - 15px);
+  }
+
+  .metric-boxes__item span:nth-child(1) {
+    font-size: 38px;
+    margin-bottom: 0;
+  }
+
+  .metric-boxes__item p {
+    font-size: 18px;
+  }
+
+  #home--Proofi {
+    padding-top: 40px !important;
+    padding-bottom: 80px !important;
+  }
+
+  #home--YourWalletIsYou {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .section-2023.team .navs {
+    top: 125px;
   }
 }
 
