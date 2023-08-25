@@ -33,16 +33,10 @@ const Works2Slider = ({ subBG }) => {
         } position-re`}
       >
         <div className="container">
-          <div className="sec-head custom-font text-center">
-            <h6 className="wow fadeIn" data-wow-delay=".5s">
-              2023 Development Roadmap
-            </h6>
+          <div className="custom-font text-center">
             <Split>
-              <h3 className="wow words chars splitting" data-splitting>
-                Roadmap
-              </h3>
+              <h2 className="title-2023" data-splitting>2023 Roadmap</h2>
             </Split>
-            <span className="tbg">Roadmap</span>
           </div>
           <div className="row">
             <div className="col-lg-12 no-padding">

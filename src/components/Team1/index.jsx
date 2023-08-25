@@ -57,13 +57,13 @@ class Team1 extends React.Component {
 
   render() {
     return (
-      <section className="team section-padding">
+      <section className="team section-padding section-2023">
         <div className="container">
           <div className="row">
             <div className="col-lg-3 valign">
               <div className="full-width">
                 <div className="sec-head custom-font mb-0">
-                  <h3 style={{'lineHeight':"1em"}}>Team</h3>
+                  <h2 className="title-2023">Team</h2>
                   <p>Meet the vibrant team behind LTO Network</p>
                 </div>
                 {this.renderArrows()}

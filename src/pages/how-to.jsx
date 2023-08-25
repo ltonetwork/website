@@ -19,12 +19,7 @@ const HowToDark = () => {
   return (
     <DarkTheme>
       <NavbarFullMenu />
-      <BigTitle 
-        title="How-To & Docs" 
-        subtitle="Learn More" 
-        backTitle="How To"
-        paddingTop="100" 
-      />
+      <h2 className="title-2023 pt-100 text-center pb-30">How-To & Docs</h2>
       <TOC />
       <FAQ />
       <NodeOperator />

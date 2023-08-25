@@ -11,13 +11,7 @@ const BlogsThreeColumn1 = ({ subBG }) => {
     <section className={`blog-grid section-padding pt-100 ${subBG ? "sub-bg" : ""}`}>
       <div className="container" id="feed-wrap">
         <div className="sec-head custom-font text-center">
-          <h6 className="wow fadeIn" data-wow-delay=".5s">
-            Latest News
-          </h6>
-          <h3 className="wow" data-splitting>
-            News & Updates
-          </h3>
-          <span className="tbg">Blogs</span>
+          <h2 className="title-2023">News & Updates</h2>
         </div>
         <div className="row work-carousel caroul" id="feed">
         </div>

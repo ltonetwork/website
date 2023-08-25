@@ -3,6 +3,12 @@ import NavbarFullMenu from "../components/Navbar-full-menu/navbar-full-menu";
 import HomeHero from "../components/HomeHero";
 import DarkTheme from "../layouts/Dark";
 
+import HybridPower from "../components/Home2023/HybridPower";
+import TrueAssetOwnership from "../components/Home2023/TrueAssetOwnership";
+import Ownables from "../components/Home2023/Ownables";
+import Proofi from "../components/Home2023/Proofi";
+import YourWalletIsYou from "../components/Home2023/YourWalletIsYou";
+
 import WhatIsLTO from "../components/WhatIsLTO";
 
 import SectionWrapper from "../components/SectionWrapper";
@@ -25,20 +31,11 @@ const ShowcaseDark = () => {
     <DarkTheme>
       <NavbarFullMenu />
       <HomeHero />
-      <WhatIsLTO/>
-      <SectionWrapper> 
-        <BigTitle 
-          title="Key Tech & Benefits" 
-          subtitle="What we offer" 
-          backTitle="Key Tech"
-          paddingTop="0" 
-        />
-        <HybridArchitecture/>
-        {/*<DataAnchoring/>*/}
-        {/*<AnchoringPartners/>*/}
-        <IdentityPlatform/>
-        <TitaniumLitePaper/>
-      </SectionWrapper>
+      <HybridPower />
+      <TrueAssetOwnership />
+      <Ownables />
+      <Proofi />
+      <YourWalletIsYou />
       <Team1/>
       <PressKit/>
       <Works2023Slider />

@@ -11,12 +11,7 @@ const PartnershipsDark = () => {
   return (
     <DarkTheme>
       <NavbarFullMenu />
-      <BigTitle 
-        title="Partnerships & Projects" 
-        subtitle="Our Partners" 
-        backTitle="Partners"
-        paddingTop="100" 
-      />
+      <h2 className="title-2023 pt-100 text-center pb-30">Partnerships & Projects</h2>
       <PartnerSlider />
       <Footer />
     </DarkTheme>
