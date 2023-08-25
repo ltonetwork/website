@@ -12,7 +12,7 @@ const HybridPower = () => {
               <h3 className="subtitle-2023 mt-70 mb-10">Key Metrics</h3>
               <div className="metric-boxes mt-40 mb-100">
                 <div className="metric-boxes__item">
-                  <span>1580</span>
+                  <span>1682</span>
                   <span>Days</span>
                   <p><strong>Mainnet</strong> Uptime</p>
                 </div>
@@ -21,12 +21,12 @@ const HybridPower = () => {
                   <p><strong>Total</strong> Nodes</p>
                 </div>
                 <div className="metric-boxes__item">
-                  <span>160mil</span>
+                  <span>172mil</span>
                   <p><strong>Staked</strong> Coins</p>
                 </div>
                 <div className="metric-boxes__item">
-                  <span>250k</span>
-                  <span>(monthly)</span>
+                  <span>250k+</span>
+                  <span>(weekly)</span>
                   <p><strong>Operations</strong></p>
                 </div>
               </div>
