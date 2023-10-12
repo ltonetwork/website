@@ -7,7 +7,7 @@ const HybridPower = () => {
         <div id="about">
           <section id="home--HybridPower" className="section-2023 pt-60 pb-80">
             <div className="container">
-              <h2 className="title-2023 mb-20">A Layer 1 for Real World Assets and Privacy</h2>
+              <h2 className="title-2023 mb-20">Layer 1 for Real World Assets & Privacy</h2>
               <p>LTO Network is a <span style={{ color:"#00FFFF" }}>Layer 1 blockchain</span> with a Public and Private layer to bridge the gap between real-world and digital ownership, decentralized identities, and privacy.</p>
               <h3 className="subtitle-2023 mt-70 mb-10">Key Metrics</h3>
               <div className="metric-boxes mt-40 mb-100">
