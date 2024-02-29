@@ -63,32 +63,32 @@ const NavbarFullMenu = ({ theme, lr }) => {
                   </li>
                   <li>
                     <div className="o-hidden">
+                      <a href="https://blog.ltonetwork.com" rel="noopener noreferrer" target="_blank">
+                          <a className="link">
+                            <span className="nm">02.</span>Blog &amp; News
+                          </a>
+                      </a>
+                    </div>
+                  </li>
+                  {/* <li>
+                    <div className="o-hidden">
                       <Link href="/#about">
                         <a className="link">
                           <span className="nm">02.</span>What is LTO Network?
                         </a>
                       </Link>
                     </div>
-                  </li>
+                  </li> */}
                   <li>
                     <div className="o-hidden">
                       <Link href="/how-to">
                         <a className="link">
-                          <span className="nm">03.</span>HowTo &amp; Docs
+                          <span className="nm">03.</span>FAQs &amp; Technical Docs
                         </a>
                       </Link>
                     </div>
                   </li>
-                  <li>
-                    <div className="o-hidden">
-                      <Link href="/news">
-                        <a className="link">
-                          <span className="nm">04.</span>News
-                        </a>
-                      </Link>
-                    </div>
-                  </li>
-                  <li>
+                  {/* <li>
                     <div className="o-hidden">
                       <Link href="/partnerships">
                         <a className="link">
@@ -96,7 +96,7 @@ const NavbarFullMenu = ({ theme, lr }) => {
                         </a>
                       </Link>
                     </div>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
