@@ -46,7 +46,7 @@ const Footer = () => {
               <li><Link href="/documents/LTO%20Network%20-%20Identities%20Paper.pdf" target="_blank"><a className="footer-item">Identities Paper</a></Link></li>
               <li><Link href="/documents/LTO%20Network%20-%20Identities%20Tech.pdf" target="_blank"><a className="footer-item">Identities Technical Paper</a></Link></li>
               <li className="footer-title mt-20">GDPR</li>
-              <li><Link href="/documents/privacy-policy.pdf"><a className="footer-item" target="_blank">Privacy Policy</a></Link></li>
+              <li><Link href="/documents/privacy-policy.html"><a className="footer-item" target="_blank">Privacy Policy</a></Link></li>
               <li><Link href="/documents/cookie-statement.pdf"><a className="footer-item" target="_blank">Cookie Statement</a></Link></li>
               <li><Link href="/documents/Terms and Conditions LTO Network B.V. - 16.01.2019.pdf"><a className="footer-item" target="_blank">Terms and conditions</a></Link></li>
             </ul>
