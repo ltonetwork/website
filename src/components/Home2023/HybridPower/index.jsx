@@ -3,6 +3,18 @@ import Split from "../../Split";
 import Link from 'next/link';
 
 const HybridPower = () => {
+      // Function to calculate the difference in days
+      const calculateDaysSince = (startDate) => {
+        const start = new Date(startDate);
+        const now = new Date();
+        const difference = now - start;
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        return days;
+    };
+
+    // Calculate days since January 19, 2019
+    const daysSinceLaunch = calculateDaysSince('2019-01-16');
+
     return (
         <div id="about">
           <section id="home--HybridPower" className="section-2023 pt-60 pb-80">
@@ -12,7 +24,8 @@ const HybridPower = () => {
               <h3 className="subtitle-2023 mt-70 mb-10">Key Metrics</h3>
               <div className="metric-boxes mt-40 mb-100">
                 <div className="metric-boxes__item">
-                  <span>2001</span>
+                  {/* <span>2001</span> */}
+                  <span>{daysSinceLaunch}</span>
                   <span>Days</span>
                   <p><strong>Mainnet</strong> Uptime</p>
                 </div>
