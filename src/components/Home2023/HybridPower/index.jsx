@@ -12,6 +12,7 @@ const HybridPower = () => {
               <h3 className="subtitle-2023 mt-70 mb-10">Key Metrics</h3>
               <div className="metric-boxes mt-40 mb-100">
                 <div className="metric-boxes__item">
+                  
                   <span>2001</span>
                   <span>Days</span>
                   <p><strong>Mainnet</strong> Uptime</p>
