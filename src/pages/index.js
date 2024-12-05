@@ -33,11 +33,11 @@ const ShowcaseDark = () => {
       <NavbarFullMenu />
       <HomeHero />
       <HybridPower />
-      {/* <MobileWallet /> */}
+      <MobileWallet />
       <TrueAssetOwnership />
       <Ownables />
       <Proofi />
-      <YourWalletIsYou />
+      {/* <YourWalletIsYou /> */}
       <Team1/>
       <PressKit/>
       <Works2023Slider />

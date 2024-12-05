@@ -15,16 +15,16 @@ const MobileWallet = () => {
                         <h2 className="title-2023 mb-20">Universal Wallet Is Here</h2>
                         <p className="mb-20">A truly decentralized wallet for RWAs, tokenization, digital collectibles and media assets.</p>
                         <div className="links-container">
-                            <Link href="https://apps.apple.com/app/idXXXXXXXXX" target="_blank">
+                            <Link href="https://apps.apple.com/us/app/lto-universal-wallet/id6448051682" target="_blank">
                                 <a>
-                                <img src="/img/home-2023/apple-store500x300.png" alt="Download on the App Store" />
+                                <img src="/img/home-2023/apple-store500x300.png" alt="Download on the App Store" style={{ maxWidth: '300px' }}/>
                                 </a>
                             </Link>
-                            <Link href="https://play.google.com/store/apps/details?id=XXXXXXXXX" target="_blank">
+                            {/* <Link href="https://play.google.com/store/apps/details?id=XXXXXXXXX" target="_blank">
                                 <a>
                                 <img src="/img/home-2023/play-store500x300.png" alt="Download on the Play Store" />
                                 </a>
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
                 </div>
