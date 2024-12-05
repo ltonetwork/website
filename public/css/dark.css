@@ -7012,13 +7012,32 @@ body {
   align-items: flex-end;
 }
 
+.flex-box__nolink {
+  display: flex;
+  align-items: center;
+}
+
+.flex-box__mw {
+  display: flex;
+  align-items: flex-end;
+}
+
 .flex-box__left {
   flex: 0 0 60%;
   padding-right: 30px;
 }
 
-.flex-box__right {
+.flex-box__left__mw {
   flex: 0 0 40%;
+  padding-right: 30px;
+}
+
+.flex-box__left__mw img {
+  width: 600px;
+}
+
+.flex-box__right {
+  flex: 0 0 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7026,6 +7045,23 @@ body {
 
 .flex-box__right img {
   width: 340px;
+}
+
+.flex-box__right__mw {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-box__right__mw img {
+  width: 600px;
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
 }
 
 #home--YourWalletIsYou {
@@ -7037,6 +7073,19 @@ body {
 }
 
 #home--YourWalletIsYou a::after {
+  background: #00CEEA; 
+}
+
+#home--MobileWallet {
+  /* background: rgba(109, 5, 255, 0.1); */
+  background: rgba(58, 2, 142, 0.1);
+}
+
+#home--MobileWallet a {
+  color: #00CEEA;
+}
+
+#home--MobileWallet a::after {
   background: #00CEEA; 
 }
 
@@ -7386,9 +7435,19 @@ body {
     padding-bottom: 60px !important;
   }
 
+  #home--MobileWallet {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+
   .flex-box {
     flex-direction: column;
     align-items: flex-start;
+  } 
+
+  .flex-box__nolink {
+    flex-direction: column;
+    align-items: center;
   } 
 
   .flex-box__left {
@@ -7651,10 +7710,14 @@ body {
 
   .metric-boxes {
     flex-wrap: wrap;
-    margin-bottom: 20px !important;*/
+    margin-bottom: 20px !important;
   }
 
   .link-2023 {
+    font-size: 36px;
+  }
+
+  .link-2024 {
     font-size: 36px;
   }
 
@@ -7815,6 +7878,16 @@ body {
     font-size: 28px;
   }
 
+  .link-2024 {
+    font-size: 22px;
+  }
+
+  .links-container {
+    display: flex;
+    justify-content: center;
+  }
+
+
   #home--HybridPower {
     background: none;
     padding-bottom: 40px !important;
@@ -7848,6 +7921,11 @@ body {
   }
 
   #home--YourWalletIsYou {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  #home--MobileWallet {
     padding-top: 40px !important;
     padding-bottom: 40px !important;
   }
