@@ -17,14 +17,14 @@ const MobileWallet = () => {
                         <div className="links-container">
                             <Link href="https://apps.apple.com/us/app/lto-universal-wallet/id6448051682" target="_blank">
                                 <a>
-                                <img src="/img/home-2023/apple-store500x300.png" alt="Download on the App Store" style={{ maxWidth: '300px' }}/>
+                                <img src="/img/home-2023/apple-store500x300.png" alt="Download on the App Store" />
                                 </a>
                             </Link>
-                            {/* <Link href="https://play.google.com/store/apps/details?id=XXXXXXXXX" target="_blank">
+                            <Link href="https://play.google.com/store/apps/details?id=com2.ltonetwork.universal" target="_blank">
                                 <a>
                                 <img src="/img/home-2023/play-store500x300.png" alt="Download on the Play Store" />
                                 </a>
-                            </Link> */}
+                            </Link>
                         </div>
                     </div>
                 </div>
