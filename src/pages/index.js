@@ -40,7 +40,7 @@ const ShowcaseDark = () => {
       {/* <YourWalletIsYou /> */}
       <Team1/>
       <PressKit/>
-      <Works2023Slider />
+      {/* <Works2023Slider /> */}
       <Footer />
     </DarkTheme>
   );
