@@ -131,7 +131,8 @@ class HomeHero extends React.Component {
 
     scrollToAbout = () => {
       window.scrollTo({
-        top: document.getElementById('about').offsetTop - 50,
+        top: document.getElementById('wallet').offsetTop - 50,
+        // top: document.getElementById('about').offsetTop - 50,
         behavior: 'smooth',
       });
     };

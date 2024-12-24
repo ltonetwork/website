@@ -7,7 +7,7 @@ import HybridPower from "../components/Home2023/HybridPower";
 import TrueAssetOwnership from "../components/Home2023/TrueAssetOwnership";
 import Ownables from "../components/Home2023/Ownables";
 import Proofi from "../components/Home2023/Proofi";
-import YourWalletIsYou from "../components/Home2023/YourWalletIsYou";
+// import YourWalletIsYou from "../components/Home2023/YourWalletIsYou";
 import MobileWallet from "../components/Home2023/MobileWallet";
 
 import WhatIsLTO from "../components/WhatIsLTO";
@@ -23,7 +23,8 @@ import TitaniumLitePaper from "../components/TitaniumLitePaper";
 
 import Team1 from "../components/Team1";
 import PressKit from "../components/PressKit";
-import Works2023Slider from "../components/Works2023-slider";
+// import Works2023Slider from "../components/Works2023-slider";
+import Banner from "../components/Home2023/Banner";
 
 import Footer from "../components/Footer";
 
@@ -31,7 +32,9 @@ const ShowcaseDark = () => {
   return (
     <DarkTheme>
       <NavbarFullMenu />
+      <Banner />
       <HomeHero />
+      <MobileWallet />
       <HybridPower />
       <MobileWallet />
       <TrueAssetOwnership />
