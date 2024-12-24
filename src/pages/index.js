@@ -36,7 +36,6 @@ const ShowcaseDark = () => {
       <HomeHero />
       <MobileWallet />
       <HybridPower />
-      <MobileWallet />
       <TrueAssetOwnership />
       <Ownables />
       <Proofi />
