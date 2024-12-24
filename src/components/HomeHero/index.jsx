@@ -139,7 +139,7 @@ class HomeHero extends React.Component {
 
     render() {
         return (
-            <div className="hero" onMouseMove={heroMouseMove} onTouchMove={heroMouseMove}>
+            <div id="home--Hero" className="hero" onMouseMove={heroMouseMove} onTouchMove={heroMouseMove}>
               <div className="hero__inner"> 
                 <div className="hero__image" data-x="0.05" data-y="0.05" data-scale="1.05"><img src="/img/hero/layer-sky.jpg"/></div>
                 <div className="hero__image hero__image--sun" data-x="0.065" data-y="0.065" data-scale="1.1"><img src="/img/hero/layer-sunNoSparkle.png"/></div>
