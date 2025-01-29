@@ -315,9 +315,45 @@ b, strong {
 }
 
 .hero__image--text h1 {
-  font-size: 115px;
+  font-size: 85px;
   line-height: 1;
   text-shadow: 0px 0px 5px rgba(255,255,255,0.5);
+}
+
+.hero__buttons {
+  margin-top: 20px; /* Space above the buttons */
+  display: flex; /* Align buttons in a row */
+  justify-content: center; /* Center the buttons horizontally */
+}
+
+.hero__button {
+  padding: 10px 20px; /* Padding inside the button */
+  margin: 0 10px; /* Space between buttons */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+.hero__button--primary {
+  background-color: #0070f3; /* Primary button color */
+  color: white; /* Text color */
+}
+
+.hero__button--primary:hover {
+  background-color: #005bb5; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.hero__button--secondary {
+  background-color: #eaeaea; /* Secondary button color */
+  color: #333; /* Text color */
+}
+
+.hero__button--secondary:hover {
+  background-color: #d4d4d4; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .hero__link {
@@ -2813,7 +2849,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 999999;
-  padding: 20px 0;
+  padding: 10px 0;
   color: #fff;
   -webkit-transition: all 0.7s;
   -o-transition: all 0.7s;
@@ -7072,7 +7108,9 @@ body {
 
 .banner-link{
   margin: 0 10px;
-  max-width: 200px; 
+  max-width: 180px; 
+  opacity: 0.9;
+  /* transition: opacity 1.3s ease;  */
 }
 
 #home--YourWalletIsYou {
