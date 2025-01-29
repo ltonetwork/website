@@ -146,12 +146,7 @@ class HomeHero extends React.Component {
                 <div className="hero__image hero__image--sparkle" data-x="0.065" data-y="0.065" data-scale="1.1"><img src="/img/hero/layer-sunSparkle.png"/></div>
                 <div className="hero__image" data-x="0.09" data-y="0.09" data-scale="1.15"><img src="/img/hero/layer-smallField.png"/></div>
                 <div className="hero__image" data-x="0.13" data-y="0.13" data-scale="1.15"><img src="/img/hero/layer-bigField.png"/></div>
-                <div className="hero__image hero__image--text" data-x="0.15" data-y="1.5" data-scale="1"><h1 className="hero__title">L<br/>T<br/>O</h1>
-                  {/* <div className="hero__buttons">
-                      <button className="hero__button hero__button--primary">Button 1</button>
-                      <button className="hero__button hero__button--secondary">Button 2</button>
-                  </div> */}
-                </div>
+                <div className="hero__image hero__image--text" data-x="0.15" data-y="1.5" data-scale="1"><h1 className="hero__title">L<br/>T<br/>O</h1></div>
                 <div className="hero__image hero__image--leaf7 nudge-left" data-x="0.17" data-y="0.17" data-scale="1.19"><img src="/img/hero/layer-leaf7Trans.png"/></div>
                 <div className="hero__image hero__image--leaf6 nudge-left" data-x="0.22" data-y="0.22" data-scale="1.2"><img src="/img/hero/layer-leaf6Trans.png"/></div>
                 <div className="hero__image hero__image--leaf5 nudge-left stay-top" data-x="0.25" data-y="0.25" data-scale="1.2"><img src="/img/hero/layer-leaf5.png"/></div>
