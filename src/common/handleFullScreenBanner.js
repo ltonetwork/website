@@ -9,6 +9,7 @@ const handleFullScreenBanner = () => {
         banner.style.top = '0';
         banner.style.width = '100%';
         banner.style.zIndex = '10';
+        banner.style.transition = 'opacity 0.5s ease'
     }
 
     window.addEventListener('scroll', () => {
