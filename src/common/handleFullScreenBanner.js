@@ -4,7 +4,6 @@ const handleFullScreenBanner = () => {
     }
 
     const banner = document.getElementById('home--Banner');
-
     if (banner) {
         banner.style.position = 'fixed';
         banner.style.top = '0';
@@ -18,21 +17,36 @@ const handleFullScreenBanner = () => {
         const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
         const scrollPercentage = (scrollPosition / pageHeight) * 100;
 
-        if (scrollPercentage >= 8) {
-            banner.style.opacity = '0';
-        } else {
-            banner.style.opacity = '1';
-            banner.style.display = 'block';
-        }
-    });
-
-    banner.addEventListener('transitionend', () => {
-        if (banner.style.opacity === '0') {
+        if (scrollPercentage >= 15) {
             banner.style.display = 'none';
+        } else {
+            banner.style.display = 'block';
         }
     });
 
 };
 
+// const banner = document.getElementById('home--Banner');
+// const homeHero = document.getElementById('home--Hero');
+
+// if (banner && homeHero) {
+//     const observer = new IntersectionObserver(
+//         ([entry]) => {
+//             if (entry.isIntersecting) {
+//                 banner.style.position = 'fixed';
+//                 banner.style.top = '0';
+//                 banner.style.width = '100%';
+//                 banner.style.zIndex = '10';
+//                 banner.style.display = 'block';
+//             } else {
+//                 banner.style.display = 'none';
+//             }
+//         },
+//         { threshold: 0.1 }
+//     );
+
+//     observer.observe(homeHero);
+// }
+// };
 
 export default handleFullScreenBanner;
