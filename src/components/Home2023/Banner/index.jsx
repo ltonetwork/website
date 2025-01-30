@@ -9,7 +9,7 @@ const Banner = ({ theme, lr }) => {
         handleFullScreenBanner();
     }, []);
     return (
-            <section id="home--Banner" className="section-2023 pt-60">
+            <section id="home--Banner" className="section-2023 pt-35">
                 <div className="container">
                     <div className="banner-container">
                         <Link href="https://apps.apple.com/us/app/lto-universal-wallet/id6448051682" target="_blank">
