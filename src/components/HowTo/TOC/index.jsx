@@ -12,12 +12,12 @@ class TOC extends React.Component {
     render() {
         return (
             <section id="howTo--TOC" className="toc d-flex justify-content-center mb-50 flex-wrap">
+                <button onClick={() => this.scrollTo('howTo--Wallet')}>Wallet</button>
                 <button onClick={() => this.scrollTo('howTo--FAQ')}>FAQ</button>
                 <button onClick={() => this.scrollTo('howTo--NodeOperator')}>Node Operator</button>
                 <button onClick={() => this.scrollTo('howTo--Buy')}>Buy LTO</button>
                 <button onClick={() => this.scrollTo('howTo--Exchanges')}>Exchanges</button>
-                <button onClick={() => this.scrollTo('howTo--Whitepapers')}>Whitepapers</button>
-                <button onClick={() => this.scrollTo('howTo--Wallet')}>Wallet</button>
+                <button onClick={() => this.scrollTo('howTo--Whitepapers')}>Whitepapers</button>        
             </section>
         );
     }
