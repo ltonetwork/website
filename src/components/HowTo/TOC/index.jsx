@@ -17,6 +17,7 @@ class TOC extends React.Component {
                 <button onClick={() => this.scrollTo('howTo--Buy')}>Buy LTO</button>
                 <button onClick={() => this.scrollTo('howTo--Exchanges')}>Exchanges</button>
                 <button onClick={() => this.scrollTo('howTo--Whitepapers')}>Whitepapers</button>
+                <button onClick={() => this.scrollTo('howTo--Wallet')}>Wallet</button>
             </section>
         );
     }

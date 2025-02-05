@@ -14,6 +14,7 @@ import Exchanges from "../components/Exchanges";
 import Buy from "../components/HowTo/Buy";
 import Whitepapers from "../components/HowTo/Whitepapers";
 // import Litepapers from "../components/HowTo/Litepapers";
+import Wallet from "../components/HowTo/Wallet";
 
 const HowToDark = () => {
   return (
@@ -32,6 +33,7 @@ const HowToDark = () => {
           backgroundSize: "100%"}}>
         <Buy />
         <Exchanges theme="dark" />
+        <Wallet />
       </div>
       <Whitepapers />
       {/*<Litepapers />*/}
