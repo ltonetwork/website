@@ -27,6 +27,9 @@ const MobileWallet = () => {
                                     </a>
                                 </Link>
                             </div>
+                            <Link href="/how-to#howTo--Wallet">
+                                <a className="btn" style={{ fontSize: '40px' }}>How to use the Universal Wallet</a>
+                            </Link>
                         </div>
                     </div>
                 </div>

@@ -22,6 +22,7 @@ const HowToDark = () => {
       <NavbarFullMenu />
       <h2 className="title-2023 pt-100 text-center pb-30">How-To & Docs</h2>
       <TOC />
+      <Wallet />
       <FAQ />
       <NodeOperator />
       {/*<Integrator />*/}
@@ -33,7 +34,6 @@ const HowToDark = () => {
           backgroundSize: "100%"}}>
         <Buy />
         <Exchanges theme="dark" />
-        <Wallet />
       </div>
       <Whitepapers />
       {/*<Litepapers />*/}
