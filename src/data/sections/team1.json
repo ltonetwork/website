@@ -5,26 +5,17 @@
     "name": "Rick Schmitz",
     "title": "CEO",
     "color": "#ff00ff",
-    "linkedin":"https://linkedin.com/in/rschmitz",
-    "twitter":"https://twitter.com/realrickschmitz"
-  },
-  {
-    "id": 2,
-    "image": "/img/team/martijn.png",
-    "name": "Martijn Migchelsen",
-    "title": "CFO",
-    "color":"#ff00ff",
-    "linkedin":"https://www.linkedin.com/in/migchelsen",
-    "twitter":""
+    "linkedin": "https://linkedin.com/in/rschmitz",
+    "twitter": "https://twitter.com/realrickschmitz"
   },
   {
     "id": 3,
     "image": "/img/team/shawn_naderi.png",
     "name": "Shawn Naderi",
     "title": "CMO",
-    "color":"#ff00ff",
-    "linkedin":"",
-    "twitter":"https://twitter.com/itsnaderi"
+    "color": "#ff00ff",
+    "linkedin": "",
+    "twitter": "https://twitter.com/itsnaderi"
   },
   {
     "id": 3,
@@ -32,18 +23,18 @@
     "name": "Arnold Daniels",
     "title": "Chief Architect",
     "color": "#00ccdd",
-    "linkedin":"https://www.linkedin.com/in/arnolddaniels",
-    "twitter":"https://twitter.com/ArnoldDaniels"
+    "linkedin": "https://www.linkedin.com/in/arnolddaniels",
+    "twitter": "https://twitter.com/ArnoldDaniels"
   },
-  
+
   {
     "id": 3,
     "image": "/img/team/borja.png",
     "name": "Borja",
     "title": "Business Development",
     "color": "#00ccdd",
-    "linkedin":"",
-    "twitter":""
+    "linkedin": "",
+    "twitter": ""
   },
   {
     "id": 4,
@@ -51,8 +42,8 @@
     "name": "Andrea",
     "title": "Dev",
     "color": "#00ccdd",
-    "linkedin":"",
-    "twitter":""
+    "linkedin": "",
+    "twitter": ""
   },
   {
     "id": 5,
@@ -60,17 +51,17 @@
     "name": "Maurits",
     "title": "Dev",
     "color": "#00ccdd",
-    "linkedin":"",
-    "twitter":""
+    "linkedin": "",
+    "twitter": ""
   },
-   {
+  {
     "id": 6,
     "image": "/img/team/empty.png",
     "name": "Joshua Van Boxtel",
     "title": "Web-Dev",
     "color": "#00ccdd",
-    "linkedin":"",
-    "twitter":""
+    "linkedin": "",
+    "twitter": ""
   },
   {
     "id": 7,
@@ -78,61 +69,70 @@
     "name": "Ben",
     "title": "Marketing",
     "color": "#510094",
-    "linkedin":"",
-    "twitter":""
+    "linkedin": "",
+    "twitter": ""
   },
   {
     "id": 8,
     "image": "/img/team/christin_team.png",
     "name": "Christin",
     "title": "Marketing",
-    "color":"#510094",
-    "linkedin":"",
-    "twitter":""
+    "color": "#510094",
+    "linkedin": "",
+    "twitter": ""
   },
   {
     "id": 9,
     "image": "/img/team/dom.jpg",
     "name": "Dom",
     "title": "Marketing",
-    "color":"#510094",
-    "linkedin":"",
-    "twitter":""
+    "color": "#510094",
+    "linkedin": "",
+    "twitter": ""
   },
   {
     "id": 10,
     "image": "/img/team/empty.png",
     "name": "Jason",
     "title": "Co-ordinator",
-    "color":"#510094",
-    "linkedin":"",
-    "twitter":""
+    "color": "#510094",
+    "linkedin": "",
+    "twitter": ""
   },
   {
     "id": 11,
     "image": "/img/team/tegan_team.png",
     "name": "Tegan",
     "title": "Business Admin",
-    "color":"#510094",
-    "linkedin":"",
-    "twitter":""
+    "color": "#510094",
+    "linkedin": "",
+    "twitter": ""
   },
   {
-      "id": 12,
+    "id": 2,
+    "image": "/img/team/martijn.png",
+    "name": "Martijn Migchelsen",
+    "title": "Advisor",
+    "color": "#ff00ff",
+    "linkedin": "https://www.linkedin.com/in/migchelsen",
+    "twitter": ""
+  },
+  {
+    "id": 12,
     "image": "/img/team/empty.png",
     "name": "Cees",
     "title": "Marketing",
-    "color":"#510094",
-    "linkedin":"",
-    "twitter":""
+    "color": "#510094",
+    "linkedin": "",
+    "twitter": ""
   },
   {
     "id": 13,
     "image": "/img/team/dog.png",
     "name": "Kobe",
     "title": "Woof",
-    "color":"#510094",
-    "linkedin":"",
-    "twitter":""
+    "color": "#510094",
+    "linkedin": "",
+    "twitter": ""
   }
 ]
