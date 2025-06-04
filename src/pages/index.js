@@ -9,6 +9,7 @@ import Ownables from "../components/Home2023/Ownables";
 import Proofi from "../components/Home2023/Proofi";
 // import YourWalletIsYou from "../components/Home2023/YourWalletIsYou";
 import MobileWallet from "../components/Home2023/MobileWallet";
+import EQTYFinance from "../components/Home2023/EQTYFinance";
 
 import WhatIsLTO from "../components/WhatIsLTO";
 
@@ -32,9 +33,11 @@ const ShowcaseDark = () => {
   return (
     <DarkTheme>
       <NavbarFullMenu />
-      <Banner />
+      {/* <Banner /> */}
       <HomeHero />
+      <EQTYFinance />
       <MobileWallet />
+      {/* <EQTYFinance /> */}
       <HybridPower />
       <TrueAssetOwnership />
       <Ownables />
