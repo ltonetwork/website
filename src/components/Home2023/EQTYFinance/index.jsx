@@ -8,15 +8,18 @@ const EQTYFinance = () => {
             <section id="home--EQTYFinance" className="section-2023 pt-100 pb-100 mb-50">
                 <div className="container">
                     <div className="flex-box">
-                        <div className="flex-box__left__eqty pb-30">
-                            <img className="responsive-img" src="/img/home-2023/eqty-finance.png" alt="EQTY Finance platform interface" />
-                        </div>
-                        <div className="flex-box__right__eqty">
+                        <div className="flex-box__left__eqty">
                             <h2 className="title-2023 mb-20">EQTY Finance</h2>
-                            <p className="mb-20">A decentralized platform for real estate tokenization and investment, powered by LTO Network&apos;s blockchain technology.</p>
-                            <Link href="https://eqty.finance/litepaper" target="_blank">
+                            {/* <p className="mb-20">A decentralized platform for real estate tokenization and investment, powered by LTO Network&apos;s blockchain technology.</p> */}
+                            <p className="mb-20">The moment many of you have been waiting for has arrived. 
+
+We are proud to officially unveil the EQTY Litepaper, which goes on a deep dive of our upcoming tokenization platform!</p>
+                            <Link href="https://blog.ltonetwork.com/EQTY_Litepaper" target="_blank">
                                 <a className="link-2023">Read the Litepaper</a>
                             </Link>
+                        </div>
+                        <div className="flex-box__right__eqty pb-30">
+                            <img className="responsive-img" src="/img/eqty-logo.png" alt="EQTY Finance platform interface" />
                         </div>
                     </div>
                 </div>
@@ -26,6 +29,12 @@ const EQTYFinance = () => {
                         display: flex;
                         gap: 2rem;
                         align-items: center;
+                    }
+
+                    .eqty-logo {
+                        display: block;
+                        max-width: 120px;
+                        margin: 0 auto 16px auto;
                     }
 
                     .flex-box__left__eqty {
@@ -46,7 +55,13 @@ const EQTYFinance = () => {
                             flex-direction: column;
                             text-align: center;
                         }
-
+                        .eqty-logo {
+                            max-width: 90px;
+                            margin-bottom: 12px;
+                        }
+                        .flex-box__right__eqty {
+                            order: -1;
+                        }
                         .responsive-img {
                             max-width: 80%;
                             margin: 0 auto;
