@@ -33,7 +33,7 @@ const ShowcaseDark = () => {
   return (
     <DarkTheme>
       <NavbarFullMenu />
-      {/* <Banner /> */}
+      <Banner />
       <HomeHero />
       <EQTYFinance />
       <MobileWallet />
