@@ -19,7 +19,7 @@ We are proud to officially unveil the EQTY Litepaper, which goes on a deep dive 
                             </Link>
                         </div>
                         <div className="flex-box__right__eqty pb-30">
-                            <img className="responsive-img" src="/img/eqty-logo.png" alt="EQTY Finance platform interface" />
+                            <img className="responsive-img" src="/img/home-2023/litepaper_hero.png" alt="EQTY Finance platform interface" />
                         </div>
                     </div>
                 </div>
