@@ -63,8 +63,21 @@ We are proud to officially unveil the EQTY Litepaper, which goes on a deep dive 
                             order: -1;
                         }
                         .responsive-img {
-                            max-width: 80%;
-                            margin: 0 auto;
+                            max-width: 100vw;
+                            width: 100vw;
+                            height: auto;
+                            margin: 0;
+                            display: block;
+                            padding-left: 0;
+                            padding-right: 0;
+                        }
+                        #home--EQTYFinance .container {
+                            padding-left: 0;
+                            padding-right: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            width: 100vw;
+                            max-width: 100vw;
                         }
                     }
                 `}</style>
