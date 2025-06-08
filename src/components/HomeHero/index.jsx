@@ -88,28 +88,45 @@ const heroMouseMove = (e) => {
     });
 }
 
-const loadHero = () => { 
+const loadHero = () =>{ 
     const title = heroPhrases[Math.floor(Math.random()*heroPhrases.length)].title;
-    const titleElement = document.querySelector('.hero__title');
-    if (titleElement) {
-        titleElement.innerHTML = title;
-    }
-    
-    window.addEventListener('resize', orientHero);
+    document.querySelector('.hero__title').innerHTML = title;
+      
+    // apply initial scales
+    document.querySelectorAll('.hero__image').forEach(function(layer, index){
+      const scale = parseFloat(layer.dataset.scale);
+      if (layer.classList.contains('hero__image--sun')) {
+        layer.style.transform = ' translate3d(0,100%,0) scale('+scale+')';
+      } else {
+        layer.style.transform = 'scale('+scale+')';
+      }
+    });
+
+    window.addEventListener('resize',orientHero);
     orientHero();
+
+    setTimeout(function(){
+        const sunLayer = document.querySelector('.hero__image--sun');
+        document.querySelector('.hero__inner').classList.add('lto-animate');    
+        setTimeout(function(){
+            sunLayer.classList.add('lto-animate');
+            setTimeout(function(){
+                sunLayer.classList.remove('lto-animate');
+                sunLayer.style.transform = 'translate3d(0px,0px,0px) scale(1.1)';
+            },1500)
+        }, 1000);
+    }, 1000);
 }
 
 class HomeHero extends React.Component {
     componentDidMount() {
-        if (document.readyState === 'complete') { 
-            loadHero(); 
-        }
-        window.addEventListener('load', loadHero);
+        if (document.readyState == 'complete') { loadHero(); }
+        window.addEventListener('load',loadHero);
     }
 
     componentWillUnmount() {
-        window.removeEventListener('load', loadHero);
-        window.removeEventListener('resize', orientHero);
+      window.removeEventListener('load',loadHero);
+      window.removeEventListener('resize',orientHero);
     }
 
     scrollToAbout = () => {
@@ -121,11 +138,21 @@ class HomeHero extends React.Component {
 
     render() {
         return (
-            <div id="home--Hero" className="hero">
+            <div id="home--Hero" className="hero" onMouseMove={heroMouseMove} onTouchMove={heroMouseMove}>
               <div className="hero__inner"> 
-                <div className="hero__image hero__image--text" data-x="0.15" data-y="1.5" data-scale="1">
-                  <h1 className="hero__title">L<br/>T<br/>O</h1>
-                </div>
+                <div className="hero__image" data-x="0.05" data-y="0.05" data-scale="1.05"><img src="/img/hero/layer-sky.jpg"/></div>
+                <div className="hero__image hero__image--sun" data-x="0.065" data-y="0.065" data-scale="1.1"><img src="/img/hero/layer-sunNoSparkle.png"/></div>
+                <div className="hero__image hero__image--sparkle" data-x="0.065" data-y="0.065" data-scale="1.1"><img src="/img/hero/layer-sunSparkle.png"/></div>
+                <div className="hero__image" data-x="0.09" data-y="0.09" data-scale="1.15"><img src="/img/hero/layer-smallField.png"/></div>
+                <div className="hero__image" data-x="0.13" data-y="0.13" data-scale="1.15"><img src="/img/hero/layer-bigField.png"/></div>
+                <div className="hero__image hero__image--text" data-x="0.15" data-y="1.5" data-scale="1"><h1 className="hero__title">L<br/>T<br/>O</h1></div>
+                <div className="hero__image hero__image--leaf7 nudge-left" data-x="0.17" data-y="0.17" data-scale="1.19"><img src="/img/hero/layer-leaf7Trans.png"/></div>
+                <div className="hero__image hero__image--leaf6 nudge-left" data-x="0.22" data-y="0.22" data-scale="1.2"><img src="/img/hero/layer-leaf6Trans.png"/></div>
+                <div className="hero__image hero__image--leaf5 nudge-left stay-top" data-x="0.25" data-y="0.25" data-scale="1.2"><img src="/img/hero/layer-leaf5.png"/></div>
+                <div className="hero__image hero__image--leaf4 nudge-right stay-bot" data-x="0.28" data-y="0.28" data-scale="1.22"><img src="/img/hero/layer-leaf4Trans.png"/></div>
+                <div className="hero__image hero__image--leaf3 nudge-right stay-bot" data-x="0.3" data-y="0.3" data-scale="1.25"><img src="/img/hero/layer-leaf3.png"/></div>
+                <div className="hero__image hero__image--leaf2 nudge-right" data-x="0.2" data-y="0.2" data-scale="1.18"><img src="/img/hero/layer-leaf2Trans.png"/></div>
+                <div className="hero__image hero__image--leaf1 nudge-right" data-x="0.28" data-y="0.28" data-scale="1.25"><img src="/img/hero/layer-leaf1Trans.png"/></div>
               </div>
               <div className="hero__prompt">
                 <img src="/img/hero/down-arrow-glow.png" alt="Scroll down" />
