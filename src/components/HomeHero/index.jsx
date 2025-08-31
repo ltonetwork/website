@@ -1,24 +1,23 @@
 import React from 'react';
-import Link from "next/link";
 import heroPhrases from "../../data/hero-phrases.json";
 import Countdown from 'react-countdown';
 
-const orientHero = () => {  
+const orientHero = () => {
     const hero = document.querySelector('.hero');
     const cont = document.querySelector('.hero__inner');
     const heroH = hero.offsetHeight;
     const heroW = hero.offsetWidth;
-  
+
     if (heroH > heroW/1.6) {
       hero.classList.add('hero--vert');
       hero.classList.remove('hero--horz');
       cont.style.width = (heroH * 1.6) + 'px';
       cont.style.height = '100%';
-      
+
       // const nudgeAmount = (((heroH * 1.6) - heroW) / 2) * 0.65;
       const nudgePerc = (((((heroH * 1.6) - heroW) / 2) / (heroH * 1.6))*100)*1.4;
       const nudgeAmount = nudgePerc / 2;
-      
+
       document.querySelectorAll('.nudge-left').forEach(function(layer, index){
         if (layer.classList.contains('stay-top')) {
           layer.style.left = (nudgeAmount * 0.5) + '%';
@@ -30,7 +29,7 @@ const orientHero = () => {
         layer.style.width = (100 - nudgePerc) + '%';
         layer.style.height = (100 - nudgePerc) + '%';
       });
-      
+
       document.querySelectorAll('.nudge-right').forEach(function(layer, index){
         if (layer.classList.contains('stay-bot')) {
           layer.style.top = (nudgeAmount * 2.25) + '%';
@@ -46,7 +45,7 @@ const orientHero = () => {
       hero.classList.remove('hero--vert');
       cont.style.width = '100%';
       cont.style.height = (heroW / 1.6) + 'px';
-      
+
       document.querySelectorAll('.nudge-left, .nudge-right').forEach(function(layer, index){
         // nudge right
         layer.style.left = '0px';
@@ -69,30 +68,30 @@ const heroMouseMove = (e) => {
     const heroMidY = hero.offsetTop + (heroH / 2);
     const diffX = heroMidX - mouseX;
     const diffY = heroMidY - mouseY;
-    
+
     layers.forEach(function(layer, index){
         const ratioX = parseFloat(layer.dataset.x);
         const ratioY = parseFloat(layer.dataset.y);
         const scale = parseFloat(layer.dataset.scale);
         const minScale = ((scale - 1) / 2);
-        
+
         const minX = heroW * minScale;
         const minY = heroH * minScale;
-        
+
         const maxX = - (heroW * minScale);
         const maxY = - (heroH * minScale);
-        
+
         const moveX = Math.max(maxX,Math.min(minX,ratioX * diffX));
         const moveY = Math.max(maxY,Math.min(minY,ratioY * diffY));
-        
+
         layer.style.transform = 'translate3d('+moveX+'px,'+moveY+'px,0px) scale('+scale+')';
     });
 }
 
-const loadHero = () =>{ 
+const loadHero = () =>{
     const title = heroPhrases[Math.floor(Math.random()*heroPhrases.length)].title;
     document.querySelector('.hero__title').innerHTML = title;
-      
+
     // apply initial scales
     document.querySelectorAll('.hero__image').forEach(function(layer, index){
       const scale = parseFloat(layer.dataset.scale);
@@ -108,7 +107,7 @@ const loadHero = () =>{
 
     setTimeout(function(){
         const sunLayer = document.querySelector('.hero__image--sun');
-        document.querySelector('.hero__inner').classList.add('lto-animate');    
+        document.querySelector('.hero__inner').classList.add('lto-animate');
         setTimeout(function(){
             sunLayer.classList.add('lto-animate');
             setTimeout(function(){
@@ -136,11 +135,32 @@ class HomeHero extends React.Component {
         behavior: 'smooth',
       });
     };
-    
+
     renderCountdown({ days, hours, minutes, seconds, completed }) {
       if (completed) {
         // Render a completed state
-        return <span className="hero__timer hero__timer--complete">EQTY</span>
+        return <>
+          <div className="hero__cta" style={{ marginTop: '12px', display: 'flex', gap: '12px', alignItems: 'center', flexWrap: 'wrap' }}>
+            <a
+              href="https://wallet.lto.network"
+              className="btn-curve btn-lit bg-color"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Swap to EQTY on LTO Wallet"
+            >
+              <span>Swap to EQTY</span>
+            </a>
+            <a
+              href="https://docs.ltonetwork.com/wallets/swapping-lto-to-eqty"
+              className="btn-curve btn-lit btn-blc"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Learn how to swap LTO to EQTY"
+            >
+              <span>How to swap</span>
+            </a>
+          </div>
+        </>;
       } else {
         // Render a countdown
         return <>
@@ -153,14 +173,14 @@ class HomeHero extends React.Component {
     render() {
         return (
             <div id="home--Hero" className="hero" onMouseMove={heroMouseMove} onTouchMove={heroMouseMove}>
-              <div className="hero__inner"> 
+              <div className="hero__inner">
                 <div className="hero__image" data-x="0.05" data-y="0.05" data-scale="1.05"><img src="/img/hero/layer-sky.jpg"/></div>
                 <div className="hero__image hero__image--sun" data-x="0.065" data-y="0.065" data-scale="1.1"><img src="/img/hero/layer-sunNoSparkle.png"/></div>
                 <div className="hero__image hero__image--sparkle" data-x="0.065" data-y="0.065" data-scale="1.1"><img src="/img/hero/layer-sunSparkle.png"/></div>
                 <div className="hero__image" data-x="0.09" data-y="0.09" data-scale="1.15"><img src="/img/hero/layer-smallField.png"/></div>
                 <div className="hero__image" data-x="0.13" data-y="0.13" data-scale="1.15"><img src="/img/hero/layer-bigField.png"/></div>
                 <div className="hero__image hero__image--text" data-x="0.15" data-y="1.5" data-scale="1"><h1 className="hero__title">L<br/>T<br/>O</h1></div>
-                <div className="hero__image hero__image--timer" data-x="0.15" data-y="1.5" data-scale="1"><Countdown date="2025-09-01T17:00:00+00:00" renderer={(args) => this.renderCountdown(args)} /></div>                
+                <div className="hero__image hero__image--timer" data-x="0.15" data-y="1.5" data-scale="1"><Countdown date="2025-09-01T17:00:00+00:00" renderer={(args) => this.renderCountdown(args)} /></div>
                 <div className="hero__image hero__image--leaf7 nudge-left" data-x="0.17" data-y="0.17" data-scale="1.19"><img src="/img/hero/layer-leaf7Trans.png"/></div>
                 <div className="hero__image hero__image--leaf6 nudge-left" data-x="0.22" data-y="0.22" data-scale="1.2"><img src="/img/hero/layer-leaf6Trans.png"/></div>
                 <div className="hero__image hero__image--leaf5 nudge-left stay-top" data-x="0.25" data-y="0.25" data-scale="1.2"><img src="/img/hero/layer-leaf5.png"/></div>
@@ -172,7 +192,6 @@ class HomeHero extends React.Component {
               <div className="hero__prompt">
                 <img src="/img/hero/down-arrow-glow.png" alt="Scroll down" />
               </div>
-              <div onClick={() => this.scrollToAbout()} className="hero__link"></div>  
             </div>
         );
     }
