@@ -142,13 +142,13 @@ class HomeHero extends React.Component {
         return <>
           <div className="hero__cta" style={{ marginTop: '12px', display: 'flex', gap: '12px', alignItems: 'center', flexWrap: 'wrap' }}>
             <a
-              href="https://wallet.lto.network"
+              href="https://eqty.me"
               className="btn-curve btn-lit bg-color"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Swap to EQTY on LTO Wallet"
+              aria-label="EQTY platform"
             >
-              <span>Swap to EQTY</span>
+              <span>EQTY platform</span>
             </a>
             <a
               href="https://docs.ltonetwork.com/wallets/swapping-lto-to-eqty"
@@ -180,7 +180,7 @@ class HomeHero extends React.Component {
                 <div className="hero__image" data-x="0.09" data-y="0.09" data-scale="1.15"><img src="/img/hero/layer-smallField.png"/></div>
                 <div className="hero__image" data-x="0.13" data-y="0.13" data-scale="1.15"><img src="/img/hero/layer-bigField.png"/></div>
                 <div className="hero__image hero__image--text" data-x="0.15" data-y="1.5" data-scale="1"><h1 className="hero__title">L<br/>T<br/>O</h1></div>
-                <div className="hero__image hero__image--timer" data-x="0.15" data-y="1.5" data-scale="1"><Countdown date="2025-09-01T17:00:00+00:00" renderer={(args) => this.renderCountdown(args)} /></div>
+                <div className="hero__image hero__image--timer" data-x="0.15" data-y="1.5" data-scale="1"><Countdown date="2025-08-01T17:00:00+00:00" renderer={(args) => this.renderCountdown(args)} /></div>
                 <div className="hero__image hero__image--leaf7 nudge-left" data-x="0.17" data-y="0.17" data-scale="1.19"><img src="/img/hero/layer-leaf7Trans.png"/></div>
                 <div className="hero__image hero__image--leaf6 nudge-left" data-x="0.22" data-y="0.22" data-scale="1.2"><img src="/img/hero/layer-leaf6Trans.png"/></div>
                 <div className="hero__image hero__image--leaf5 nudge-left stay-top" data-x="0.25" data-y="0.25" data-scale="1.2"><img src="/img/hero/layer-leaf5.png"/></div>
