@@ -21,7 +21,7 @@ const HybridPower = () => {
             <div className="container">
               <h2 className="title-2023 mb-20">LTO Network is shutting downy</h2>
               <p>The Layer 1 blockchain is <span style={{ color:"#00FFFF" }}>shutting down</span>. The story will continue on Base as EQTY</p>
-              <p>The LTO to EQTY <strong>swap period has ended</strong> on 31 October 23:59. It's no longer possible to swap or trade LTO tokens.</p>
+              <p>The LTO to EQTY <strong>swap period has ended</strong> on 31 October 23:59. It&quot;s no longer possible to swap or trade LTO tokens.</p>
             </div>
           </section>
         </div>
