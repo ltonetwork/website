@@ -36,15 +36,15 @@ const ShowcaseDark = () => {
       <Banner />
       <HomeHero />
       <EQTYFinance />
-      <MobileWallet />
+      {/* <MobileWallet /> */}
       {/* <EQTYFinance /> */}
       <HybridPower />
-      <TrueAssetOwnership />
+      {/* <TrueAssetOwnership /> */}
       <Ownables />
-      <Proofi />
+      {/* <Proofi /> */}
       {/* <YourWalletIsYou /> */}
-      <Team1/>
-      <PressKit/>
+      {/* <Team1/> */}
+      {/* <PressKit/> */}
       {/* <Works2023Slider /> */}
       <Footer />
     </DarkTheme>
